@@ -14,15 +14,15 @@ namespace NLI_Database.Sets
             var reader = databaseUtility.Command.ExecuteReader();
             while (reader.Read())
             {
-                _nameSet.Add(reader["name"].ToString());
+                _nameSet.Add(reader["Name"].ToString());
             }
             reader.Close();
         }
-        public bool Contains(string item)
+        public bool Contains(string item, string parameter="")
         {
             return _nameSet.Contains(item);
         }
-        public string Name { get { return "Emp-Name"; }}
-        public IEnumerable<string> Values { get { return _nameSet; } }
+        public string Name => "Emp-Name";
+        public IEnumerable<string> GetValues(string parameter = "") { return _nameSet;  }
     }
 }

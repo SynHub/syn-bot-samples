@@ -57,3 +57,6 @@ Who gets paid the (Most|Highest)
 Who has the (Least|Lowest) salary
 Who gets paid the (Least|Lowest)
 Who is paid the least
+
+List all Employees whose age is (Equal to|Less Than|Greater Than|Less Than or Equal to|Greater than or Equal to) <Number>
+List all Employees whose salary is (Equal to|Less Than|Greater Than|Less Than or Equal to|Greater than or Equal to) <Number>

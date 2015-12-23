@@ -1,7 +1,6 @@
 ﻿using System.Xml.Linq;
 using Syn.Bot;
 using Syn.Bot.Interfaces;
-using Syn.Bot.Processors;
 
 namespace NLI_Database.Adapter
 {

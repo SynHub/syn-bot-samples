@@ -18,11 +18,11 @@ namespace NLI_Database.Sets
             }
             reader.Close();
         }
-        public bool Contains(string item)
+        public bool Contains(string item, string parameter = "")
         {
             return _jobSet.Contains(item);
         }
-        public string Name { get { return "Emp-Job"; }}
-        public IEnumerable<string> Values { get { return _jobSet; } }
+        public string Name => "Emp-Job";
+        public IEnumerable<string> GetValues(string parameter = "") {  return _jobSet;  }
     }
 }

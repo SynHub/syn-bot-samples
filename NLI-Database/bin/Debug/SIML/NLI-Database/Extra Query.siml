@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <Concept Type="public" Name="General Concept" xmlns:x="http://syn.co.in/2014/siml#external">
+    <Model>
+      <Pattern>
+        <Item>CLEAR</Item>
+        <Item>RESET</Item>
+        <Item>LIST ALL EMPLOYEES</Item>
+      </Pattern>
+      <Response>
+         Entire employees table.
+        <x:Sql>SELECT * FROM Employees</x:Sql></Response>
+    </Model>
+
+    <Model>
+      <Pattern>LIST ALL EMPLOYEES * (AGE|SALARY) IS [OPERATOR] *</Pattern>
+      <Response>
+        <x:Sql>select * from Employees where <Match Index="2" /><Map Get="operator"><Match Index="3" /></Map><Match Index="4" /></x:Sql>
+      </Response>
+    </Model>
+
+  </Concept>
+</Siml>

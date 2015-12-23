@@ -18,11 +18,11 @@ namespace NLI_Database.Sets
             }
             reader.Close();
         }
-        public bool Contains(string item)
+        public bool Contains(string item, string parameter = "")
         {
             return _idSet.Contains(item);
         }
-        public string Name { get { return "Emp-ID"; }}
-        public IEnumerable<string> Values { get { return _idSet; } }
+        public string Name => "Emp-ID";
+        public IEnumerable<string> GetValues(string parameter = "") { return _idSet; }
     }
 }

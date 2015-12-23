@@ -19,12 +19,12 @@
                         <TextBox Name="InputBox" TextAlignment="Center" CharacterCasing="Upper" KeyDown="InputBox_OnKeyDown"/>
                         <Button Name="ExecuteButton" Content="Evaluate" Grid.Column="1" Click="ExecuteButton_OnClick"/>
                     </Grid>
-                    <Label Grid.Row="1"  Name="ResponseLabel" Content="No Response Yet"/>
+                    <Label Grid.Row="1"  Name="ResponseLabel" Content="No Response Yet" VerticalContentAlignment="Center"/>
                     <DataGrid  Name="EmployeeGrid" Grid.Row="2"  FontSize="14" />
                 </Grid>
             </TabItem>
             <TabItem Header="Examples">
-                <TextBox Name="ExamplesBox" VerticalScrollBarVisibility="Auto"/>
+                <TextBox Name="ExamplesBox" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" IsReadOnly="True"/>
             </TabItem>
         </TabControl>
     </Grid>

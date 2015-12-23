@@ -43,8 +43,8 @@
       <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syn.Bot, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syn.Bot.1.1.2\lib\portable-net45+sl5+wp8+win8\Syn.Bot.dll</HintPath>
+    <Reference Include="Syn.Bot, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syn.Bot.1.2.1\lib\portable-net45+sl5+wp8+win8\Syn.Bot.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

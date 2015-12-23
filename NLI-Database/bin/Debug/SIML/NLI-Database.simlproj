@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<simlproject>
+  <name>Natural Language Interface to Database</name>
+  <directory>NLI-Database</directory>
+  <botname>Maya</botname>
+  <personality>None</personality>
+  <author>Developer</author>
+  <description>Demonstration of NLI to Databases using SIML</description>
+  <date>3:54:44 PM, Saturday, May 09, 2015</date>
+</simlproject>
