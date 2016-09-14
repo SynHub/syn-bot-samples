@@ -7,7 +7,7 @@ using System.Windows.Input;
 using System.Xml.Linq;
 using NLI_Database.Adapter;
 using NLI_Database.Sets;
-using Syn.Bot;
+using Syn.Bot.Siml;
 
 namespace NLI_Database
 {
@@ -17,12 +17,12 @@ namespace NLI_Database
     public partial class MainWindow
     {
         public DatabaseUtility DatabaseUtility { get; private set; }
-        public SynBot Bot { get; private set; }
+        public SimlBot Bot { get; private set; }
 
         public MainWindow()
         {
             InitializeComponent();
-            Bot = new SynBot();
+            Bot = new SimlBot();
             DatabaseUtility = new DatabaseUtility();
             DatabaseUtility.Initialize();
             UpdateDataGrid("SELECT * From Employees");

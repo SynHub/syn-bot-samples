@@ -47,3 +47,6 @@ H:\GitHub\Natural-Language-Interface-to-Database\NLI-Database\obj\Debug\NLI-Data
 H:\GitHub\Natural-Language-Interface-to-Database\Natural-Language-Interface-to-Database\NLI-Database\bin\Debug\NLI-Database.exe.config
 H:\GitHub\Natural-Language-Interface-to-Database\Natural-Language-Interface-to-Database\NLI-Database\obj\Debug\NLI-Database.exe
 H:\GitHub\Natural-Language-Interface-to-Database\Natural-Language-Interface-to-Database\NLI-Database\obj\Debug\NLI-Database.pdb
+H:\GitHub\Natural-Language-Interface-to-Database\NLI-Database\bin\Debug\Jint.dll
+H:\GitHub\Natural-Language-Interface-to-Database\NLI-Database\bin\Debug\Syn.Log.dll
+H:\GitHub\Natural-Language-Interface-to-Database\NLI-Database\bin\Debug\Syn.VA.dll

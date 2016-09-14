@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Syn.Bot.Interfaces;
+using Syn.Bot.Siml.Interfaces;
 
 namespace NLI_Database.Sets
 {

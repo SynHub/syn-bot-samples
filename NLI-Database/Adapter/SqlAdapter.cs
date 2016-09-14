@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
-using Syn.Bot;
-using Syn.Bot.Interfaces;
+using Syn.Bot.Siml;
+using Syn.Bot.Siml.Interfaces;
 
 namespace NLI_Database.Adapter
 {
@@ -11,8 +11,9 @@ namespace NLI_Database.Adapter
         {
             _window = window;
         }
-        public bool IsRecursive { get { return true; } }
-        public XName TagName { get { return Specification.Namespace.X + "Sql"; } }
+        public bool IsRecursive => true;
+        public XName TagName => Specification.Namespace.X + "Sql";
+
         public string Evaluate(Context parameter)
         {
             _window.UpdateDataGrid(parameter.Element.Value);
