@@ -12,7 +12,7 @@ namespace NLI_Database.Adapter
             _window = window;
         }
         public bool IsRecursive => true;
-        public XName TagName => Specification.Namespace.X + "Sql";
+        public XName TagName => SimlSpecification.Namespace.X + "Sql";
 
         public string Evaluate(Context parameter)
         {
