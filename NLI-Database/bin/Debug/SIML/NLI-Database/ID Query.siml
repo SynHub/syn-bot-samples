@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Siml>
-  <Concept Name="ID Query" Type="Public" Repeat="True" xmlns:x="http://syn.co.in/2014/siml#external">
+<Siml xmlns:x="http://syn.co.in/2014/siml#external">
+  <Concept Name="ID Query">
+    
     <Model>
       <Pattern>$ ID OF [EMP-NAME]</Pattern>
+      <Example>What is the ID of [Emp-Name]?</Example>
       <Response>
         Employee ID of <Match Index="2" />.
         <x:Sql>SELECT ID FROM EMPLOYEES WHERE UPPER(Name) LIKE UPPER('%<Match Index="2" />%')</x:Sql></Response>
     </Model>
-
+    
     <Model>
       <Pattern>
         <Item>[EMP-ID]</Item>
@@ -17,6 +19,6 @@
         Employee with ID <Match />.
         <x:Sql>SELECT * FROM Employees WHERE ID=<Match /></x:Sql></Response>
     </Model>
-
+    
   </Concept>
 </Siml>

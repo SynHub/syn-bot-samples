@@ -8,7 +8,7 @@
   <!--Important: As a Repeat element is not treated like an SIML Model certain SIML elements including (but not limited to) <Match>, <Goto>, <Output>, <Input>, <Phrase>... are invalid within this Element-->
   <Repeat>
     <Response>
-      <If User="partial-repeat">
+      <If User="repeat-ispartial">
         <Switch User="repeat-count">
           <Case Value="1">And I have already mentioned <Echo Index="1" /></Case>
           <Case Value="2">And I think you already know <Echo Index="1" /> and <Echo Index="2" /></Case>

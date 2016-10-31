@@ -2156,12 +2156,12 @@
               <c>true</c> if filters are allowed; otherwise, <c>false</c>.
             </value>
         </member>
-        <member name="P:Syn.Bot.Siml.BotConfiguration.AllowScripting">
+        <member name="P:Syn.Bot.Siml.BotConfiguration.AllowJavaScript">
             <summary>
-            Gets or sets a value indicating if scripts are allowed.
+            Gets or sets a value indicating whether JavaScript is allowed.
             </summary>
             <value>
-              <c>true</c> if scripts are allowed; otherwise, <c>false</c>.
+              <c>true</c> if JavaScript is allowed; otherwise, <c>false</c>.
             </value>
         </member>
         <member name="P:Syn.Bot.Siml.BotConfiguration.AllowStacking">
@@ -2226,6 +2226,14 @@
             </summary>
             <value>
               <c>true</c> if Models can be stored in the User's <see cref="T:Syn.Bot.Siml.Graph.GraphNode"/>; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syn.Bot.Siml.BotConfiguration.AllowScripting">
+            <summary>
+            Gets or sets a value indicating if scripts are allowed.
+            </summary>
+            <value>
+              <c>true</c> if scripts are allowed; otherwise, <c>false</c>.
             </value>
         </member>
         <member name="P:Syn.Bot.Siml.BotConfiguration.AllowInteractionStorage">
@@ -3623,6 +3631,14 @@
             The parsers.
             </value>
         </member>
+        <member name="P:Syn.Bot.Siml.SimlBot.SearchEngine">
+            <summary>
+            Gets or sets the search engine for processing examples.
+            </summary>
+            <value>
+            The search engine.
+            </value>
+        </member>
         <member name="P:Syn.Bot.Siml.SimlBot.Adapters">
             <summary>
             Gets the tag handlers.
@@ -3759,10 +3775,9 @@
         </member>
         <member name="M:Syn.Bot.Siml.SimlBot.AddSiml(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument})">
             <summary>
-            Adds SIML
+            Adds SIML documents to Bot Knowledge-Base after proper sequencing.
             </summary>
-            <param name="simlElements">SIML Elements</param>
-            <returns></returns>
+            <param name="simlDocuments">SIML Elements</param>
         </member>
         <member name="M:Syn.Bot.Siml.SimlBot.AddSiml(System.Xml.Linq.XDocument)">
             <summary>

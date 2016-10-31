@@ -8,7 +8,7 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="35"/>
-                        <RowDefinition Height="53*"/>
+                        <RowDefinition Height="100*"/>
                         <RowDefinition Height="232*"/>
                     </Grid.RowDefinitions>
                     <Grid>
@@ -19,7 +19,7 @@
                         <TextBox Name="InputBox" TextAlignment="Center" CharacterCasing="Upper" KeyDown="InputBox_OnKeyDown"/>
                         <Button Name="ExecuteButton" Content="Evaluate" Grid.Column="1" Click="ExecuteButton_OnClick"/>
                     </Grid>
-                    <Label Grid.Row="1"  Name="ResponseLabel" Content="No Response Yet" VerticalContentAlignment="Center"/>
+                    <Label Grid.Row="1"  Name="ResponseLabel" Content="No Response Yet" VerticalContentAlignment="Top" />
                     <DataGrid  Name="EmployeeGrid" Grid.Row="2"  FontSize="14" />
                 </Grid>
             </TabItem>
