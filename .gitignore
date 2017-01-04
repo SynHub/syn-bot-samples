@@ -1,5 +1,6 @@
-NLI-Database\obj\
-packages\
+NLI-Database-SIML/obj/
+NLI-Database-Oscova/obj/
+packages/
 
 # Windows image file caches
 Thumbs.db
@@ -44,4 +45,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-NLI-Database/bin/Debug/SIML.zip
+NLI-Database-SIML/bin/Debug/SIML.zip
