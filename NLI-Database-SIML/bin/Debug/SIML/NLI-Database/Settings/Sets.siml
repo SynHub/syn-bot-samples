@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <!--Note: When referring to an already declared set you should enclose the set name within square brackets [EXAMPLE]-->
+  <!--Note: Names of set(s) are case insensitive and are language-independent-->
+  <!--Note: Set names should be Singural by convention-->
+  <!--Change Set Update-->
+  <Set Name="Change">
+    <Item>Change</Item>
+    <Item>Set</Item>
+    <Item>Update</Item>
+  </Set>
+ 
+  <!--[NO]-->
+  <Set Name="No">
+    <Item>no</Item>
+    <Item>not</Item>
+    <Item>negative</Item>
+    <Item>never</Item>
+    <Item>nix</Item>
+    <Item>nah</Item>
+    <Item>nope</Item>
+    <Item>nop</Item>
+  </Set>
+  <!--[YES]-->
+  <Set Name="Yes">
+    <Item>yes</Item>
+    <Item>yeah</Item>
+    <Item>yep</Item>
+    <Item>yea</Item>
+    <Item>ok</Item>
+    <Item>okay</Item>
+    <Item>ofcourse</Item>
+    <Item>fine</Item>
+    <Item>affirmative</Item>
+    <Item>all right</Item>
+    <Item>amen</Item>
+    <Item>aye</Item>
+    <Item>beyond a doubt</Item>
+    <Item>by all means</Item>
+    <Item>certainly</Item>
+    <Item>definitely</Item>
+    <Item>even so</Item>
+    <Item>exactly</Item>
+    <Item>gladly</Item>
+    <Item>good</Item>
+    <Item>granted</Item>
+    <Item>indubitably</Item>
+    <Item>just so</Item>
+    <Item>most assuredly</Item>
+    <Item>naturally</Item>
+    <Item>of course</Item>
+    <Item>positively</Item>
+    <Item>precisely</Item>
+    <Item>sure thing</Item>
+    <Item>surely</Item>
+    <Item>true</Item>
+    <Item>undoubtedly</Item>
+    <Item>unquestionably</Item>
+    <Item>very well</Item>
+    <Item>willingly</Item>
+    <Item>without fail</Item>
+    <Item>or what</Item>
+  </Set>
+</Siml>

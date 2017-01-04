@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml xmlns:x="http://syn.co.in/2014/siml#external">
+  <Concept Name="Job Query">
+    <!--COMMAND-->
+    
+    <Model>
+      <Pattern>[CHANGE] THE JOB OF [EMP-NAME] TO [EMP-JOB]</Pattern>
+      <Example>[Change] the job of [emp-name] to [emp-job]</Example>
+      <Response>
+       Role of <Match Index="2" /> has now changed to <Match Index="3" /><x:Sql>UPDATE EMPLOYEES SET Job='<Match Index="3" />' WHERE UPPER(Name) LIKE UPPER('%<Match Index="2" />%');</x:Sql><x:Sql>SELECT * FROM EMPLOYEES WHERE UPPER(Name) LIKE UPPER('%<Match Index="2" />%');</x:Sql></Response>
+    </Model>
+    
+    <Model>
+      <Pattern>[CHANGE] THE JOB OF ID [EMP-ID] TO [EMP-JOB]</Pattern>
+      <Example>[Change] the job of ID [Emp-ID] to [Emp-Job]</Example>
+      <Response>
+       Role of ID <Match Index="2" /> has now changed to <Match Index="3" />.
+      <x:Sql>UPDATE EMPLOYEES SET Job='<Match Index="3" />' WHERE ID=<Match Index="2" />;</x:Sql><x:Sql>SELECT * FROM EMPLOYEES WHERE ID=<Match Index="2" />;</x:Sql></Response>
+    </Model>
+    <!--QUERY-->
+    
+    <Model>
+      <Pattern>
+        <Item>[EMP-JOB]</Item>
+        <Item>$ IN [EMP-JOB]</Item>
+      </Pattern>
+      <Response>
+        All employees playing the role of <Match />.
+        <x:Sql>SELECT * FROM Employees WHERE UPPER(Job) LIKE UPPER('%<Match />%')</x:Sql></Response>
+    </Model>
+    
+    <Model>
+      <Pattern>
+        <Item>JOB OF [EMP-NAME]</Item>
+        <Item>ROLE OF [EMP-NAME]</Item>
+        <Item>WHAT DOES [EMP-NAME] DO</Item>
+      </Pattern>
+      <Example>
+        <Item>What is the job of [Emp-Name]?</Item>
+        <Item>What is the Role of [Emp-Name]?</Item>
+        <Item>What does [Emp-Name] do?</Item>
+      </Example>
+      <Response>
+        Role of <Match />.
+        <x:Sql>SELECT Job FROM Employees WHERE UPPER(Name) LIKE UPPER('%<Match />%')</x:Sql></Response>
+    </Model>
+    
+  </Concept>
+</Siml>
