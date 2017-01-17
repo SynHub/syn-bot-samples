@@ -21,4 +21,6 @@ All example patterns are highlighted within the Examples tab. The database used 
 
 The knowledge-base of this project also implements an intelligent suggestion system to address queries that are very similar to existing patterns. Thereby teaching the user the right format of presenting questions to the Database.
 
+## License
 
+Projects under this repository are dual licensed under: MIT and [CPOL](http://www.codeproject.com/info/cpol10.aspx)
