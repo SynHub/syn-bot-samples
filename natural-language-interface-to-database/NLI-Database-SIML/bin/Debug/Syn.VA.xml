@@ -1,0 +1,784 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syn.VA</name>
+    </assembly>
+    <members>
+        <member name="T:Syn.VA.Collections.ChoiceCollection">
+            <summary>
+            A collection class to hold all known choices for interacting with the <see cref="T:Syn.VA.VirtualAssistant"/>.
+            </summary>
+            <seealso cref="T:System.Collections.Generic.ICollection`1" />
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.Collections.ChoiceCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.Add(Syn.VA.Interfaces.IChoiceItem)">
+            <summary>
+            Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.
+            </summary>
+            <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+            <remarks>Duplicate <see cref="P:Syn.VA.Interfaces.IChoiceItem.Value"/> is ignored.</remarks>
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.Clear">
+            <summary>
+            Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.Contains(Syn.VA.Interfaces.IChoiceItem)">
+            <summary>
+            Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific value.
+            </summary>
+            <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+            <returns>
+            true if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.CopyTo(Syn.VA.Interfaces.IChoiceItem[],System.Int32)">
+            <summary>
+            Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.
+            </summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Generic.ICollection`1" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
+        </member>
+        <member name="M:Syn.VA.Collections.ChoiceCollection.Remove(Syn.VA.Interfaces.IChoiceItem)">
+            <summary>
+            Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.
+            </summary>
+            <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+            <returns>
+            true if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, false. This method also returns false if <paramref name="item" /> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.
+            </returns>
+        </member>
+        <member name="P:Syn.VA.Collections.ChoiceCollection.Count">
+            <summary>
+            Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1" />.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Collections.ChoiceCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Collections.PluginCollection.GetPluginByName(System.String)">
+            <summary>
+            Gets the plugin with the specified name.
+            </summary>
+            <param name="pluginName">Name of the plugin.</param>
+            <returns>The plugin if found otherwise <code>null</code>.</returns>
+        </member>
+        <member name="M:Syn.VA.Collections.PluginCollection.GetPluginByType``1">
+            <summary>
+            Gets the plugin of the specified type.
+            </summary>
+            <typeparam name="T">Type of Plugin.</typeparam>
+            <returns>The plugin if found otherwise <code>null</code>.</returns>
+        </member>
+        <member name="T:Syn.VA.Collections.ServiceCollection">
+            <summary>
+            A Service management class that helps interact with added <see cref="T:Syn.VA.Service"/>
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Collections.ServiceCollection.Add(Syn.VA.Service)">
+            <summary>
+            Adds the specified service.
+            </summary>
+            <param name="service">The service.</param>
+        </member>
+        <member name="M:Syn.VA.Collections.ServiceCollection.Remove(System.String)">
+            <summary>
+            Removes a <see cref="T:Syn.VA.Service"/> by ID.
+            </summary>
+            <param name="serviceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syn.VA.Collections.ServiceCollection.GetServiceById(System.String)">
+            <summary>
+            Gets the <see cref="T:Syn.VA.Service"/> by the case-insensitive identifier.
+            </summary>
+            <param name="serviceId">The service identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Syn.VA.Component.ComponentManager">
+            <summary>
+            Container class for external component interactions.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Events.MessageReceivedEventArgs.Handled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syn.VA.Events.MessageReceivedEventArgs"/> is handled.
+            </summary>
+            <value>
+              <c>true</c> if handled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Syn.VA.Events.SettingsChangedAction">
+            <summary>
+            Describes the action that caused a <see cref="E:Syn.VA.Settings.SettingsChanged"/> event. 
+            </summary>
+        </member>
+        <member name="F:Syn.VA.Events.SettingsChangedAction.Add">
+            <summary>
+            A new variable added.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.Events.SettingsChangedAction.Remove">
+            <summary>
+            An existing variable is removed.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.Events.SettingsChangedAction.Replace">
+            <summary>
+            Value or Values part of an existing variable is updated.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.Events.SettingsChangedAction.Reset">
+            <summary>
+            Settings cleared.
+            </summary>
+        </member>
+        <member name="T:Syn.VA.Events.VariableChangedAction">
+            <summary>
+            Describes the action that caused a <see cref="E:Syn.VA.Variable.Changed"/> event. 
+            </summary>
+        </member>
+        <member name="T:Syn.VA.Events.SettingsChangedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syn.VA.Settings.SettingsChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Events.SettingsChangedEventArgs.Action">
+            <summary>
+            Gets the action that caused the event. 
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Events.SettingsChangedEventArgs.Variable">
+            <summary>
+            Gets the <see cref="T:Syn.VA.Interfaces.IVariable"/> involved in the change.
+            </summary>
+        </member>
+        <member name="T:Syn.VA.Events.VariableChangedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syn.VA.Interfaces.IVariable.Changed"/> event.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Events.VariableChangedEventArgs.#ctor(Syn.VA.Events.VariableChangedAction,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.Events.VariableChangedEventArgs"/> class.
+            </summary>
+            <param name="action">The action.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:Syn.VA.Events.VariableChangedEventArgs.Action">
+            <summary>
+            Gets the action that caused the event. 
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Events.VariableChangedEventArgs.Value">
+            <summary>
+            Gets the string value involved in the change.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="F:Syn.VA.EventType.Loaded">
+            <summary>
+            Event type that is fired when the VA has loaded of all necessary components.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.EventType.FirstLoad">
+            <summary>
+            Event type that is fired when the VA starts for the first time.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.EventType.Closing">
+            <summary>
+            Event type that is fired when the VA is shutting down.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.EventType.Resetting">
+            <summary>
+            Event type that is fired when the VA is requested to reset its settings to default values. 
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Extensions.VariableExtensions.ValueAs``1(Syn.VA.Interfaces.IVariable,``0)">
+            <summary>
+            Returns the <see cref="P:Syn.VA.Interfaces.IVariable.Value"/> as the <see cref="!:T"/> specified.
+            </summary>
+            <typeparam name="T">Return Type</typeparam>
+            <param name="source">The source <see cref="T:Syn.VA.Interfaces.IVariable"/>.</param>
+            <param name="defaultValue">The default value.</param>
+        </member>
+        <member name="M:Syn.VA.FunctionalVariable.#ctor(System.String,System.Func{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.FunctionalVariable"/> class.
+            </summary>
+            <param name="name">The name of the variable.</param>
+            <param name="function">The function that returns a <see cref="T:System.String"/> value.</param>
+        </member>
+        <member name="E:Syn.VA.FunctionalVariable.Changed">
+            <summary>
+            This event is not triggered in <see cref="T:Syn.VA.FunctionalVariable"/>.
+            </summary>
+        </member>
+        <member name="T:Syn.VA.Interaction.InteractionManager">
+            <summary>
+            A class for managing interations with the <see cref="T:Syn.VA.VirtualAssistant"/>.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Interaction.InteractionManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.Interaction.InteractionManager"/> class.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interaction.InteractionManager.LastMessage">
+            <summary>
+            Gets the last message received by the <see cref="T:Syn.VA.VirtualAssistant"/>.
+            </summary>
+            <value>
+            The last message.
+            </value>
+            <remarks>The initial value of this property is <see cref="F:Syn.VA.Interaction.Message.Empty"/>.</remarks>
+        </member>
+        <member name="M:Syn.VA.Interaction.InteractionManager.SendMessage(Syn.VA.Interaction.Message)">
+            <summary>
+            Sends the specified <see cref="T:Syn.VA.Interaction.Message"/> to the Virtual Assistant.
+            </summary>
+            <param name="message">The message.</param>
+            <remarks>This method raises the <see cref="E:Syn.VA.Interaction.InteractionManager.MessageReceived"/> event.</remarks>
+        </member>
+        <member name="M:Syn.VA.Interaction.InteractionManager.SendMessage(System.String)">
+            <summary>
+            Sends the message to the Virtual Assistant.
+            </summary>
+            <param name="message">The message.</param>
+            <remarks>This method raises the <see cref="E:Syn.VA.Interaction.InteractionManager.MessageReceived"/> event.</remarks>
+        </member>
+        <member name="E:Syn.VA.Interaction.InteractionManager.MessageReceived">
+            <summary>
+            Occurs when the <see cref="T:Syn.VA.VirtualAssistant"/> receives a message.
+            </summary>
+        </member>
+        <member name="E:Syn.VA.Interaction.InteractionManager.ResponseReceived">
+            <summary>
+            Occurs when a response is generated by a component in relation to the previously received message.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interaction.Message.User">
+            <summary>
+            Gets or sets the user.
+            </summary>
+            <value>
+            The targetted user.
+            </value>
+            <remarks>Returns <see cref="P:Syn.VA.VirtualAssistant.MainUser"/> if the value is not set.</remarks>
+        </member>
+        <member name="P:Syn.VA.Interaction.Message.From">
+            <summary>
+            Gets or sets the component from which this message is received.
+            </summary>
+            <value>
+            Name of the component sending this message.
+            </value>
+            <remarks>The value of this property must be a unique name of the component.</remarks>
+        </member>
+        <member name="F:Syn.VA.Interaction.Message.Empty">
+            <summary>
+            An Empty Message.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interaction.Message.IsEmpty">
+            <summary>
+            Gets a value indicating whether this instance is an empty message.
+            </summary>
+            <value>
+              <c>true</c> if this instance is empty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="F:Syn.VA.Interaction.MessageType.UserMessage">
+            <summary>
+            User message type.
+            </summary>
+            <remarks>This is the default value of <see cref="P:Syn.VA.Interaction.Message.Type"/>.</remarks>
+        </member>
+        <member name="F:Syn.VA.Interaction.MessageType.EventMessage">
+            <summary>
+            An event message that is triggered when an internal event is fired.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.Interaction.MessageType.None">
+            <summary>
+            Undefined message type.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interaction.Response.User">
+            <summary>
+            Gets or sets the user.
+            </summary>
+            <value>
+            The user.
+            </value>
+            <remarks>Returns <see cref="P:Syn.VA.VirtualAssistant.MainUser"/> if the value is not set.</remarks>
+        </member>
+        <member name="P:Syn.VA.Interaction.Response.Hint">
+            <summary>
+            Gets or sets the hint.
+            </summary>
+            <value>
+            The next input value expected by the Virtual Assistant.
+            </value>
+        </member>
+        <member name="P:Syn.VA.Interaction.Response.Rank">
+            <summary>
+            Gets or sets the rank.
+            </summary>
+            <value>
+            The rank of this response.
+            </value>
+        </member>
+        <member name="T:Syn.VA.Interfaces.IVariable">
+            <summary>
+            An interface for SIML variable implementation.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interfaces.IVariable.Name">
+            <summary>
+            Gets the name of this variable.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interfaces.IVariable.Value">
+            <summary>
+            Gets or sets the main value of this variable.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interfaces.IVariable.Owner">
+            <summary>
+            Gets or sets the <see cref="T:Syn.VA.Settings"/> that owns this <see cref="T:Syn.VA.Interfaces.IVariable"/>.
+            </summary>
+            <value>
+            The owner <see cref="T:Syn.VA.Settings"/>
+            </value>
+        </member>
+        <member name="P:Syn.VA.Interfaces.IVariable.List">
+            <summary>
+            Gets a list of all the values stored within this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interfaces.IVariable.Count">
+            <summary>
+            Gets the number of values held by this variable.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Interfaces.IVariable.Add(System.String)">
+            <summary>
+            Adds the specified value to this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+            <param name="value">The value to add.</param>
+        </member>
+        <member name="M:Syn.VA.Interfaces.IVariable.Remove(System.String)">
+            <summary>
+            Removes the specified value from this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+            <param name="value">The value to remove.</param>
+        </member>
+        <member name="M:Syn.VA.Interfaces.IVariable.Contains(System.String)">
+            <summary>
+            Determines whether this <see cref="T:Syn.VA.Variable"/> contains the specified value.
+            </summary>
+            <param name="value">The value to search.</param>
+            <returns>true if this <see cref="T:Syn.VA.Variable"/> contains the specified value; otherwise, false.</returns>
+        </member>
+        <member name="M:Syn.VA.Interfaces.IVariable.Clear">
+            <summary>
+            Clears all values of this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Interfaces.IVariable.Clone">
+            <summary>
+            Gets the copy of this <see cref="T:Syn.VA.Variable"/>.
+            </summary>
+            <value>
+            Deep copy of <see cref="T:Syn.VA.Variable"/>
+            </value>
+        </member>
+        <member name="E:Syn.VA.Interfaces.IVariable.Changed">
+            <summary>
+            Occurs when the value of this <see cref="T:Syn.VA.Interfaces.IVariable"/> is changed.
+            </summary>
+        </member>
+        <member name="T:Syn.VA.Interfaces.IVolatile">
+            <summary>
+            Interface to be implemented by volatile classes.
+            </summary>
+        </member>
+        <member name="T:Syn.VA.ResponseRank">
+            <summary>
+            A Rank given to a Response to reflect its priority of reaching a user.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.ResponseRank.Internal">
+            <summary>
+            An internal ranking response.
+            The textual data generated by this type of response MUST NOT be displayed to the user.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.ResponseRank.Low">
+            <summary>
+            A low ranking response. 
+            The textual data generated by this type of response isn't important enough to be displayed to the user.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.ResponseRank.Normal">
+            <summary>
+            A normal ranking response, the textual value of which is usually meant to be displayed to the user.
+            </summary>
+        </member>
+        <member name="F:Syn.VA.ResponseRank.High">
+            <summary>
+            A high ranking response, the value or data of which must be presented to the user.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Service.ID">
+            <summary>
+            Gets or sets the unique ID of this service.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Service.Description">
+            <summary>
+            Gets or sets the description for this service.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Service.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syn.VA.Service"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syn.VA.Service.Action">
+            <summary>
+            Gets or sets the service action.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Service.Interval">
+            <summary>
+            Gets or sets the time interval at which this service is to be executed.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Service.Stopwatch">
+            <summary>
+            Gets the <see cref="P:Syn.VA.Service.Stopwatch"/> used to check if the service can be executed.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Settings.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.Settings"/> class.
+            </summary>
+            <param name="name">The settings name.</param>
+            <param name="location">The location where the settings is to be stored.</param>
+        </member>
+        <member name="M:Syn.VA.Settings.Bind(Syn.VA.Settings)">
+            <summary>
+            Binds the current settings to the specified settings.
+            </summary>
+            <param name="settings">The settings to bind to.</param>
+            <remarks>Bind a Settings to another settings clears its existing variable table.</remarks>
+        </member>
+        <member name="M:Syn.VA.Settings.Load(Syn.VA.Settings)">
+            <summary>
+            Loads the specified settings.
+            </summary>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Syn.VA.Settings.Add(System.String,System.Func{System.String})">
+            <summary>
+            Adds the specified variable name.
+            </summary>
+            <param name="variableName">Name of the variable.</param>
+            <param name="function">The function that returns a string value.</param>
+        </member>
+        <member name="M:Syn.VA.Settings.Remove(System.String)">
+            <summary>
+            Removes the variable with the specified name.
+            </summary>
+            <param name="variableName">Name of the variable.</param>
+        </member>
+        <member name="M:Syn.VA.Settings.RaiseSettingsChanged(Syn.VA.Events.SettingsChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:VariableChanged" /> event.
+            </summary>
+            <param name="eventArgs">The <see cref="T:Syn.VA.Events.SettingsChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Syn.VA.Settings.TryGetValue(System.String,System.String@)">
+            <summary>
+            Tries to get the value of a variable.
+            </summary>
+            <param name="variableName">Name of the variable.</param>
+            <param name="variableValue">value of the variable.</param>
+            <returns>true if the variable was found; otherwise false.</returns>
+        </member>
+        <member name="M:Syn.VA.Settings.GetValue(System.String)">
+            <summary>
+            Gets the main value of the specified variable.
+            </summary>
+            <param name="variableName">Name of the variable.</param>
+            <returns>Value of the variable if it exists otherwise returns the default value.</returns>
+        </member>
+        <member name="M:Syn.VA.Settings.Contains(System.String)">
+            <summary>
+            Determines whether this <see cref="T:Syn.VA.Settings"/> instance contains the specified variable.
+            </summary>
+            <param name="variableName">Name of the variable.</param>
+            <returns>
+              <c>true</c> if specified variable is found; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="E:Syn.VA.Settings.SettingsChanged">
+            <summary>
+            Occurs when a variable is added or removed.
+            </summary>
+        </member>
+        <member name="T:Syn.VA.SettingsManager">
+            <summary>
+            Container class that holds <see cref="T:Syn.VA.Settings"/> instances of components and plugins.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.SettingsManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.SettingsManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.SettingsManager.Create(System.String)">
+            <summary>
+            Creates a new <see cref="T:Syn.VA.Settings"/> with specified name.
+            </summary>
+            <param name="name">The Settings name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syn.VA.SettingsManager.Add(Syn.VA.Settings)">
+            <summary>
+            Adds the specified settings.
+            </summary>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:Syn.VA.SettingsManager.Contains(System.String)">
+            <summary>
+            Determines whether this <see cref="T:Syn.VA.SettingsManager"/> contains a Settings instance with the specified name.
+            </summary>
+            <param name="settingsName">Name of the settings.</param>
+            <returns>
+              <c>true</c> if a settings with the specified name exists; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="E:Syn.VA.SettingsManager.SettingsSaved">
+            <summary>
+            Occurs when a <see cref="T:Syn.VA.Settings"/> is serialized to a file.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Speech.ISpeechRecognizer.Name">
+            <summary>
+            Gets the unique name of the <see cref="T:Syn.VA.Speech.ISpeechRecognizer"/>
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="M:Syn.VA.Timing.ServiceTimer.PerformTick">
+            <summary>
+            Function that should be called by the Service Timer once every 1 second.
+            </summary>
+        </member>
+        <member name="E:Syn.VA.Timing.ServiceTimer.Tick">
+            <summary>
+            Event that is fired when a tick is performed.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.User.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.User"/> class.
+            </summary>
+            <param name="uniqueId">The unique identifier.</param>
+        </member>
+        <member name="P:Syn.VA.User.ID">
+            <summary>
+            Gets the identifier of this user.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Syn.VA.User.IsMain">
+            <summary>
+            Gets a value indicating whether this instance is <see cref="P:Syn.VA.VirtualAssistant.MainUser"/>.
+            </summary>
+            <value>
+              <c>true</c> if this instance is <see cref="P:Syn.VA.VirtualAssistant.MainUser"/>; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Syn.VA.Variable">
+            <summary>
+            Represents an SIML variable.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Variable.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.VA.Variable"/> class.
+            </summary>
+            <param name="name">Name of the <see cref="T:Syn.VA.Variable"/></param>
+        </member>
+        <member name="P:Syn.VA.Variable.Name">
+            <summary>
+            Gets the name of this variable.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Variable.Value">
+            <summary>
+            Gets or sets the main value of this variable.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Variable.Owner">
+            <summary>
+            Gets or sets the <see cref="T:Syn.VA.Settings" /> that owns this <see cref="T:Syn.VA.Interfaces.IVariable" />.
+            </summary>
+            <value>
+            The owner <see cref="T:Syn.VA.Settings" />
+            </value>
+        </member>
+        <member name="P:Syn.VA.Variable.List">
+            <summary>
+            Gets a list of all the values stored within this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Variable.Add(System.String)">
+            <summary>
+            Adds the specified value to this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+            <param name="value">The value to add.</param>
+        </member>
+        <member name="M:Syn.VA.Variable.Remove(System.String)">
+            <summary>
+            Removes the specified value from this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+            <param name="value">The value to remove.</param>
+        </member>
+        <member name="P:Syn.VA.Variable.Count">
+            <summary>
+            Gets the number of values held by this variable.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.Variable.Contains(System.String)">
+            <summary>
+            Determines whether this <see cref="T:Syn.VA.Variable"/> contains the specified value.
+            </summary>
+            <param name="value">The value to search.</param>
+            <returns>true if this <see cref="T:Syn.VA.Variable"/> contains the specified value; otherwise, false.</returns>
+        </member>
+        <member name="M:Syn.VA.Variable.Clear">
+            <summary>
+            Clears all values of this <see cref="T:Syn.VA.Variable"/>
+            </summary>
+        </member>
+        <member name="P:Syn.VA.Variable.Clone">
+            <summary>
+            Gets the copy of this <see cref="T:Syn.VA.Variable"/>.
+            </summary>
+            <value>
+            Deep copy of <see cref="T:Syn.VA.Variable"/>
+            </value>
+        </member>
+        <member name="M:Syn.VA.Variable.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents the value of this variable.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents the value of this variable.
+            </returns>
+        </member>
+        <member name="E:Syn.VA.Variable.Changed">
+            <summary>
+            Occurs when the value of this <see cref="T:Syn.VA.Interfaces.IVariable" /> is changed.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.VirtualAssistant.#ctor(System.String)">
+            <summary>
+            Initializes
+            </summary>
+            <param name="name">The name of the Virtual Assistant. This <see cref="!:name"/> can be changed at runtime.</param>
+        </member>
+        <member name="P:Syn.VA.VirtualAssistant.Name">
+            <summary>
+            Gets or sets the name of this Virtual Assistant.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.VirtualAssistant.Architecture">
+            <summary>
+            Gets or sets the name of the Architecture used by this Virtual Assistant.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.VirtualAssistant.Version">
+            <summary>
+            Gets the version of the VA Framework used by this Virtual Assistant.
+            </summary>
+        </member>
+        <member name="P:Syn.VA.VirtualAssistant.MainUser">
+            <summary>
+            Gets or sets the main user.
+            </summary>
+            <value>
+            The main user.
+            </value>
+        </member>
+        <member name="P:Syn.VA.VirtualAssistant.SettingsManager">
+            <summary>
+            Gets the <see cref="P:Syn.VA.VirtualAssistant.SettingsManager"/>.
+            </summary>
+        </member>
+        <member name="M:Syn.VA.VirtualAssistant.RaiseEvent(Syn.VA.EventType)">
+            <summary>
+            Raises VA events using the <see cref="!:eventType"/> specified.
+            </summary>
+            <param name="eventType"></param>
+        </member>
+        <member name="E:Syn.VA.VirtualAssistant.Loaded">
+            <summary>
+            Occurs when the Virtual Assistant application has loaded successfully.
+            </summary>
+        </member>
+        <member name="E:Syn.VA.VirtualAssistant.FirstLoad">
+            <summary>
+            Occurs when the Virtual Assistant application starts for the first time in user machine.
+            </summary>
+            <remarks>This event occurs after the <see cref="E:Syn.VA.VirtualAssistant.Loaded"/> event.</remarks>
+        </member>
+        <member name="E:Syn.VA.VirtualAssistant.Closing">
+            <summary>
+            Occurs when the Virtual Assistant application is shutting down.
+            </summary>
+        </member>
+        <member name="E:Syn.VA.VirtualAssistant.Resetting">
+            <summary>
+            Occurs when the Virtual Assistant is requested to reset its settings to default values.
+            </summary>
+        </member>
+    </members>
+</doc>

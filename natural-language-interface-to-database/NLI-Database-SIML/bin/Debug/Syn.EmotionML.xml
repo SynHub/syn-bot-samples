@@ -1,0 +1,858 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syn.EmotionML</name>
+    </assembly>
+    <members>
+        <member name="T:Syn.EmotionML.ActionTendency">
+            <summary>
+            A class that describes an emotion or a related state according to an emotion action tendency vocabulary.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.ActionTendency.ActionTendencyFrijda">
+            <summary>
+            Gets Frijda's action tendencies vocabulary URI
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.ActionTendency.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Syn.EmotionML.ActionTendency"/>
+            </summary>
+            <param name="name">The name of the action tendency.</param>
+        </member>
+        <member name="M:Syn.EmotionML.ActionTendency.#ctor(System.String,System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.ActionTendency"/> class.
+            </summary>
+            <param name="name">The name of the action tendency.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+        </member>
+        <member name="M:Syn.EmotionML.ActionTendency.#ctor(System.String,System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.ActionTendency"/> class.
+            </summary>
+            <param name="name">The name of the action tendency.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+            <param name="confidence">The annotator's confidence that the annotation given for this action tendency is correct.</param>
+        </member>
+        <member name="T:Syn.EmotionML.Appraisal">
+            <summary>
+            A class that describes an emotion or a related state according to an emotion appraisal vocabulary.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Appraisal.AppraisalEma">
+            <summary>
+            Gets the EMA appraisals vocabulary URI
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Appraisal.AppraisalOcc">
+            <summary>
+            Gets the OCC appraisals vocabulary URI
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Appraisal.AppraisalScherer">
+            <summary>
+            Gets the Scherer's appraisals vocabulary URI
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Appraisal.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Appraisal"/> class.
+            </summary>
+            <param name="name">The name of the appraisal, which must be contained in the declared appraisal vocabulary.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Appraisal.#ctor(System.String,System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Appraisal"/> class.
+            </summary>
+            <param name="name">The name of the appraisal, which must be contained in the declared appraisal vocabulary.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+        </member>
+        <member name="M:Syn.EmotionML.Appraisal.#ctor(System.String,System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Appraisal"/> class.
+            </summary>
+            <param name="name">The name of the appraisal, which must be contained in the declared appraisal vocabulary.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+            <param name="confidence">The degree of confidence or probability that the emotion representation carrying this attribute is correct.</param>
+        </member>
+        <member name="T:Syn.EmotionML.Category">
+            <summary>
+            A class that describes an emotion or a related state using a category.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Category.CategoryBig6">
+            <summary>
+            Gets the Ekman's "big six" basic emotions vocabulary URI
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Category.CategoryEveryday">
+            <summary>
+            Gets the Everyday emotion vocabulary URI
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Category.CategoryOcc">
+            <summary>
+            Gets the OCC categories vocabulary URI 
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Category.CategoryFsre">
+            <summary>
+            Gets the FSRE categories vocabulary URI 
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Category.CategoryFrijda">
+            <summary>
+            Gets the Frijda's categories vocabulary URI
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Category.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Category"/> class.
+            </summary>
+            <param name="name">The name of the category, which must be contained in the declared category vocabulary.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Category.#ctor(System.String,System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Category"/> class.
+            </summary>
+            <param name="name">The name of the category, which must be contained in the declared category vocabulary.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+        </member>
+        <member name="M:Syn.EmotionML.Category.#ctor(System.String,System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Category"/> class.
+            </summary>
+            <param name="name">The name of the category, which must be contained in the declared category vocabulary.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+            <param name="confidence">The degree of confidence or probability that the emotion representation carrying this attribute is correct.</param>
+        </member>
+        <member name="T:Syn.EmotionML.Dimension">
+            <summary>
+            A class that describes an emotion or a related state according to an emotion dimension vocabulary.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Dimension.DimensionPad">
+            <summary>
+            Gets the Mehrabian's PAD dimensions URI
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Dimension.DimensionFsre">
+            <summary>
+            Gets the FSRE dimensions URI
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Dimension.DimensionIntensity">
+            <summary>
+            Gets the intensity dimension URI
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Dimension.Value">
+            <summary>
+            Gets or sets a static scale value which must be a floating point value from the closed interval [0, 1].
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Dimension.Trace">
+            <summary>
+            Gets or sets a value that represents the time evolution of a dynamic scale value.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Dimension.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Dimension"/> class.
+            </summary>
+            <param name="name">The name of the dimension, which must be contained in the declared dimension vocabulary.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Dimension.#ctor(System.String,System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Dimension"/> class.
+            </summary>
+            <param name="name">The name of the dimension, which must be contained in the declared dimension vocabulary.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+        </member>
+        <member name="M:Syn.EmotionML.Dimension.#ctor(System.String,System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Dimension"/> class.
+            </summary>
+            <param name="name">The name of the dimension, which must be contained in the declared dimension vocabulary.</param>
+            <param name="value">The static scale value which must be a floating point value from the closed interval [0, 1].</param>
+            <param name="confidence">The degree of confidence or probability that the emotion representation carrying this attribute is correct.</param>
+        </member>
+        <member name="T:Syn.EmotionML.Emotion">
+            <summary>
+            A class that represents a single emotion annotation.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughFace">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through face.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughGaze">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through gaze.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughGesture">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through gesture.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughHead">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through head.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughLeg">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through leg.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughLocomotion">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through locomotion.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughText">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through text.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughPhysiology">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through physiology.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughPosture">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through posture.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughTorso">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through torso.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughVoice">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through voice.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughCamera">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through camera.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughFacialSkinColor">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through facial skin color.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThroughMicrophone">
+            <summary>
+            Gets the modality which denotes that the emotion is expressed through microphone.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Emotion"/> class.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.Info">
+            <summary>
+            Gets or sets the <see cref="P:Syn.EmotionML.Emotion.Info"/> used to annotate arbitrary metadata..
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.Categories">
+            <summary>
+            Gets or sets the categories used to describe this <see cref="T:Syn.EmotionML.Emotion"/> or a related state using a category.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.Dimensions">
+            <summary>
+            Gets or sets the dimensions that describe this <see cref="T:Syn.EmotionML.Emotion"/> or a related state according to an emotion dimension vocabulary.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.Appraisals">
+            <summary>
+            Gets or sets the appraisals that describe this <see cref="T:Syn.EmotionML.Emotion"/> or a related state according to an emotion appraisal vocabulary.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ActionTendencies">
+            <summary>
+            Gets or sets the action tendencies that describe this <see cref="T:Syn.EmotionML.Emotion"/> or a related state according to an emotion action tendency vocabulary.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ID">
+            <summary>
+            Gets or sets the unique identifier for the emotion
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.Version">
+            <summary>
+            Gets or sets the version which indicates the version of the specification to be used for the <see cref="T:Syn.EmotionML.Emotion"/> and its descendants.
+            </summary>
+            <value>
+            The specification version.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.References">
+            <summary>
+            Gets a list of references that relate this <see cref="T:Syn.EmotionML.Emotion"/> annotation to the "rest of the world".
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.ExpressedThrough">
+            <summary>
+            Gets or sets the modality, or list of modalities, through which the emotion is expressed. 
+            An attribute of type xsd:NMTOKENS which contains a space delimited set of values from an open set of values including: {gaze, face, head, torso, gesture, leg, voice, text, locomotion, posture, physiology, ...}.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.Start">
+            <summary>
+            Gets or sets a value which denotes the starting and ending absolute times. 
+            The value must be of type xsd:nonNegativeInteger and should indicate the number of milliseconds since 1 January 1970 00:00:00 GMT.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.End">
+            <summary>
+            Gets or sets a value which denotes the starting and ending absolute times. 
+            The value must be of type xsd:nonNegativeInteger and should indicate the number of milliseconds since 1 January 1970 00:00:00 GMT.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.Duration">
+            <summary>
+            Gets or sets a value defaulting to zero which specifies the duration of the event in milliseconds.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.TimeRefUri">
+            <summary>
+            Gets or sets a value which indicates the URI used to anchor the relative timestamp.
+            </summary>
+            <value>
+            The time reference URI.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.TimeRefAnchorPoint">
+            <summary>
+            Gets or sets a value which indicates whether to measure the time from the start or end of the interval designated with <see cref="P:Syn.EmotionML.Emotion.TimeRefUri"/>.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.OffsetToStart">
+            <summary>
+            Gets or sets the offset in milliseconds for the start of input from the anchor point designated with <see cref="P:Syn.EmotionML.Emotion.TimeRefUri"/> and <see cref="P:Syn.EmotionML.Emotion.TimeRefAnchorPoint"/>.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Emotion.PlainText">
+            <summary>
+            Gets or sets an arbitrary text value.
+            </summary>
+            <value>
+            The plain text.
+            </value>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.AddCategory(Syn.EmotionML.Category)">
+            <summary>
+            Adds a <see cref="T:Syn.EmotionML.Category"/> to this <see cref="T:Syn.EmotionML.Emotion"/>.
+            </summary>
+            <param name="newCategory">The category to add.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.RemoveCategory(System.String)">
+            <summary>
+            Removes a <see cref="T:Syn.EmotionML.Category"/> by name.
+            </summary>
+            <param name="categoryName">The name of the category to remove</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.AddDimension(Syn.EmotionML.Dimension)">
+            <summary>
+            Adds a <see cref="T:Syn.EmotionML.Dimension"/> to this <see cref="T:Syn.EmotionML.Emotion"/>.
+            </summary>
+            <param name="newDimension">The <see cref="T:Syn.EmotionML.Dimension"/> to add.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.RemoveDimension(System.String)">
+            <summary>
+            Removes a <see cref="T:Syn.EmotionML.Dimension"/> by name.
+            </summary>
+            <param name="dimensionName">The name of the dimension to remove</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.AddAppraisal(Syn.EmotionML.Appraisal)">
+            <summary>
+            Adds an <see cref="T:Syn.EmotionML.Appraisal"/> to this <see cref="T:Syn.EmotionML.Emotion"/>.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.RemoveAppraisal(System.String)">
+            <summary>
+            Removes an <see cref="T:Syn.EmotionML.Appraisal"/> by name.
+            </summary>
+            <param name="appraisalName">The name of the appraisal to remove.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.AddActionTendency(Syn.EmotionML.ActionTendency)">
+            <summary>
+            Adds an <see cref="T:Syn.EmotionML.ActionTendency"/> to this <see cref="T:Syn.EmotionML.Emotion"/>.
+            </summary>
+            <param name="newActionTendency">The <see cref="T:Syn.EmotionML.ActionTendency"/> to add.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.RemoveActionTendency(System.String)">
+            <summary>
+            Removes an <see cref="T:Syn.EmotionML.ActionTendency"/> by name
+            </summary>
+            <param name="actionTendencyName">The name of the <see cref="T:Syn.EmotionML.ActionTendency"/> to remove.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.AddReference(Syn.EmotionML.Reference)">
+            <summary>
+            Adds a reference URI to this <see cref="T:Syn.EmotionML.Emotion"/> annotation.
+            </summary>
+            <param name="newReference">The reference URI to add.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.RemoveReference(Syn.EmotionML.Reference)">
+            <summary>
+            Removes a reference by its value.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.MergeWith(Syn.EmotionML.Emotion)">
+            <summary>
+            Merges this emotion with the specified emotion annnotation.
+            </summary>
+            <param name="mergingEmotion">The <see cref="T:Syn.EmotionML.Emotion"/> to merge with.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.GetElement">
+            <summary>
+            Gets an <see cref="T:System.Xml.Linq.XElement"/> that represents this <see cref="T:Syn.EmotionML.Emotion"/>.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Emotion.Parse(Syn.EmotionML.EmotionMLDocument,System.Xml.Linq.XElement)">
+            <summary>
+            Loads an <see cref="T:Syn.EmotionML.Emotion"/> from the specified <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+        </member>
+        <member name="T:Syn.EmotionML.EmotionMLDocument">
+            <summary>
+            A class that represents the root element of an EmotionML document.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.EmotionMLDocument"/> class.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.Info">
+            <summary>
+            Gets or sets the <see cref="P:Syn.EmotionML.EmotionMLDocument.Info"/> element used to annotate arbitrary metadata..
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.Vocabularies">
+            <summary>
+            Gets or sets list of  vocabularies that contain the definition of individual <see cref="T:Syn.EmotionML.Emotion"/> vocabulary.
+            </summary>
+            <value>
+            The vocabularies.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.Emotions">
+            <summary>
+            Gets or sets the list of all the emotions that represents a individual emotion annotation.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.CategorySet">
+            <summary>
+            category set for categories
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.DimensionSet">
+            <summary>
+            dimension set for dimensions
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.AppraisalSet">
+            <summary>
+            Gets or sets the appraisal set.
+            </summary>
+            <value>
+            The appraisal set.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.ActionTendencySet">
+            <summary>
+            Gets or sets the action tendency set for action tendencies
+            </summary>
+            <value>
+            The action tendency set.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.Version">
+            <summary>
+            Gets the version of EmotionML specification.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLDocument.PlainText">
+            <summary>
+            Gets or sets an arbitrary plain text value.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.GetEmotionById(System.String)">
+            <summary>
+            Gets an <see cref="T:Syn.EmotionML.Emotion"/> by identifier.
+            </summary>
+            <param name="id">The emotion identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.ContainsEmotion(System.String)">
+            <summary>
+            Determines whether an emotion with the specified ID exists.
+            </summary>
+            <param name="id">The emotion identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.AddVocabulary(Syn.EmotionML.Vocabulary)">
+            <summary>
+            Adds a vocabulary to this <see cref="T:Syn.EmotionML.EmotionMLDocument"/>.
+            </summary>
+            <param name="vocabulary">The Vocabulary to add.</param>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.AddEmotion(Syn.EmotionML.Emotion)">
+            <summary>
+            Adds an <see cref="T:Syn.EmotionML.Emotion"/> to this <see cref="T:Syn.EmotionML.EmotionMLDocument"/>.
+            </summary>
+            <param name="emotion">The Emotion to add.</param>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.GetDocument">
+            <summary>
+            Gets an <see cref="T:System.Xml.Linq.XDocument"/> that represents this <see cref="T:Syn.EmotionML.EmotionMLDocument"/> object.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.Parse(System.Xml.Linq.XDocument)">
+            <summary>
+            Loads an <see cref="T:Syn.EmotionML.EmotionMLDocument"/> from the specified <see cref="T:System.Xml.Linq.XDocument"/>.
+            </summary>
+            <param name="emotionMLDocument">The EmotionML document.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLDocument.Parse(System.String)">
+            <summary>
+            Loads an <see cref="T:Syn.EmotionML.EmotionMLDocument"/> by parsing the specified <see cref="T:System.String"/>.
+            </summary>
+            <param name="emotionML">The EmotionML document string.</param>
+        </member>
+        <member name="T:Syn.EmotionML.EmotionMLException">
+            <summary>
+            Represents errors that occur when an EmotionML element is parsed.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.EmotionMLException"/> class.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.EmotionMLException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Syn.EmotionML.EmotionMLException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.EmotionMLException"/> class.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="T:Syn.EmotionML.EmotionMLSpecification">
+            <summary>
+            A class that holds static EmotionML constants.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLSpecification.KnownTags">
+            <summary>
+            Gets a list of all the known EmotionML tags.
+            </summary>
+            <value>
+            The known tags.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLSpecification.Namespace">
+            <summary>
+            Gets the namespace for EmotionML 1.0 specification.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLSpecification.Prefix">
+            <summary>
+            Gets the recommented XML-prefix of EmotionML
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLSpecification.MimeType">
+            <summary>
+            Gets the MIME type of EmotionML
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLSpecification.FileExtension">
+            <summary>
+            Gets the File-extension of EmotionML
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLSpecification.Version">
+            <summary>
+            Gets the version of highest EmotionML-Recommendation
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionMLSpecification.Versions">
+            <summary>
+            Gets all known EmotionML versions.
+            </summary>
+        </member>
+        <member name="T:Syn.EmotionML.EmotionRelatedState">
+            <summary>
+            An abstract class for the broad range of phenomena intended to be covered by EmotionML specification.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionRelatedState.Name">
+            <summary>
+            Gets or sets a value which describes and or defines an <see cref="T:Syn.EmotionML.Emotion"/> or an emotion related state.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionRelatedState.Value">
+            <summary>
+            Gets or sets a value which represents a static scale value of the enclosing element.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionRelatedState.Confidence">
+            <summary>
+            Gets or sets a value which indicates the degree of confidence or probability that the emotion representation carrying this attribute is correct. 
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.EmotionRelatedState.Trace">
+            <summary>
+            Gets or sets the Trace value which represents the time evolution of a dynamic scale value.
+            </summary>
+        </member>
+        <member name="T:Syn.EmotionML.Info">
+            <summary>
+            A class used to annotate arbitrary metadata.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Info.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Info"/> class.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Info.Element">
+            <summary>
+            Gets or sets the <see cref="T:Syn.EmotionML.Info"/> element node.
+            </summary>
+            <value>
+            The <see cref="T:Syn.EmotionML.Info"/> element node.
+            </value>
+        </member>
+        <member name="P:Syn.EmotionML.Info.ID">
+            <summary>
+            Gets or sets the unique identifier for this <see cref="T:Syn.EmotionML.Info"/> element.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Info.Parse(System.Xml.Linq.XElement)">
+            <summary>
+            Loads an <see cref="T:Syn.EmotionML.Info"/> from the specified <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+        </member>
+        <member name="T:Syn.EmotionML.Item">
+            <summary>
+            Represents the definition of one vocabulary item, associated with a value which can be used in the "name" attribute of <see cref="T:Syn.EmotionML.Category"/>, <see cref="T:Syn.EmotionML.Dimension"/>, <see cref="T:Syn.EmotionML.Appraisal"/> or <see cref="T:Syn.EmotionML.ActionTendency"/>. 
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Item.Name">
+            <summary>
+            Gets or sets the name for the <see cref="T:Syn.EmotionML.Item"/>, used to refer to this <see cref="T:Syn.EmotionML.Item"/>.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Item.Info">
+            <summary>
+            Gets or sets the <see cref="P:Syn.EmotionML.Item.Info"/> element used to annotate arbitrary metadata..
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Item.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Item"/> class.
+            </summary>
+            <param name="name">The name of the <see cref="T:Syn.EmotionML.Item"/>.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Item.GetElement">
+            <summary>
+            Gets an <see cref="T:System.Xml.Linq.XElement"/> that represents this <see cref="T:Syn.EmotionML.Item"/>.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Item.Parse(System.Xml.Linq.XElement)">
+            <summary>
+            Loads an <see cref="T:Syn.EmotionML.Item"/> from the specified <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+        </member>
+        <member name="T:Syn.EmotionML.Reference">
+            <summary>
+            Reference used to relate the emotion annotation to the "rest of the world", more specifically to the emotional expression, the experiencing subject, the trigger, and the target of the emotion.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Reference.ExpressedBy">
+            <summary>
+            Gets a value that indicates that the reference points to observable behavior expressing the emotion.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Reference.ExperiencedBy">
+            <summary>
+            Gets a value that indicates that the reference points to the subject experiencing the emotion.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Reference.TriggeredBy">
+            <summary>
+            Gets a value that indicates that the reference points to an emotion-eliciting event that caused an emotion and/or related appraisals.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Reference.TargetedAt">
+            <summary>
+            Gets a value that indicates that the reference points to an object towards which an emotion-related action, or action tendency, is directed.
+            </summary>
+            <value>
+            The targeted by.
+            </value>
+        </member>
+        <member name="M:Syn.EmotionML.Reference.#ctor(System.Uri)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Reference"/> class.
+            </summary>
+            <param name="uri">The URI identifying the actual reference target.</param>
+        </member>
+        <member name="P:Syn.EmotionML.Reference.Uri">
+            <summary>
+            Gets or sets the URI identifying the actual reference target.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Reference.Role">
+            <summary>
+            Gets or sets the type of relation between the emotion and the external item referred to. The value must be one of <see cref="P:Syn.EmotionML.Reference.ExpressedBy"/> (default), <see cref="P:Syn.EmotionML.Reference.ExperiencedBy"/>, <see cref="P:Syn.EmotionML.Reference.TriggeredBy"/>, <see cref="P:Syn.EmotionML.Reference.TargetedAt"/>.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Reference.MediaType">
+            <summary>
+            Gets or sets a value of type xsd:string holding the MIME type of the data that the <see cref="P:Syn.EmotionML.Reference.Uri"/> attribute points to.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Reference.GetElement">
+            <summary>
+            Gets an <see cref="T:System.Xml.Linq.XElement"/> that represent this <see cref="T:Syn.EmotionML.Reference"/>.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Reference.Parse(System.Xml.Linq.XElement)">
+            <summary>
+            Loads a <see cref="T:Syn.EmotionML.Reference"/> from the specified <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+        </member>
+        <member name="T:Syn.EmotionML.Trace">
+            <summary>
+            Represents the time evolution of a dynamic scale value.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Trace.#ctor(System.Double,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Trace"/> class.
+            </summary>
+            <param name="frequency">The frequency.</param>
+            <param name="samples">The samples.</param>
+        </member>
+        <member name="M:Syn.EmotionML.Trace.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Trace"/> class.
+            </summary>
+            <param name="frequencyString">The frequency as string.</param>
+            <param name="samples">The samples.</param>
+        </member>
+        <member name="P:Syn.EmotionML.Trace.Frequency">
+            <summary>
+            Gets or sets the frequency.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Trace.Samples">
+            <summary>
+            Gets or sets the samples.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Trace.SetFrequency(System.String)">
+            <summary>
+            Set frequency by frequency-string (within Hz)
+            </summary>
+            <param name="frequencyValue">frequency string</param>
+        </member>
+        <member name="M:Syn.EmotionML.Trace.FrequencyText">
+            <summary>
+            Gets the frequency as string with Hz
+            </summary>
+            <returns>Frequency string (with Hz)</returns>
+        </member>
+        <member name="M:Syn.EmotionML.Trace.GetElement">
+            <summary>
+            Gets an <see cref="T:System.Xml.Linq.XElement"/> that represents this <see cref="T:Syn.EmotionML.Trace"/> object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syn.EmotionML.Trace.Parse(System.Xml.Linq.XElement)">
+            <summary>
+            Loads a <see cref="T:Syn.EmotionML.Trace"/> object from the specified <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+            <param name="element">The trace element.</param>
+        </member>
+        <member name="T:Syn.EmotionML.Vocabulary">
+            <summary>
+            Encapsulates the definition of an <see cref="T:Syn.EmotionML.Emotion"/> vocabulary.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Vocabulary.#ctor(System.String,System.String,Syn.EmotionML.Item)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syn.EmotionML.Vocabulary"/> class.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="id">The identifier.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="P:Syn.EmotionML.Vocabulary.ID">
+            <summary>
+            Gets or sets a unique vocabulary identifier of type xsd:ID. 
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Vocabulary.Type">
+            <summary>
+            Gets or sets a value that explicitly indicates whether the vocabulary represents category names, dimension elements, appraisal elements or action tendency elements. 
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Vocabulary.Info">
+            <summary>
+            Gets or sets the <see cref="P:Syn.EmotionML.Vocabulary.Info"/> element that provides an arbitrary metadata about this <see cref="T:Syn.EmotionML.Vocabulary"/>.
+            </summary>
+        </member>
+        <member name="P:Syn.EmotionML.Vocabulary.Items">
+            <summary>
+            Gets the list of <see cref="T:Syn.EmotionML.Item"/> elements that represent the definition of this <see cref="T:Syn.EmotionML.Vocabulary"/> item, associated with a value which can be used in the "name" attribute of <see cref="T:Syn.EmotionML.Category"/>, <see cref="T:Syn.EmotionML.Dimension"/>, <see cref="T:Syn.EmotionML.Appraisal"/> or <see cref="T:Syn.EmotionML.ActionTendency"/>.
+            </summary>
+        </member>
+        <member name="M:Syn.EmotionML.Vocabulary.AddItem(Syn.EmotionML.Item)">
+            <summary>
+            Adds an item to this vocabulary.
+            </summary>
+            <param name="newItem"></param>
+        </member>
+        <member name="M:Syn.EmotionML.Vocabulary.RemoveItem(Syn.EmotionML.Item)">
+            <summary>
+            Removes item from this vocabulary.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syn.EmotionML.Vocabulary.GetElement">
+            <summary>
+            Gets an <see cref="T:System.Xml.Linq.XElement"/> that represents this <see cref="T:Syn.EmotionML.Vocabulary"/> object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syn.EmotionML.Vocabulary.Parse(System.Xml.Linq.XElement)">
+            <summary>
+            Loads a <see cref="T:Syn.EmotionML.Vocabulary"/> object from the specified <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+            <param name="element">The element.</param>
+        </member>
+    </members>
+</doc>

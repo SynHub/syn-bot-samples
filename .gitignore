@@ -1,48 +1,11 @@
-NLI-Database-SIML/obj/
-NLI-Database-Oscova/obj/
-packages/
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-NLI-Database-SIML/bin/Debug/SIML.zip
+Natural-Language-Interface-to-Database/NLI-Database-SIML/obj/
+Natural-Language-Interface-to-Database/NLI-Database-Oscova/obj/
+Natural-Language-Interface-to-Database/NLI-Database-SIML/bin/Debug/SIML.zip
+Natural-Language-Interface-to-Database/packages/
+oscova-android-bot/obj/
+oscova-android-bot/packages/
+oscova-console-bot/obj/
+oscova-console-bot/packages/
+oscova-excel-bot/packages/
+oscova-excel-bot/OscovaExcelBot/obj
+oscova-excel-bot/*.pdf

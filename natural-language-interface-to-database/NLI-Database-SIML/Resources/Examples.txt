@@ -1,0 +1,62 @@
+=====The following Patterns have been applied using SIML=====
+
+(Clear|Reset|List All Employees) -> Selects all Employees
+
+<ID>  -> Returns the Employee with the specified ID.
+<Age> -> Returns all the Employees with the specified Age.
+<Job> -> Returns all Employees under the specified department.
+<Salary> -> Returns all Employees with the specified Salary.
+<Name>   -> Returns an Employee with the name specified.
+
+What is the age of <Employee Name>
+How old is <Employee Name>
+Age of <Employee Name>
+
+What is the age of the <Employee Job>
+How old is the <Employee Job>
+Age of the <Employee Job>
+
+Youngest Employee
+Oldest Employee
+
+Change the Age of <Employee Name> to <Number>
+Change the Age of ID <Employee ID> to <Number>
+Change the Job of <Employee Name> to <Employee Job>
+Change the Job of ID <Employee ID> to <Employee Job>
+Change the Salary of <Employee Name> To <Number>
+Change the Salary of ID <Employee ID> to <Number>
+
+ID of <Employee Name>
+ID <Employee ID>
+
+Job of <Employee Name>
+Role of <Employee Name>
+What does <Employee Name> do
+
+Find Employee with the name <Employee Name>
+Find an Employee with the name <Employee Name>
+Who is <Employee Name>
+
+What is the name of the <Employee Job>
+Who is the <Employee Job>
+
+What is the Salary of <Employee Name>
+How much is <Employee Name> Paid
+Salary of <Employee Name>
+
+What is the Salary of <Employee Job>
+Salary of the <Employee Job>
+How much is the <Employee Job> Paid
+
+Who has the highest salary
+Highest paid employee
+Employee with the highest salary
+Who gets paid the (Most|Highest)
+
+(Lowest|Least) Paid Employee
+Who has the (Least|Lowest) salary
+Who gets paid the (Least|Lowest)
+Who is paid the least
+
+List all Employees whose age is (Equal to|Less Than|Greater Than|Less Than or Equal to|Greater than or Equal to) <Number>
+List all Employees whose salary is (Equal to|Less Than|Greater Than|Less Than or Equal to|Greater than or Equal to) <Number>

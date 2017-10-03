@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimlProject>
+  <Profile>Classic</Profile>
+  <Name>Natural Language Interface to Database</Name>
+  <Directory>NLI-Database</Directory>
+  <BotName>Maya</BotName>
+  <Personality>None</Personality>
+  <Author>Developer</Author>
+  <Description>Demonstration of NLI to Databases using SIML</Description>
+  <Date>15-05-09 03:54:44.000</Date>
+  <Notes></Notes>
+</SimlProject>
