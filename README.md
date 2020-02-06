@@ -8,6 +8,17 @@ A demostration of how developers can use SIML or Oscova to create a natural lang
 
 **Note:** Build both the projects in `Debug` mode.
 
+### Workspace Pizza Bot
+
+This project shows how one can build a simple pizza bot without a single line of coding or scripting in SIML. The project purely uses Workspace nodes to build a pizza bot.
+
+[Workspace Pizza Bot](workspace-pizza-bot.png)
+
+To work with the Workspace project.
+
+* Click the `Train Bot` button on Oscova Test Panel
+* And type `start` as the first user message.
+
 ### Oscova
 
 The Oscova project contains all required Intents and design patterns to create custom Oscova Dialogs.
@@ -54,7 +65,7 @@ The project covers the following:
 
 ## 4. OSCOVA Excel Bot
 
-This sample project demostrates incoporation of OSCOVA based bot directly within Office Excel via VSTA Add-In Project.
+This sample project demonstrates incorporation of OSCOVA based bot directly within Office Excel via VSTA Add-In Project.
 
 ![Screenshot EXCEL Bot](oscova-excel-bot.png)
 
