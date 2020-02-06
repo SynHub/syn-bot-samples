@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿
+using System.Linq;
 using Syn.Bot.Oscova;
 using Syn.Bot.Oscova.Attributes;
 

@@ -1,7 +1,10 @@
 Natural-Language-Interface-to-Database/NLI-Database-SIML/obj/
 Natural-Language-Interface-to-Database/NLI-Database-Oscova/obj/
+Natural-Language-Interface-to-Database/NLI-Database-Oscova/bin/
 Natural-Language-Interface-to-Database/NLI-Database-SIML/bin/Debug/SIML.zip
 Natural-Language-Interface-to-Database/packages/
+Natural-Language-Interface-to-Database/.vs/
+Natural-Language-Interface-to-Database/bin/
 oscova-android-bot/obj/
 oscova-android-bot/packages/
 oscova-console-bot/obj/
@@ -9,3 +12,7 @@ oscova-console-bot/packages/
 oscova-excel-bot/packages/
 oscova-excel-bot/OscovaExcelBot/obj
 oscova-excel-bot/*.pdf
+oscova-pizza-bot/packages/
+oscova-pizza-bot/.vs/
+oscova-excel-bot/.vs/
+oscova-excel-bot/OscovaExcelBot/bin/

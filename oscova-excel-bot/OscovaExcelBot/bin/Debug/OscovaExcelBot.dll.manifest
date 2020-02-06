@@ -43,12 +43,37 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Accessibility" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="Microsoft.CSharp" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="mscorlib" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="PresentationCore" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="PresentationFramework" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -78,6 +103,26 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Configuration" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.DataSetExtensions" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Diagnostics.Contracts" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
@@ -94,6 +139,11 @@
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Diagnostics.Tracing" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Drawing" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -218,6 +268,11 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Runtime.Serialization" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Runtime.Serialization.Json" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
@@ -293,7 +348,22 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Windows.Forms" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Xaml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xml.Linq" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -309,6 +379,21 @@
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Xml.XmlSerializer" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="UIAutomationProvider" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsFormsIntegration" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -420,14 +505,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OscovaExcelBot.dll" size="32256">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OscovaExcelBot.dll" size="34304">
       <assemblyIdentity name="OscovaExcelBot" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XZB8hwb6o6bioXaJozwmIvpgkKwYcGsirllv7TWppkw=</dsig:DigestValue>
+        <dsig:DigestValue>k3kjvDsotpiCzUgMdTLv1oF92264zuRKvDanqk5gBac=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -574,4 +659,4 @@
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=Workstation\Workstation" issuerKeyHash="3bb1a174d15575028aa0dabd42c1fa32a2d58ec7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>beG54fFHeKcEJMEZnzud/p25PF5Hxubdqc6+UF5V6bw=</DigestValue></Reference></SignedInfo><SignatureValue>JdeoB8HSGwck9tX+rNo1+6r0aYZikW5Nwd7TUuDMfSM0KSexqARGxgP8sYUdKIwLDVfIYuZCpJ/arnb8jAGaA4/YqibAT2UMPs+tlFCQcBXUjmyUtJbJMgBjI5dNMdpVDWr7g6lDG+a3wPFYSLcuzgP4o4Dj8MsKM2yp/ocHNe4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s+KDcD8f9LuFJNdf2ucVKQHti0gFqJdJqWXyFoI1nHUKFZ63HWNNiuvbzHfvXheY5c7dwjR4i3fGWgY79N57xFchL14cv+9nkpNR+PoFIIQ665H3h2l34seiBUl3wff1bvpz7tp412K3Tf8ymKPnzpfuXHJqwi/ROoeG53pMGp8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bce9555e50becea9dde6c6475e3cb99dfe9d3b9f19c12404a77847f1e1b9e16d" Description="" Url=""><as:assemblyIdentity name="OscovaExcelBot.dll" version="1.0.0.0" publicKeyToken="9b26cca6f22a3fde" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Workstation\Workstation</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>q6RLAzRLvDloMYVgb/EZx7Q4ck7Sqonuc/H947Xzl44=</DigestValue></Reference></SignedInfo><SignatureValue>C0UrNu8fDk8gGNBdf+q82myTc/NhPa1l6+R3zfGbnXlZ3xZsb3VS40OoODUpf/6qs1Ru5Hb4wTgMs+waC4d2d9RLCYxI7DfrMPG9VDskIT5fi7Wi13IWvnV5nOnaJSOFSJcxDKomoLpjPSSsh8NGimguNxjCpZjRn23Ygb8yaVE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s+KDcD8f9LuFJNdf2ucVKQHti0gFqJdJqWXyFoI1nHUKFZ63HWNNiuvbzHfvXheY5c7dwjR4i3fGWgY79N57xFchL14cv+9nkpNR+PoFIIQ665H3h2l34seiBUl3wff1bvpz7tp412K3Tf8ymKPnzpfuXHJqwi/ROoeG53pMGp8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQN+B766gCAYdMx1+rW1ZcIzANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4AVwBvAHIAawBzAHQAYQB0AGkAbwBuAFwAVwBvAHIAawBzAHQAYQB0AGkAbwBuMB4XDTE3MDcyNDE4MTYwOFoXDTE4MDcyNTAwMTYwOFowOTE3MDUGA1UEAx4uAFcAbwByAGsAcwB0AGEAdABpAG8AbgBcAFcAbwByAGsAcwB0AGEAdABpAG8AbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAs+KDcD8f9LuFJNdf2ucVKQHti0gFqJdJqWXyFoI1nHUKFZ63HWNNiuvbzHfvXheY5c7dwjR4i3fGWgY79N57xFchL14cv+9nkpNR+PoFIIQ665H3h2l34seiBUl3wff1bvpz7tp412K3Tf8ymKPnzpfuXHJqwi/ROoeG53pMGp8CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBXCDVe6ybpjG4SC83EGoFJrI0gv1P/DXEKdQNOtaiRStpTAeYITRMY28O+Oohz8/JwVEKUJit7dIIqojIUTFfSel2qQ6HSEJdFRjGFu29EF0UIP5zmR/6gdUGjh2vAkEeiSA6IX/uP94rxNWMuBJDEGgQ5Z5J4u/bPb/wxY0jvow==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=Workstation\Workstation" issuerKeyHash="3bb1a174d15575028aa0dabd42c1fa32a2d58ec7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Mfi0cxvWcB2ThZmjVma4pDxQQgeVTjs9kx71AL76yZs=</DigestValue></Reference></SignedInfo><SignatureValue>dH8Qv587E2OwQw/3Qu6vK0c/bciyhAufa7niPSjK/F9lIznLH1KFJlniKtuNzi0jwCuv2w7zhPJ7iQV8vOtqD/YVTWv8HzxEpXT/PNoqYTXmDr4EKfHZtBPqKTTxrwb0/NcfyzWGkblc5iYbc4I0Lh3M8MoMWNbBEx784rPWBpM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s+KDcD8f9LuFJNdf2ucVKQHti0gFqJdJqWXyFoI1nHUKFZ63HWNNiuvbzHfvXheY5c7dwjR4i3fGWgY79N57xFchL14cv+9nkpNR+PoFIIQ665H3h2l34seiBUl3wff1bvpz7tp412K3Tf8ymKPnzpfuXHJqwi/ROoeG53pMGp8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9bc9fabe00f51e933d3b4e950742503ca4b86656a39985931d70d61b73b4f831" Description="" Url=""><as:assemblyIdentity name="OscovaExcelBot.dll" version="1.0.0.0" publicKeyToken="9b26cca6f22a3fde" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Workstation\Workstation</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Qq4g16QdrtS4x+4Bco0UAy7ACcOFnE2LZFOQDfnBE20=</DigestValue></Reference></SignedInfo><SignatureValue>KKi8eiA0NmtqSYod5ohvWFPdCJw5pnYuTtOal6+saWg7C5UK/cTMgnxQI0J+HlEvvAqTA4pl0Bb9FTvgBHyxM16OnycGj0u2eeKTTanAyWiyMM9l/T6oidNwK/lKlGXm40llb8O1bn42pOQqB1iKUMwo2G9/RyY9GULBmyJQfW0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s+KDcD8f9LuFJNdf2ucVKQHti0gFqJdJqWXyFoI1nHUKFZ63HWNNiuvbzHfvXheY5c7dwjR4i3fGWgY79N57xFchL14cv+9nkpNR+PoFIIQ665H3h2l34seiBUl3wff1bvpz7tp412K3Tf8ymKPnzpfuXHJqwi/ROoeG53pMGp8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQN+B766gCAYdMx1+rW1ZcIzANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4AVwBvAHIAawBzAHQAYQB0AGkAbwBuAFwAVwBvAHIAawBzAHQAYQB0AGkAbwBuMB4XDTE3MDcyNDE4MTYwOFoXDTE4MDcyNTAwMTYwOFowOTE3MDUGA1UEAx4uAFcAbwByAGsAcwB0AGEAdABpAG8AbgBcAFcAbwByAGsAcwB0AGEAdABpAG8AbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAs+KDcD8f9LuFJNdf2ucVKQHti0gFqJdJqWXyFoI1nHUKFZ63HWNNiuvbzHfvXheY5c7dwjR4i3fGWgY79N57xFchL14cv+9nkpNR+PoFIIQ665H3h2l34seiBUl3wff1bvpz7tp412K3Tf8ymKPnzpfuXHJqwi/ROoeG53pMGp8CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBXCDVe6ybpjG4SC83EGoFJrI0gv1P/DXEKdQNOtaiRStpTAeYITRMY28O+Oohz8/JwVEKUJit7dIIqojIUTFfSel2qQ6HSEJdFRjGFu29EF0UIP5zmR/6gdUGjh2vAkEeiSA6IX/uP94rxNWMuBJDEGgQ5Z5J4u/bPb/wxY0jvow==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

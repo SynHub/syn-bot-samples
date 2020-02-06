@@ -82,6 +82,7 @@ namespace OscovaExcelBot
                 Bot.Dialogs.Add(new DatabaseGenericDialog());
                 Bot.Dialogs.Add(new DatabaseEnquiryDialog());
                 Bot.Dialogs.Add(new DatabaseSuperlativeDialog());
+                Bot.Dialogs.Add(new DatabaseComparitiveDialog());
 
                 Bot.MainUser.ResponseReceived += (sender, args) =>
                 {
@@ -92,6 +93,8 @@ namespace OscovaExcelBot
                 {
                     Bot.CreateRecognizer("property", new[] { "ID", "Name", "Role", "Age", "Salary" });
                     Bot.CreateRecognizer("role", new[] { "CEO", "Manager", "Admin", "Engineer", "Tech", "Support" });
+                    Bot.CreateRecognizer("gt", new[] { "greater than","larger than","bigger than","more than"});
+                    Bot.CreateRecognizer("lt", new[] { "less than", "lesser than", "smaller than", "little than" });
                     AddEmployeeNameRecognizer();
                     Bot.Trainer.StartTraining();
                 });
@@ -169,6 +172,20 @@ namespace OscovaExcelBot
         public List<Employee> EmployeesBy(string propName, string propValue)
         {
             return EmployeesBy(propName, propValue, FullEmployeeList);
+        }
+
+        public List<Employee> EmployeeCompare(string propString, string comType)
+        {
+            var propValue = Convert.ToInt32(propString);
+            if (comType == "gt")
+            {
+                return FullEmployeeList.Where(emp => emp.Salary > propValue).ToList();
+            }
+            else
+            {
+                return FullEmployeeList.Where(emp => emp.Salary < propValue).ToList();
+            }
+           
         }
 
         public List<Employee> EmployeesBy(string propertyName, string propertyValue, IEnumerable<Employee> employees)

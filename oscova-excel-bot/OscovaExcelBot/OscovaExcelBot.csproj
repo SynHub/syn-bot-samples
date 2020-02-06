@@ -192,6 +192,7 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="BotData\Dialogs\DatabaseComparitiveDialog.cs" />
     <Compile Include="BotData\Dialogs\DatabaseEnquiryDialog.cs" />
     <Compile Include="BotData\Dialogs\DatabaseGenericDialog.cs" />
     <Compile Include="BotData\Dialogs\DatabaseSuperlativeDialog.cs" />

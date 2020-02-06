@@ -12,7 +12,7 @@ namespace OscovaExcelBot
         {
 #if DEBUG
             //PLEASE CHANGE THE FOLLOWING TO THE APPROPRIATE LOCATION.
-            const string excelFilePath = @"H:\GitHub\oscova-excel-bot\OscovaExcelBot\bin\Debug\employees.xlsx";
+            const string excelFilePath = @"H:\GitHub\syn-bot-samples\oscova-excel-bot\OscovaExcelBot\bin\Debug\employees.xlsx";
             if(File.Exists(excelFilePath)) Application.Workbooks.Open(excelFilePath);
 #endif
         }
