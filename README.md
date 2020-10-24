@@ -2,7 +2,7 @@
 
 This repository contains samples related to Syn Bot Development framework.
 
-## 1. Workspace Pizza Bot
+## Workspace Pizza Bot
 
 This project shows how one can build a simple pizza bot without a single line of coding or scripting in SIML. The project purely uses Workspace nodes to build a pizza bot.
 
@@ -13,7 +13,7 @@ To work with the Workspace project.
 * Click the `Train Bot` button on Oscova Test Panel
 * And type `start` as the first user message.
 
-## 2. Natural Language Interface to Database
+## Natural Language Interface to Database
 
 A demostration of how developers can use SIML or Oscova to create a natural language interface to database.
 
@@ -40,14 +40,14 @@ The knowledge-base of this project also implements an intelligent suggestion sys
 
 Projects under this repository are dual licensed under: MIT and [CPOL](http://www.codeproject.com/info/cpol10.aspx)
 
-## 3. Oscova Android Bot
+## Oscova Android Bot
 
 This project demonstrates the very basic concepts of creating an Android Bot in C# using Oscova.
 
 ### Watch the Tutorial on YouTube
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/r_yMLAO2mBQ/0.jpg)](https://www.youtube.com/watch?v=r_yMLAO2mBQ)
 
-## 4. Sample Oscova Bot
+## Sample Oscova Bot
 
 This is a sample App Bot developed using Oscova. You may download this repository to understand the basics covered in the Oscova tutorials section.
 
@@ -63,7 +63,7 @@ The project covers the following:
 ### Watch the Tutorial on YouTube
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/tqKd4seDi6c/0.jpg)](https://www.youtube.com/watch?v=tqKd4seDi6c)
 
-## 5. OSCOVA Excel Bot
+## OSCOVA Excel Bot
 
 This sample project demonstrates incorporation of OSCOVA based bot directly within Office Excel via VSTA Add-In Project.
 
@@ -91,3 +91,9 @@ To remove the installed sample bot add-in from Excel after you have successfully
 * Click on `File` and choose `Options`
 * Select `Add-ins` and in the *Manage* drop-down option choose `COM Add-ins` and click **Go...**
 * In the **COM Add-ins** dialog uncheck `OscovaExcelBot` and click **OK**
+
+## Unity Bot in OSCOVA
+
+![Screenshot Unity Bot](unity-bot-oscova.png)
+
+This project demostrates how you can import `Syn.Bot.unitypackage` into Unity and create a simple ***Hello Bot*** dialog.

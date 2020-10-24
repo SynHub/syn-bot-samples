@@ -1,5 +1,5 @@
 {
-  "GraphVersion": "1.0.1.0",
+  "GraphVersion": "1.5.0.0",
   "UserNote": "This demo workspace shows how:\r\n\r\n1. Create dialogs intents\r\n2. Create entities\r\n3. Create fallbacks\r\n4. Add Expressions\r\n5. Add contexts\r\n6. How to work with Variables\r\n7. How to re-use and connect nodes to multiple parents.\r\n\r\nFinally it shows how you can test your bot within the workspace.",
   "Nodes": [
     {
@@ -19,27 +19,118 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@start",
                     "ExpressionName": null,
-                    "Id": "1e982435-5ade-44d1-a4eb-9c5523c40521",
+                    "Id": null,
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
-                      "X": 3623.9846999405822,
-                      "Y": 1701.0347765581496
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "hi there",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "hello",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "@start",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "hi there",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "hello",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "@start",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "hi there",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    }
+                  },
+                  {
+                    "Value": "hello",
+                    "ExpressionName": null,
+                    "Id": null,
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
                     }
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": "Small|Medium|Large|Extra Large",
                   "Type": null,
                   "Format": null,
-                  "Text": "Lets build your pizze. To Begin I'll need you to specify the size of the pizza.",
+                  "Text": "Hi! lets build your pizze. To Begin I'll need you to specify the size of the pizza. (Small | Medium | Large)",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
+                  "Id": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
@@ -47,12 +138,12 @@
                     "Y": 1889.9236654470396
                   }
                 },
-                "Id": "21d11caa-8ee4-49e6-a374-9daf35892563",
+                "Id": "e98f5102-440c-447b-a9a5-098d519c8d75",
                 "IsFolded": false,
                 "DisplayName": "Intent (start_intent)",
                 "Position": {
-                  "X": 3938.9520202020185,
-                  "Y": 1640.7207070707059
+                  "X": 3976.7297979797959,
+                  "Y": 1599.6095959595948
                 }
               },
               {
@@ -63,7 +154,7 @@
                 "AutoEntity": null,
                 "Fallback": {
                   "ContextName": "con-wait-size",
-                  "Id": "6f1099f5-543a-48dc-ba43-6a5fa67b0656",
+                  "Id": "753f051f-855c-4bc2-8939-a78c257b2692",
                   "IsFolded": false,
                   "DisplayName": "Fallback",
                   "Position": {
@@ -72,23 +163,26 @@
                   }
                 },
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": "Small|Medium|Large|Extra Large",
                   "Type": null,
                   "Format": null,
                   "Text": "That doesn't seem like a valid pizza size. Please select an option.",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "f6599b28-8cc3-4521-86a2-6f5b20e7d927",
+                  "Id": "9ce76e34-16eb-4977-9119-10b1cccc35ac",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
-                    "X": 3550.9291941288852,
-                    "Y": 2386.4648329310835
+                    "X": 3543.8703705994735,
+                    "Y": 2364.1118917546132
                   }
                 },
-                "Id": "c9d58e7f-e2e9-4a4a-833f-e6d80aa56a40",
+                "Id": "deafff16-0198-4ec4-bd43-3a91dcdecfa4",
                 "IsFolded": false,
                 "DisplayName": "Intent (size_fallback)",
                 "Position": {
@@ -97,7 +191,9 @@
                 }
               }
             ],
-            "Id": "f0ca1b28-5841-478f-a2f5-62643847ec89",
+            "Events": [],
+            "Actions": [],
+            "Id": "565d09c8-0688-4816-a883-47fd6334dc04",
             "IsFolded": false,
             "DisplayName": "Dialog (start_dialog)",
             "Position": {
@@ -116,7 +212,7 @@
                 "IntentContexts": [
                   {
                     "ContextName": "con-wait-size",
-                    "Id": "bd70268c-785a-4655-8636-572bdb0c4121",
+                    "Id": "91b35485-270b-43a9-a567-72204933a82d",
                     "IsFolded": false,
                     "DisplayName": "Context",
                     "Position": {
@@ -129,12 +225,13 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@pizza-size",
                     "ExpressionName": null,
-                    "Id": "734609b7-d3fd-4546-a4b0-7ec57010a61c",
+                    "Id": "ddb8ab79-89e9-46a0-b75c-37f0b3b09778",
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
@@ -144,12 +241,14 @@
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": "Olives|Garlic|Onions",
                   "Type": null,
                   "Format": null,
-                  "Text": "So $sys.user.size it is. Now what would the toppings be?",
+                  "Text": "So $user.size it is. Now what would the toppings be? (Garlic | Onions | Olives)",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
+                  "Id": "040fd457-13e2-40a0-82ed-6c905368fd67",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
@@ -157,7 +256,7 @@
                     "Y": 3054.0348853021014
                   }
                 },
-                "Id": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
+                "Id": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
                 "IsFolded": false,
                 "DisplayName": "Intent (size_intent)",
                 "Position": {
@@ -166,7 +265,9 @@
                 }
               }
             ],
-            "Id": "edd5dd46-6dc5-4580-85a0-b056d7770d9a",
+            "Events": [],
+            "Actions": [],
+            "Id": "f7164098-e9aa-42a7-bdfd-d03b5bbb7038",
             "IsFolded": false,
             "DisplayName": "Dialog (size_dialog)",
             "Position": {
@@ -185,7 +286,7 @@
                 "IntentContexts": [
                   {
                     "ContextName": "con-wait-top",
-                    "Id": "10360cec-b575-4772-9d01-a92b907a2b1f",
+                    "Id": "a2916d48-0d7e-41f0-ad70-a4b1dc892e37",
                     "IsFolded": false,
                     "DisplayName": "Context",
                     "Position": {
@@ -198,12 +299,13 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@pizza-top",
                     "ExpressionName": null,
-                    "Id": "fb3cf054-7827-44d9-9070-630e39d583c5",
+                    "Id": "9d67304d-8623-4ebd-8e17-97fd880b64c8",
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
@@ -213,12 +315,14 @@
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": "Yes|No",
                   "Type": null,
                   "Format": null,
-                  "Text": "Aha $pizza-top is a good choice. Would you like to add another topping? ",
+                  "Text": "Aha $pizza-top is a good choice. Would you like to add another topping?  (Yes | No)",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "2b159754-598f-4509-a617-5bea07fc50fb",
+                  "Id": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
@@ -226,7 +330,7 @@
                     "Y": 3682.734537581443
                   }
                 },
-                "Id": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
+                "Id": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
                 "IsFolded": false,
                 "DisplayName": "Intent (toppings_intent)",
                 "Position": {
@@ -240,7 +344,7 @@
                 "IntentContexts": [
                   {
                     "ContextName": "con-more-top",
-                    "Id": "348a83c8-f4fd-4ba6-a316-1fa58426fefa",
+                    "Id": "c0a1fcaf-b57a-4edb-a93a-a698bdb60312",
                     "IsFolded": false,
                     "DisplayName": "Context",
                     "Position": {
@@ -253,12 +357,13 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@sys.positive",
                     "ExpressionName": null,
-                    "Id": "9481f14c-a6a8-4548-9aa4-8e74e8b48d15",
+                    "Id": "efd0f796-eca8-48d8-9762-b48940fffc38",
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
@@ -268,25 +373,27 @@
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": "Olives|Garlic|Onions",
                   "Type": null,
                   "Format": null,
-                  "Text": "Please select your second topping.",
+                  "Text": "Please select your second topping.  (Garlic | Olives | Onions)",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "897d605f-3163-4d57-abb6-9f1c34007ed9",
+                  "Id": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
-                    "X": 3114.2212582925617,
-                    "Y": 4445.0599252365273
+                    "X": 3023.5545916258952,
+                    "Y": 4478.3932585698612
                   }
                 },
-                "Id": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
+                "Id": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
                 "IsFolded": false,
                 "DisplayName": "Intent (more_top_yes)",
                 "Position": {
-                  "X": 3421.5632413681888,
-                  "Y": 4241.1130781230213
+                  "X": 3429.2555490604964,
+                  "Y": 4206.4976935076365
                 }
               },
               {
@@ -295,7 +402,7 @@
                 "IntentContexts": [
                   {
                     "ContextName": "con-plus-top",
-                    "Id": "bab6bf93-b5d5-4ac6-b365-bfd31996a4ef",
+                    "Id": "8d1c2820-ba19-4801-8717-7f600dfd3a5e",
                     "IsFolded": false,
                     "DisplayName": "Context",
                     "Position": {
@@ -308,12 +415,13 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@pizza-top",
                     "ExpressionName": null,
-                    "Id": "63b84a2d-2ccf-4a4a-a0a0-d4abe75581ba",
+                    "Id": "4a899900-408e-4bf7-8682-e81d6c9f880e",
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
@@ -323,12 +431,14 @@
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": "Classic|Stuffed|Thin",
                   "Type": null,
                   "Format": null,
-                  "Text": "Moving forward, what is your crust preference?",
+                  "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "5554f375-21f6-47c3-a3d4-191e6438effd",
+                  "Id": "b9e05350-05e7-453c-82e6-844dc7c913e0",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
@@ -336,7 +446,7 @@
                     "Y": 5344.1648496498456
                   }
                 },
-                "Id": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
+                "Id": "b30c2ea2-2332-4efb-9756-951faef6820f",
                 "IsFolded": false,
                 "DisplayName": "Intent (plus_toppings)",
                 "Position": {
@@ -352,12 +462,13 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@sys.negative",
                     "ExpressionName": null,
-                    "Id": "51875d54-311a-4b1a-b70c-ed7430523712",
+                    "Id": "752075e3-b8d2-46ec-aa54-defe641e67ea",
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
@@ -367,12 +478,14 @@
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": "Classic|Stuffed|Thin",
                   "Type": null,
                   "Format": null,
-                  "Text": "Moving forward, what is your crust preference?",
+                  "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+                  "Id": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
@@ -380,7 +493,7 @@
                     "Y": 6050.7722667425542
                   }
                 },
-                "Id": "4e35bdc4-9156-4fd9-b41f-9a218024f78f",
+                "Id": "99289072-4b08-45e2-bc19-053eea65a954",
                 "IsFolded": false,
                 "DisplayName": "Intent (more_top_no)",
                 "Position": {
@@ -389,7 +502,9 @@
                 }
               }
             ],
-            "Id": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
+            "Events": [],
+            "Actions": [],
+            "Id": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
             "IsFolded": false,
             "DisplayName": "Dialog (toppings_dialog)",
             "Position": {
@@ -408,7 +523,7 @@
                 "IntentContexts": [
                   {
                     "ContextName": "con-wait-crust",
-                    "Id": "1d05a082-4c89-4a64-b074-74702fb40857",
+                    "Id": "d78cde35-98ce-4df3-8e4c-afe390c93adf",
                     "IsFolded": false,
                     "DisplayName": "Context",
                     "Position": {
@@ -421,12 +536,13 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@pizza-crust",
                     "ExpressionName": null,
-                    "Id": "38dde4cc-1ab2-4a17-8002-d3f6efa47d67",
+                    "Id": "5707e71a-6452-4718-b58a-ddcb480eb344",
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
@@ -436,12 +552,14 @@
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": null,
                   "Type": null,
                   "Format": null,
-                  "Text": "Alright you're pizza will have $sys.user.crust crust. Please now specify your delivery address.",
+                  "Text": "Alright you're pizza will have $user.crust crust. Please now specify your delivery address.",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "9e32b871-35ba-4640-b398-81d192afbb93",
+                  "Id": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
@@ -449,7 +567,7 @@
                     "Y": 6676.838181526532
                   }
                 },
-                "Id": "88373396-d15c-4676-b2ff-5e717728ef2a",
+                "Id": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
                 "IsFolded": false,
                 "DisplayName": "Intent (crust_intent)",
                 "Position": {
@@ -463,7 +581,7 @@
                 "IntentContexts": [
                   {
                     "ContextName": "con-wait-address",
-                    "Id": "f4c20e97-5324-4ebc-9aea-b9245cd47b62",
+                    "Id": "d8fe45a3-be42-49be-8198-83b8dd4e2b09",
                     "IsFolded": false,
                     "DisplayName": "Context",
                     "Position": {
@@ -476,12 +594,13 @@
                 "AutoEntity": null,
                 "Fallback": null,
                 "Trait": null,
+                "Event": null,
                 "Action": null,
                 "Expressions": [
                   {
                     "Value": "@sys.text",
                     "ExpressionName": null,
-                    "Id": "1bc5c77f-fba9-4a7c-b2ca-866b85665519",
+                    "Id": "6e93e69e-2e4f-407b-826b-30efe82a9461",
                     "IsFolded": false,
                     "DisplayName": "Expression",
                     "Position": {
@@ -491,12 +610,14 @@
                   }
                 ],
                 "Response": {
+                  "Priority": "Normal",
                   "Hint": null,
                   "Type": null,
                   "Format": null,
-                  "Text": "Thank you! Your Pizza:\r\n\r\nSize: $sys.user.size\r\nToppings Primary: $sys.user.top1\r\nToppings Secondary: $sys.user.top2\r\nCrust: $sys.user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+                  "Text": "Thank you! Your Pizza:\r\n\r\nSize: $user.size\r\nToppings Primary: $user.top1\r\nToppings Secondary: $user.top2\r\nCrust: $user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+                  "ResponseMessages": [],
                   "Children": [],
-                  "Id": "064c9567-4b16-4321-b558-23d582f3ff61",
+                  "Id": "d901f76f-7407-477f-ab81-a88814867ac3",
                   "IsFolded": false,
                   "DisplayName": "Response",
                   "Position": {
@@ -504,7 +625,7 @@
                     "Y": 7777.82181348064
                   }
                 },
-                "Id": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
+                "Id": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
                 "IsFolded": false,
                 "DisplayName": "Intent (end_intent)",
                 "Position": {
@@ -513,7 +634,9 @@
                 }
               }
             ],
-            "Id": "c6ad23b2-53b2-4612-947c-0abce4af2aae",
+            "Events": [],
+            "Actions": [],
+            "Id": "d999f74a-8b52-415e-8e14-b9d9a7dc5cb0",
             "IsFolded": false,
             "DisplayName": "Dialog (crust_dialog)",
             "Position": {
@@ -529,18 +652,19 @@
             "Entries": [
               {
                 "EntryValue": "start",
-                "Synonyms": [],
-                "Id": "a28b769e-ed38-4a5e-bbd5-d11635b1f228",
+                "Synonyms": [
+                  "run"
+                ],
+                "Id": "74f7bfbe-0281-4893-9b19-97dc53cc5624",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
-                  "X": 3697.2268907563,
-                  "Y": 7689.6182539682586
+                  "X": 3771.3935574229663,
+                  "Y": 7709.6182539682586
                 }
               }
             ],
-            "RecognizerType": 0,
-            "Id": "9d8b3260-7d9a-4112-a6d2-cc0c7fc68e15",
+            "Id": "86a54aca-9102-420c-81c5-5c739c24be47",
             "IsFolded": false,
             "DisplayName": "Entry Recognizer",
             "Position": {
@@ -555,7 +679,7 @@
               {
                 "EntryValue": "small",
                 "Synonyms": [],
-                "Id": "ea218417-506c-461f-8fed-667f87d6c840",
+                "Id": "3bdfd4aa-28d2-4b58-af66-c599dec99101",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -568,7 +692,7 @@
                 "Synonyms": [
                   "normal"
                 ],
-                "Id": "fb1352b3-f8f5-454f-8687-22e74848bf44",
+                "Id": "2ac02e62-f6f0-4e2b-8834-02edc4bc9884",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -581,7 +705,7 @@
                 "Synonyms": [
                   "big"
                 ],
-                "Id": "4d0bd3f5-970a-4eca-b2e7-dca8f14769a6",
+                "Id": "ad851940-2fec-44ea-9db6-dc431e8a6fac",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -592,7 +716,7 @@
               {
                 "EntryValue": "extra large",
                 "Synonyms": [],
-                "Id": "747f03e3-a4a9-44c3-88a9-20dbabf2eeb1",
+                "Id": "535f4a73-3409-492a-95a1-4cf9ea75e96f",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -601,8 +725,7 @@
                 }
               }
             ],
-            "RecognizerType": 0,
-            "Id": "e50fac02-4c45-411f-bf13-befc937b2a21",
+            "Id": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
             "IsFolded": false,
             "DisplayName": "Entry Recognizer",
             "Position": {
@@ -617,7 +740,7 @@
               {
                 "EntryValue": "Garlic",
                 "Synonyms": [],
-                "Id": "9ee873a7-672e-46df-a130-36e30d996198",
+                "Id": "903522fa-d703-41fb-b3fd-cb020af50c45",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -627,8 +750,10 @@
               },
               {
                 "EntryValue": "Olives",
-                "Synonyms": [],
-                "Id": "24ff475d-de32-4a84-976a-c6163d2f184c",
+                "Synonyms": [
+                  "olive"
+                ],
+                "Id": "90fd293b-eb3c-468a-91d5-e87d1aea6c5e",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -638,8 +763,10 @@
               },
               {
                 "EntryValue": "Onions",
-                "Synonyms": [],
-                "Id": "a75427fe-2f4c-4004-9c6c-1345d95e2ab9",
+                "Synonyms": [
+                  "onion"
+                ],
+                "Id": "cd49e659-6884-4259-a2f1-3c2f1ad340da",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -648,8 +775,7 @@
                 }
               }
             ],
-            "RecognizerType": 0,
-            "Id": "35bc7cb2-8151-49b5-b2e3-cb46c2dcd310",
+            "Id": "bb156d36-9be8-46e9-8095-49347f592850",
             "IsFolded": false,
             "DisplayName": "Entry Recognizer",
             "Position": {
@@ -663,30 +789,35 @@
             "Entries": [
               {
                 "EntryValue": "Stuffed",
-                "Synonyms": [],
-                "Id": "a9d813bb-09be-4605-b1fa-cc7c7d5f3769",
+                "Synonyms": [
+                  "stuff",
+                  "thick"
+                ],
+                "Id": "769d05cb-2256-44de-a54c-320b2d7a8569",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
-                  "X": 3567.0070501747587,
-                  "Y": 9480.5516295366269
+                  "X": 3566.0070501747587,
+                  "Y": 9454.5516295366269
                 }
               },
               {
                 "EntryValue": "Classic",
                 "Synonyms": [],
-                "Id": "c13cd6e4-aa7c-475c-86be-2011cc1b2e2e",
+                "Id": "eba224b9-500d-440f-b378-c416e66c35d9",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
-                  "X": 3570.7570501747587,
-                  "Y": 9685.5516295366269
+                  "X": 3565.7570501747587,
+                  "Y": 9705.5516295366269
                 }
               },
               {
                 "EntryValue": "Thin",
-                "Synonyms": [],
-                "Id": "4d7af74a-656e-4348-af52-89e6c1db0b47",
+                "Synonyms": [
+                  "small"
+                ],
+                "Id": "82f686d6-a2a5-440c-9b43-1602611c89f2",
                 "IsFolded": false,
                 "DisplayName": "Entry",
                 "Position": {
@@ -695,8 +826,7 @@
                 }
               }
             ],
-            "RecognizerType": 0,
-            "Id": "0099d050-8539-457b-af91-4407ccc01fa8",
+            "Id": "00380f86-0496-4318-999b-3a462c90d835",
             "IsFolded": false,
             "DisplayName": "Entry Recognizer",
             "Position": {
@@ -715,7 +845,7 @@
               "VariableName": "top2",
               "VariableValue": "Not Specified",
               "ValueCollection": [],
-              "Id": "df119a2d-7957-4dbd-86b5-05a291a12f12",
+              "Id": "ec8c7028-a1d1-4cfc-b1b7-30e73111981d",
               "IsFolded": false,
               "DisplayName": "Settings Variable",
               "Position": {
@@ -724,7 +854,7 @@
               }
             }
           ],
-          "Id": "2814afe8-dfec-42b0-939c-a8df2525204b",
+          "Id": "bba012f4-f740-4c0f-bb93-155889c390e9",
           "IsFolded": false,
           "DisplayName": "User Settings",
           "Position": {
@@ -733,7 +863,7 @@
           }
         },
         "SimlNodes": [],
-        "Id": "ff174022-3c3d-440d-8011-4fd4c9734cea",
+        "Id": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
         "IsFolded": false,
         "DisplayName": "Oscova Bot",
         "Position": {
@@ -741,7 +871,7 @@
           "Y": 3404.9277777777779
         }
       },
-      "Id": "04988245-1816-40bb-8702-f231aaf9ba55",
+      "Id": "43e41a95-06d2-4f13-8d2b-734e1725d648",
       "IsFolded": false,
       "DisplayName": "Oscova Test Panel",
       "Position": {
@@ -765,27 +895,118 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@start",
                   "ExpressionName": null,
-                  "Id": "1e982435-5ade-44d1-a4eb-9c5523c40521",
+                  "Id": null,
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
-                    "X": 3623.9846999405822,
-                    "Y": 1701.0347765581496
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "hi there",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "hello",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "@start",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "hi there",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "hello",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "@start",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "hi there",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "hello",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
                   }
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": "Small|Medium|Large|Extra Large",
                 "Type": null,
                 "Format": null,
-                "Text": "Lets build your pizze. To Begin I'll need you to specify the size of the pizza.",
+                "Text": "Hi! lets build your pizze. To Begin I'll need you to specify the size of the pizza. (Small | Medium | Large)",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
+                "Id": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
@@ -793,12 +1014,12 @@
                   "Y": 1889.9236654470396
                 }
               },
-              "Id": "21d11caa-8ee4-49e6-a374-9daf35892563",
+              "Id": "e98f5102-440c-447b-a9a5-098d519c8d75",
               "IsFolded": false,
               "DisplayName": "Intent (start_intent)",
               "Position": {
-                "X": 3938.9520202020185,
-                "Y": 1640.7207070707059
+                "X": 3976.7297979797959,
+                "Y": 1599.6095959595948
               }
             },
             {
@@ -809,7 +1030,7 @@
               "AutoEntity": null,
               "Fallback": {
                 "ContextName": "con-wait-size",
-                "Id": "6f1099f5-543a-48dc-ba43-6a5fa67b0656",
+                "Id": "753f051f-855c-4bc2-8939-a78c257b2692",
                 "IsFolded": false,
                 "DisplayName": "Fallback",
                 "Position": {
@@ -818,23 +1039,26 @@
                 }
               },
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [],
               "Response": {
+                "Priority": "Normal",
                 "Hint": "Small|Medium|Large|Extra Large",
                 "Type": null,
                 "Format": null,
                 "Text": "That doesn't seem like a valid pizza size. Please select an option.",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "f6599b28-8cc3-4521-86a2-6f5b20e7d927",
+                "Id": "9ce76e34-16eb-4977-9119-10b1cccc35ac",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
-                  "X": 3550.9291941288852,
-                  "Y": 2386.4648329310835
+                  "X": 3543.8703705994735,
+                  "Y": 2364.1118917546132
                 }
               },
-              "Id": "c9d58e7f-e2e9-4a4a-833f-e6d80aa56a40",
+              "Id": "deafff16-0198-4ec4-bd43-3a91dcdecfa4",
               "IsFolded": false,
               "DisplayName": "Intent (size_fallback)",
               "Position": {
@@ -843,7 +1067,9 @@
               }
             }
           ],
-          "Id": "f0ca1b28-5841-478f-a2f5-62643847ec89",
+          "Events": [],
+          "Actions": [],
+          "Id": "565d09c8-0688-4816-a883-47fd6334dc04",
           "IsFolded": false,
           "DisplayName": "Dialog (start_dialog)",
           "Position": {
@@ -862,7 +1088,7 @@
               "IntentContexts": [
                 {
                   "ContextName": "con-wait-size",
-                  "Id": "bd70268c-785a-4655-8636-572bdb0c4121",
+                  "Id": "91b35485-270b-43a9-a567-72204933a82d",
                   "IsFolded": false,
                   "DisplayName": "Context",
                   "Position": {
@@ -875,12 +1101,13 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@pizza-size",
                   "ExpressionName": null,
-                  "Id": "734609b7-d3fd-4546-a4b0-7ec57010a61c",
+                  "Id": "ddb8ab79-89e9-46a0-b75c-37f0b3b09778",
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
@@ -890,12 +1117,14 @@
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": "Olives|Garlic|Onions",
                 "Type": null,
                 "Format": null,
-                "Text": "So $sys.user.size it is. Now what would the toppings be?",
+                "Text": "So $user.size it is. Now what would the toppings be? (Garlic | Onions | Olives)",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
+                "Id": "040fd457-13e2-40a0-82ed-6c905368fd67",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
@@ -903,7 +1132,7 @@
                   "Y": 3054.0348853021014
                 }
               },
-              "Id": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
+              "Id": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
               "IsFolded": false,
               "DisplayName": "Intent (size_intent)",
               "Position": {
@@ -912,7 +1141,9 @@
               }
             }
           ],
-          "Id": "edd5dd46-6dc5-4580-85a0-b056d7770d9a",
+          "Events": [],
+          "Actions": [],
+          "Id": "f7164098-e9aa-42a7-bdfd-d03b5bbb7038",
           "IsFolded": false,
           "DisplayName": "Dialog (size_dialog)",
           "Position": {
@@ -931,7 +1162,7 @@
               "IntentContexts": [
                 {
                   "ContextName": "con-wait-top",
-                  "Id": "10360cec-b575-4772-9d01-a92b907a2b1f",
+                  "Id": "a2916d48-0d7e-41f0-ad70-a4b1dc892e37",
                   "IsFolded": false,
                   "DisplayName": "Context",
                   "Position": {
@@ -944,12 +1175,13 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@pizza-top",
                   "ExpressionName": null,
-                  "Id": "fb3cf054-7827-44d9-9070-630e39d583c5",
+                  "Id": "9d67304d-8623-4ebd-8e17-97fd880b64c8",
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
@@ -959,12 +1191,14 @@
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": "Yes|No",
                 "Type": null,
                 "Format": null,
-                "Text": "Aha $pizza-top is a good choice. Would you like to add another topping? ",
+                "Text": "Aha $pizza-top is a good choice. Would you like to add another topping?  (Yes | No)",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "2b159754-598f-4509-a617-5bea07fc50fb",
+                "Id": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
@@ -972,7 +1206,7 @@
                   "Y": 3682.734537581443
                 }
               },
-              "Id": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
+              "Id": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
               "IsFolded": false,
               "DisplayName": "Intent (toppings_intent)",
               "Position": {
@@ -986,7 +1220,7 @@
               "IntentContexts": [
                 {
                   "ContextName": "con-more-top",
-                  "Id": "348a83c8-f4fd-4ba6-a316-1fa58426fefa",
+                  "Id": "c0a1fcaf-b57a-4edb-a93a-a698bdb60312",
                   "IsFolded": false,
                   "DisplayName": "Context",
                   "Position": {
@@ -999,12 +1233,13 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@sys.positive",
                   "ExpressionName": null,
-                  "Id": "9481f14c-a6a8-4548-9aa4-8e74e8b48d15",
+                  "Id": "efd0f796-eca8-48d8-9762-b48940fffc38",
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
@@ -1014,25 +1249,27 @@
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": "Olives|Garlic|Onions",
                 "Type": null,
                 "Format": null,
-                "Text": "Please select your second topping.",
+                "Text": "Please select your second topping.  (Garlic | Olives | Onions)",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "897d605f-3163-4d57-abb6-9f1c34007ed9",
+                "Id": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
-                  "X": 3114.2212582925617,
-                  "Y": 4445.0599252365273
+                  "X": 3023.5545916258952,
+                  "Y": 4478.3932585698612
                 }
               },
-              "Id": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
+              "Id": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
               "IsFolded": false,
               "DisplayName": "Intent (more_top_yes)",
               "Position": {
-                "X": 3421.5632413681888,
-                "Y": 4241.1130781230213
+                "X": 3429.2555490604964,
+                "Y": 4206.4976935076365
               }
             },
             {
@@ -1041,7 +1278,7 @@
               "IntentContexts": [
                 {
                   "ContextName": "con-plus-top",
-                  "Id": "bab6bf93-b5d5-4ac6-b365-bfd31996a4ef",
+                  "Id": "8d1c2820-ba19-4801-8717-7f600dfd3a5e",
                   "IsFolded": false,
                   "DisplayName": "Context",
                   "Position": {
@@ -1054,12 +1291,13 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@pizza-top",
                   "ExpressionName": null,
-                  "Id": "63b84a2d-2ccf-4a4a-a0a0-d4abe75581ba",
+                  "Id": "4a899900-408e-4bf7-8682-e81d6c9f880e",
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
@@ -1069,12 +1307,14 @@
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": "Classic|Stuffed|Thin",
                 "Type": null,
                 "Format": null,
-                "Text": "Moving forward, what is your crust preference?",
+                "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "5554f375-21f6-47c3-a3d4-191e6438effd",
+                "Id": "b9e05350-05e7-453c-82e6-844dc7c913e0",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
@@ -1082,7 +1322,7 @@
                   "Y": 5344.1648496498456
                 }
               },
-              "Id": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
+              "Id": "b30c2ea2-2332-4efb-9756-951faef6820f",
               "IsFolded": false,
               "DisplayName": "Intent (plus_toppings)",
               "Position": {
@@ -1098,12 +1338,13 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@sys.negative",
                   "ExpressionName": null,
-                  "Id": "51875d54-311a-4b1a-b70c-ed7430523712",
+                  "Id": "752075e3-b8d2-46ec-aa54-defe641e67ea",
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
@@ -1113,12 +1354,14 @@
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": "Classic|Stuffed|Thin",
                 "Type": null,
                 "Format": null,
-                "Text": "Moving forward, what is your crust preference?",
+                "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+                "Id": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
@@ -1126,7 +1369,7 @@
                   "Y": 6050.7722667425542
                 }
               },
-              "Id": "4e35bdc4-9156-4fd9-b41f-9a218024f78f",
+              "Id": "99289072-4b08-45e2-bc19-053eea65a954",
               "IsFolded": false,
               "DisplayName": "Intent (more_top_no)",
               "Position": {
@@ -1135,7 +1378,9 @@
               }
             }
           ],
-          "Id": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
+          "Events": [],
+          "Actions": [],
+          "Id": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
           "IsFolded": false,
           "DisplayName": "Dialog (toppings_dialog)",
           "Position": {
@@ -1154,7 +1399,7 @@
               "IntentContexts": [
                 {
                   "ContextName": "con-wait-crust",
-                  "Id": "1d05a082-4c89-4a64-b074-74702fb40857",
+                  "Id": "d78cde35-98ce-4df3-8e4c-afe390c93adf",
                   "IsFolded": false,
                   "DisplayName": "Context",
                   "Position": {
@@ -1167,12 +1412,13 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@pizza-crust",
                   "ExpressionName": null,
-                  "Id": "38dde4cc-1ab2-4a17-8002-d3f6efa47d67",
+                  "Id": "5707e71a-6452-4718-b58a-ddcb480eb344",
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
@@ -1182,12 +1428,14 @@
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": null,
                 "Type": null,
                 "Format": null,
-                "Text": "Alright you're pizza will have $sys.user.crust crust. Please now specify your delivery address.",
+                "Text": "Alright you're pizza will have $user.crust crust. Please now specify your delivery address.",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "9e32b871-35ba-4640-b398-81d192afbb93",
+                "Id": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
@@ -1195,7 +1443,7 @@
                   "Y": 6676.838181526532
                 }
               },
-              "Id": "88373396-d15c-4676-b2ff-5e717728ef2a",
+              "Id": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
               "IsFolded": false,
               "DisplayName": "Intent (crust_intent)",
               "Position": {
@@ -1209,7 +1457,7 @@
               "IntentContexts": [
                 {
                   "ContextName": "con-wait-address",
-                  "Id": "f4c20e97-5324-4ebc-9aea-b9245cd47b62",
+                  "Id": "d8fe45a3-be42-49be-8198-83b8dd4e2b09",
                   "IsFolded": false,
                   "DisplayName": "Context",
                   "Position": {
@@ -1222,12 +1470,13 @@
               "AutoEntity": null,
               "Fallback": null,
               "Trait": null,
+              "Event": null,
               "Action": null,
               "Expressions": [
                 {
                   "Value": "@sys.text",
                   "ExpressionName": null,
-                  "Id": "1bc5c77f-fba9-4a7c-b2ca-866b85665519",
+                  "Id": "6e93e69e-2e4f-407b-826b-30efe82a9461",
                   "IsFolded": false,
                   "DisplayName": "Expression",
                   "Position": {
@@ -1237,12 +1486,14 @@
                 }
               ],
               "Response": {
+                "Priority": "Normal",
                 "Hint": null,
                 "Type": null,
                 "Format": null,
-                "Text": "Thank you! Your Pizza:\r\n\r\nSize: $sys.user.size\r\nToppings Primary: $sys.user.top1\r\nToppings Secondary: $sys.user.top2\r\nCrust: $sys.user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+                "Text": "Thank you! Your Pizza:\r\n\r\nSize: $user.size\r\nToppings Primary: $user.top1\r\nToppings Secondary: $user.top2\r\nCrust: $user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+                "ResponseMessages": [],
                 "Children": [],
-                "Id": "064c9567-4b16-4321-b558-23d582f3ff61",
+                "Id": "d901f76f-7407-477f-ab81-a88814867ac3",
                 "IsFolded": false,
                 "DisplayName": "Response",
                 "Position": {
@@ -1250,7 +1501,7 @@
                   "Y": 7777.82181348064
                 }
               },
-              "Id": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
+              "Id": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
               "IsFolded": false,
               "DisplayName": "Intent (end_intent)",
               "Position": {
@@ -1259,7 +1510,9 @@
               }
             }
           ],
-          "Id": "c6ad23b2-53b2-4612-947c-0abce4af2aae",
+          "Events": [],
+          "Actions": [],
+          "Id": "d999f74a-8b52-415e-8e14-b9d9a7dc5cb0",
           "IsFolded": false,
           "DisplayName": "Dialog (crust_dialog)",
           "Position": {
@@ -1275,18 +1528,19 @@
           "Entries": [
             {
               "EntryValue": "start",
-              "Synonyms": [],
-              "Id": "a28b769e-ed38-4a5e-bbd5-d11635b1f228",
+              "Synonyms": [
+                "run"
+              ],
+              "Id": "74f7bfbe-0281-4893-9b19-97dc53cc5624",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
-                "X": 3697.2268907563,
-                "Y": 7689.6182539682586
+                "X": 3771.3935574229663,
+                "Y": 7709.6182539682586
               }
             }
           ],
-          "RecognizerType": 0,
-          "Id": "9d8b3260-7d9a-4112-a6d2-cc0c7fc68e15",
+          "Id": "86a54aca-9102-420c-81c5-5c739c24be47",
           "IsFolded": false,
           "DisplayName": "Entry Recognizer",
           "Position": {
@@ -1301,7 +1555,7 @@
             {
               "EntryValue": "small",
               "Synonyms": [],
-              "Id": "ea218417-506c-461f-8fed-667f87d6c840",
+              "Id": "3bdfd4aa-28d2-4b58-af66-c599dec99101",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1314,7 +1568,7 @@
               "Synonyms": [
                 "normal"
               ],
-              "Id": "fb1352b3-f8f5-454f-8687-22e74848bf44",
+              "Id": "2ac02e62-f6f0-4e2b-8834-02edc4bc9884",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1327,7 +1581,7 @@
               "Synonyms": [
                 "big"
               ],
-              "Id": "4d0bd3f5-970a-4eca-b2e7-dca8f14769a6",
+              "Id": "ad851940-2fec-44ea-9db6-dc431e8a6fac",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1338,7 +1592,7 @@
             {
               "EntryValue": "extra large",
               "Synonyms": [],
-              "Id": "747f03e3-a4a9-44c3-88a9-20dbabf2eeb1",
+              "Id": "535f4a73-3409-492a-95a1-4cf9ea75e96f",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1347,8 +1601,7 @@
               }
             }
           ],
-          "RecognizerType": 0,
-          "Id": "e50fac02-4c45-411f-bf13-befc937b2a21",
+          "Id": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
           "IsFolded": false,
           "DisplayName": "Entry Recognizer",
           "Position": {
@@ -1363,7 +1616,7 @@
             {
               "EntryValue": "Garlic",
               "Synonyms": [],
-              "Id": "9ee873a7-672e-46df-a130-36e30d996198",
+              "Id": "903522fa-d703-41fb-b3fd-cb020af50c45",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1373,8 +1626,10 @@
             },
             {
               "EntryValue": "Olives",
-              "Synonyms": [],
-              "Id": "24ff475d-de32-4a84-976a-c6163d2f184c",
+              "Synonyms": [
+                "olive"
+              ],
+              "Id": "90fd293b-eb3c-468a-91d5-e87d1aea6c5e",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1384,8 +1639,10 @@
             },
             {
               "EntryValue": "Onions",
-              "Synonyms": [],
-              "Id": "a75427fe-2f4c-4004-9c6c-1345d95e2ab9",
+              "Synonyms": [
+                "onion"
+              ],
+              "Id": "cd49e659-6884-4259-a2f1-3c2f1ad340da",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1394,8 +1651,7 @@
               }
             }
           ],
-          "RecognizerType": 0,
-          "Id": "35bc7cb2-8151-49b5-b2e3-cb46c2dcd310",
+          "Id": "bb156d36-9be8-46e9-8095-49347f592850",
           "IsFolded": false,
           "DisplayName": "Entry Recognizer",
           "Position": {
@@ -1409,30 +1665,35 @@
           "Entries": [
             {
               "EntryValue": "Stuffed",
-              "Synonyms": [],
-              "Id": "a9d813bb-09be-4605-b1fa-cc7c7d5f3769",
+              "Synonyms": [
+                "stuff",
+                "thick"
+              ],
+              "Id": "769d05cb-2256-44de-a54c-320b2d7a8569",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
-                "X": 3567.0070501747587,
-                "Y": 9480.5516295366269
+                "X": 3566.0070501747587,
+                "Y": 9454.5516295366269
               }
             },
             {
               "EntryValue": "Classic",
               "Synonyms": [],
-              "Id": "c13cd6e4-aa7c-475c-86be-2011cc1b2e2e",
+              "Id": "eba224b9-500d-440f-b378-c416e66c35d9",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
-                "X": 3570.7570501747587,
-                "Y": 9685.5516295366269
+                "X": 3565.7570501747587,
+                "Y": 9705.5516295366269
               }
             },
             {
               "EntryValue": "Thin",
-              "Synonyms": [],
-              "Id": "4d7af74a-656e-4348-af52-89e6c1db0b47",
+              "Synonyms": [
+                "small"
+              ],
+              "Id": "82f686d6-a2a5-440c-9b43-1602611c89f2",
               "IsFolded": false,
               "DisplayName": "Entry",
               "Position": {
@@ -1441,8 +1702,7 @@
               }
             }
           ],
-          "RecognizerType": 0,
-          "Id": "0099d050-8539-457b-af91-4407ccc01fa8",
+          "Id": "00380f86-0496-4318-999b-3a462c90d835",
           "IsFolded": false,
           "DisplayName": "Entry Recognizer",
           "Position": {
@@ -1461,7 +1721,7 @@
             "VariableName": "top2",
             "VariableValue": "Not Specified",
             "ValueCollection": [],
-            "Id": "df119a2d-7957-4dbd-86b5-05a291a12f12",
+            "Id": "ec8c7028-a1d1-4cfc-b1b7-30e73111981d",
             "IsFolded": false,
             "DisplayName": "Settings Variable",
             "Position": {
@@ -1470,7 +1730,7 @@
             }
           }
         ],
-        "Id": "2814afe8-dfec-42b0-939c-a8df2525204b",
+        "Id": "bba012f4-f740-4c0f-bb93-155889c390e9",
         "IsFolded": false,
         "DisplayName": "User Settings",
         "Position": {
@@ -1479,7 +1739,7 @@
         }
       },
       "SimlNodes": [],
-      "Id": "ff174022-3c3d-440d-8011-4fd4c9734cea",
+      "Id": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
       "IsFolded": false,
       "DisplayName": "Oscova Bot",
       "Position": {
@@ -1496,27 +1756,118 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@start",
           "ExpressionName": null,
-          "Id": "1e982435-5ade-44d1-a4eb-9c5523c40521",
+          "Id": null,
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
-            "X": 3623.9846999405822,
-            "Y": 1701.0347765581496
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "hi there",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "hello",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "@start",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "hi there",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "hello",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "@start",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "hi there",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "hello",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
           }
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": "Small|Medium|Large|Extra Large",
         "Type": null,
         "Format": null,
-        "Text": "Lets build your pizze. To Begin I'll need you to specify the size of the pizza.",
+        "Text": "Hi! lets build your pizze. To Begin I'll need you to specify the size of the pizza. (Small | Medium | Large)",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
+        "Id": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
@@ -1524,12 +1875,12 @@
           "Y": 1889.9236654470396
         }
       },
-      "Id": "21d11caa-8ee4-49e6-a374-9daf35892563",
+      "Id": "e98f5102-440c-447b-a9a5-098d519c8d75",
       "IsFolded": false,
       "DisplayName": "Intent (start_intent)",
       "Position": {
-        "X": 3938.9520202020185,
-        "Y": 1640.7207070707059
+        "X": 3976.7297979797959,
+        "Y": 1599.6095959595948
       }
     },
     {
@@ -1546,27 +1897,118 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@start",
               "ExpressionName": null,
-              "Id": "1e982435-5ade-44d1-a4eb-9c5523c40521",
+              "Id": null,
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
-                "X": 3623.9846999405822,
-                "Y": 1701.0347765581496
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "hi there",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "hello",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "@start",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "hi there",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "hello",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "@start",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "hi there",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "hello",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
               }
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": "Small|Medium|Large|Extra Large",
             "Type": null,
             "Format": null,
-            "Text": "Lets build your pizze. To Begin I'll need you to specify the size of the pizza.",
+            "Text": "Hi! lets build your pizze. To Begin I'll need you to specify the size of the pizza. (Small | Medium | Large)",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
+            "Id": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
@@ -1574,12 +2016,12 @@
               "Y": 1889.9236654470396
             }
           },
-          "Id": "21d11caa-8ee4-49e6-a374-9daf35892563",
+          "Id": "e98f5102-440c-447b-a9a5-098d519c8d75",
           "IsFolded": false,
           "DisplayName": "Intent (start_intent)",
           "Position": {
-            "X": 3938.9520202020185,
-            "Y": 1640.7207070707059
+            "X": 3976.7297979797959,
+            "Y": 1599.6095959595948
           }
         },
         {
@@ -1590,7 +2032,7 @@
           "AutoEntity": null,
           "Fallback": {
             "ContextName": "con-wait-size",
-            "Id": "6f1099f5-543a-48dc-ba43-6a5fa67b0656",
+            "Id": "753f051f-855c-4bc2-8939-a78c257b2692",
             "IsFolded": false,
             "DisplayName": "Fallback",
             "Position": {
@@ -1599,23 +2041,26 @@
             }
           },
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [],
           "Response": {
+            "Priority": "Normal",
             "Hint": "Small|Medium|Large|Extra Large",
             "Type": null,
             "Format": null,
             "Text": "That doesn't seem like a valid pizza size. Please select an option.",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "f6599b28-8cc3-4521-86a2-6f5b20e7d927",
+            "Id": "9ce76e34-16eb-4977-9119-10b1cccc35ac",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
-              "X": 3550.9291941288852,
-              "Y": 2386.4648329310835
+              "X": 3543.8703705994735,
+              "Y": 2364.1118917546132
             }
           },
-          "Id": "c9d58e7f-e2e9-4a4a-833f-e6d80aa56a40",
+          "Id": "deafff16-0198-4ec4-bd43-3a91dcdecfa4",
           "IsFolded": false,
           "DisplayName": "Intent (size_fallback)",
           "Position": {
@@ -1624,7 +2069,9 @@
           }
         }
       ],
-      "Id": "f0ca1b28-5841-478f-a2f5-62643847ec89",
+      "Events": [],
+      "Actions": [],
+      "Id": "565d09c8-0688-4816-a883-47fd6334dc04",
       "IsFolded": false,
       "DisplayName": "Dialog (start_dialog)",
       "Position": {
@@ -1633,25 +2080,15 @@
       }
     },
     {
-      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
-      "Value": "@start",
-      "ExpressionName": null,
-      "Id": "1e982435-5ade-44d1-a4eb-9c5523c40521",
-      "IsFolded": false,
-      "DisplayName": "Expression",
-      "Position": {
-        "X": 3623.9846999405822,
-        "Y": 1701.0347765581496
-      }
-    },
-    {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": "Small|Medium|Large|Extra Large",
       "Type": null,
       "Format": null,
-      "Text": "Lets build your pizze. To Begin I'll need you to specify the size of the pizza.",
+      "Text": "Hi! lets build your pizze. To Begin I'll need you to specify the size of the pizza. (Small | Medium | Large)",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
+      "Id": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
@@ -1660,14 +2097,14 @@
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
-      "OutputValue": "Lets build your pizze. To Begin I'll need you to specify the size of the pizza.",
-      "Id": "e61ce04b-aa49-47c6-a0e4-79f675844c91",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Hi! lets build your pizze. To Begin I'll need you to specify the size of the pizza. (Small | Medium | Large)",
+      "Id": "2e19c075-0b1a-4599-b880-c28a350020c8",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
-        "X": 2929.8821358380196,
-        "Y": 1915.9749474983214
+        "X": 2798.5137147853879,
+        "Y": 2022.2381053930583
       }
     },
     {
@@ -1676,18 +2113,19 @@
       "Entries": [
         {
           "EntryValue": "start",
-          "Synonyms": [],
-          "Id": "a28b769e-ed38-4a5e-bbd5-d11635b1f228",
+          "Synonyms": [
+            "run"
+          ],
+          "Id": "74f7bfbe-0281-4893-9b19-97dc53cc5624",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
-            "X": 3697.2268907563,
-            "Y": 7689.6182539682586
+            "X": 3771.3935574229663,
+            "Y": 7709.6182539682586
           }
         }
       ],
-      "RecognizerType": 0,
-      "Id": "9d8b3260-7d9a-4112-a6d2-cc0c7fc68e15",
+      "Id": "86a54aca-9102-420c-81c5-5c739c24be47",
       "IsFolded": false,
       "DisplayName": "Entry Recognizer",
       "Position": {
@@ -1698,13 +2136,15 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "start",
-      "Synonyms": [],
-      "Id": "a28b769e-ed38-4a5e-bbd5-d11635b1f228",
+      "Synonyms": [
+        "run"
+      ],
+      "Id": "74f7bfbe-0281-4893-9b19-97dc53cc5624",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
-        "X": 3697.2268907563,
-        "Y": 7689.6182539682586
+        "X": 3771.3935574229663,
+        "Y": 7709.6182539682586
       }
     },
     {
@@ -1714,7 +2154,7 @@
         {
           "EntryValue": "small",
           "Synonyms": [],
-          "Id": "ea218417-506c-461f-8fed-667f87d6c840",
+          "Id": "3bdfd4aa-28d2-4b58-af66-c599dec99101",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -1727,7 +2167,7 @@
           "Synonyms": [
             "normal"
           ],
-          "Id": "fb1352b3-f8f5-454f-8687-22e74848bf44",
+          "Id": "2ac02e62-f6f0-4e2b-8834-02edc4bc9884",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -1740,7 +2180,7 @@
           "Synonyms": [
             "big"
           ],
-          "Id": "4d0bd3f5-970a-4eca-b2e7-dca8f14769a6",
+          "Id": "ad851940-2fec-44ea-9db6-dc431e8a6fac",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -1751,7 +2191,7 @@
         {
           "EntryValue": "extra large",
           "Synonyms": [],
-          "Id": "747f03e3-a4a9-44c3-88a9-20dbabf2eeb1",
+          "Id": "535f4a73-3409-492a-95a1-4cf9ea75e96f",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -1760,8 +2200,7 @@
           }
         }
       ],
-      "RecognizerType": 0,
-      "Id": "e50fac02-4c45-411f-bf13-befc937b2a21",
+      "Id": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
       "IsFolded": false,
       "DisplayName": "Entry Recognizer",
       "Position": {
@@ -1773,7 +2212,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "small",
       "Synonyms": [],
-      "Id": "ea218417-506c-461f-8fed-667f87d6c840",
+      "Id": "3bdfd4aa-28d2-4b58-af66-c599dec99101",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -1787,7 +2226,7 @@
       "Synonyms": [
         "normal"
       ],
-      "Id": "fb1352b3-f8f5-454f-8687-22e74848bf44",
+      "Id": "2ac02e62-f6f0-4e2b-8834-02edc4bc9884",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -1801,7 +2240,7 @@
       "Synonyms": [
         "big"
       ],
-      "Id": "4d0bd3f5-970a-4eca-b2e7-dca8f14769a6",
+      "Id": "ad851940-2fec-44ea-9db6-dc431e8a6fac",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -1813,7 +2252,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "extra large",
       "Synonyms": [],
-      "Id": "747f03e3-a4a9-44c3-88a9-20dbabf2eeb1",
+      "Id": "535f4a73-3409-492a-95a1-4cf9ea75e96f",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -1825,7 +2264,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
       "ContextName": "con-wait-size",
       "Lifespan": 2,
-      "Id": "c76b8b71-2446-4869-96eb-af365bca1a9a",
+      "Id": "7e7d8449-dcfb-4e3f-b5a9-a231c2d84e7d",
       "IsFolded": false,
       "DisplayName": "Context Add",
       "Position": {
@@ -1845,7 +2284,7 @@
           "IntentContexts": [
             {
               "ContextName": "con-wait-size",
-              "Id": "bd70268c-785a-4655-8636-572bdb0c4121",
+              "Id": "91b35485-270b-43a9-a567-72204933a82d",
               "IsFolded": false,
               "DisplayName": "Context",
               "Position": {
@@ -1858,12 +2297,13 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@pizza-size",
               "ExpressionName": null,
-              "Id": "734609b7-d3fd-4546-a4b0-7ec57010a61c",
+              "Id": "ddb8ab79-89e9-46a0-b75c-37f0b3b09778",
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
@@ -1873,12 +2313,14 @@
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": "Olives|Garlic|Onions",
             "Type": null,
             "Format": null,
-            "Text": "So $sys.user.size it is. Now what would the toppings be?",
+            "Text": "So $user.size it is. Now what would the toppings be? (Garlic | Onions | Olives)",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
+            "Id": "040fd457-13e2-40a0-82ed-6c905368fd67",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
@@ -1886,7 +2328,7 @@
               "Y": 3054.0348853021014
             }
           },
-          "Id": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
+          "Id": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
           "IsFolded": false,
           "DisplayName": "Intent (size_intent)",
           "Position": {
@@ -1895,7 +2337,9 @@
           }
         }
       ],
-      "Id": "edd5dd46-6dc5-4580-85a0-b056d7770d9a",
+      "Events": [],
+      "Actions": [],
+      "Id": "f7164098-e9aa-42a7-bdfd-d03b5bbb7038",
       "IsFolded": false,
       "DisplayName": "Dialog (size_dialog)",
       "Position": {
@@ -1910,7 +2354,7 @@
       "IntentContexts": [
         {
           "ContextName": "con-wait-size",
-          "Id": "bd70268c-785a-4655-8636-572bdb0c4121",
+          "Id": "91b35485-270b-43a9-a567-72204933a82d",
           "IsFolded": false,
           "DisplayName": "Context",
           "Position": {
@@ -1923,12 +2367,13 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@pizza-size",
           "ExpressionName": null,
-          "Id": "734609b7-d3fd-4546-a4b0-7ec57010a61c",
+          "Id": "ddb8ab79-89e9-46a0-b75c-37f0b3b09778",
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
@@ -1938,12 +2383,14 @@
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": "Olives|Garlic|Onions",
         "Type": null,
         "Format": null,
-        "Text": "So $sys.user.size it is. Now what would the toppings be?",
+        "Text": "So $user.size it is. Now what would the toppings be? (Garlic | Onions | Olives)",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
+        "Id": "040fd457-13e2-40a0-82ed-6c905368fd67",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
@@ -1951,7 +2398,7 @@
           "Y": 3054.0348853021014
         }
       },
-      "Id": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
+      "Id": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
       "IsFolded": false,
       "DisplayName": "Intent (size_intent)",
       "Position": {
@@ -1963,7 +2410,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
       "Value": "@pizza-size",
       "ExpressionName": null,
-      "Id": "734609b7-d3fd-4546-a4b0-7ec57010a61c",
+      "Id": "ddb8ab79-89e9-46a0-b75c-37f0b3b09778",
       "IsFolded": false,
       "DisplayName": "Expression",
       "Position": {
@@ -1973,12 +2420,14 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": "Olives|Garlic|Onions",
       "Type": null,
       "Format": null,
-      "Text": "So $sys.user.size it is. Now what would the toppings be?",
+      "Text": "So $user.size it is. Now what would the toppings be? (Garlic | Onions | Olives)",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
+      "Id": "040fd457-13e2-40a0-82ed-6c905368fd67",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
@@ -1987,14 +2436,14 @@
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
-      "OutputValue": "So $sys.user.size it is. Now what would the toppings be?",
-      "Id": "f1db48b1-8d37-4efd-ae90-f9c03aada8a6",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "So $user.size it is. Now what would the toppings be? (Garlic | Onions | Olives)",
+      "Id": "9b5d847b-6223-48ee-878c-6117b2f01494",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
-        "X": 3314.0967275310036,
-        "Y": 3181.5586948259106
+        "X": 3214.0967275310036,
+        "Y": 3163.2978252606931
       }
     },
     {
@@ -2004,7 +2453,7 @@
         {
           "EntryValue": "Garlic",
           "Synonyms": [],
-          "Id": "9ee873a7-672e-46df-a130-36e30d996198",
+          "Id": "903522fa-d703-41fb-b3fd-cb020af50c45",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -2014,8 +2463,10 @@
         },
         {
           "EntryValue": "Olives",
-          "Synonyms": [],
-          "Id": "24ff475d-de32-4a84-976a-c6163d2f184c",
+          "Synonyms": [
+            "olive"
+          ],
+          "Id": "90fd293b-eb3c-468a-91d5-e87d1aea6c5e",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -2025,8 +2476,10 @@
         },
         {
           "EntryValue": "Onions",
-          "Synonyms": [],
-          "Id": "a75427fe-2f4c-4004-9c6c-1345d95e2ab9",
+          "Synonyms": [
+            "onion"
+          ],
+          "Id": "cd49e659-6884-4259-a2f1-3c2f1ad340da",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -2035,8 +2488,7 @@
           }
         }
       ],
-      "RecognizerType": 0,
-      "Id": "35bc7cb2-8151-49b5-b2e3-cb46c2dcd310",
+      "Id": "bb156d36-9be8-46e9-8095-49347f592850",
       "IsFolded": false,
       "DisplayName": "Entry Recognizer",
       "Position": {
@@ -2048,7 +2500,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "Garlic",
       "Synonyms": [],
-      "Id": "9ee873a7-672e-46df-a130-36e30d996198",
+      "Id": "903522fa-d703-41fb-b3fd-cb020af50c45",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -2059,8 +2511,10 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "Olives",
-      "Synonyms": [],
-      "Id": "24ff475d-de32-4a84-976a-c6163d2f184c",
+      "Synonyms": [
+        "olive"
+      ],
+      "Id": "90fd293b-eb3c-468a-91d5-e87d1aea6c5e",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -2071,8 +2525,10 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "Onions",
-      "Synonyms": [],
-      "Id": "a75427fe-2f4c-4004-9c6c-1345d95e2ab9",
+      "Synonyms": [
+        "onion"
+      ],
+      "Id": "cd49e659-6884-4259-a2f1-3c2f1ad340da",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -2083,9 +2539,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
       "EntityName": "pizza-size",
-      "EntityGetType": 0,
+      "EntityGetType": "Value",
       "EntityPropertyName": null,
-      "Id": "ad313e2c-2268-450c-b920-ad439b7e82e8",
+      "Id": "db797fb5-92b0-4d82-8230-ad8487abd7af",
       "IsFolded": false,
       "DisplayName": "Entity Get",
       "Position": {
@@ -2096,9 +2552,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.VariableSetNode, Syn.Bot",
       "VariableName": "size",
-      "VariableOrigin": 1,
-      "VariableValue": "Small",
-      "Id": "3ce8f1c6-a3a8-49d8-b1f4-cae109707b4d",
+      "VariableOrigin": "User",
+      "VariableValue": "big",
+      "Id": "a0ab3a44-a272-4b87-8b84-48a88d05427b",
       "IsFolded": false,
       "DisplayName": "Variable Set",
       "Position": {
@@ -2118,7 +2574,7 @@
           "IntentContexts": [
             {
               "ContextName": "con-wait-top",
-              "Id": "10360cec-b575-4772-9d01-a92b907a2b1f",
+              "Id": "a2916d48-0d7e-41f0-ad70-a4b1dc892e37",
               "IsFolded": false,
               "DisplayName": "Context",
               "Position": {
@@ -2131,12 +2587,13 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@pizza-top",
               "ExpressionName": null,
-              "Id": "fb3cf054-7827-44d9-9070-630e39d583c5",
+              "Id": "9d67304d-8623-4ebd-8e17-97fd880b64c8",
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
@@ -2146,12 +2603,14 @@
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": "Yes|No",
             "Type": null,
             "Format": null,
-            "Text": "Aha $pizza-top is a good choice. Would you like to add another topping? ",
+            "Text": "Aha $pizza-top is a good choice. Would you like to add another topping?  (Yes | No)",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "2b159754-598f-4509-a617-5bea07fc50fb",
+            "Id": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
@@ -2159,7 +2618,7 @@
               "Y": 3682.734537581443
             }
           },
-          "Id": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
+          "Id": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
           "IsFolded": false,
           "DisplayName": "Intent (toppings_intent)",
           "Position": {
@@ -2173,7 +2632,7 @@
           "IntentContexts": [
             {
               "ContextName": "con-more-top",
-              "Id": "348a83c8-f4fd-4ba6-a316-1fa58426fefa",
+              "Id": "c0a1fcaf-b57a-4edb-a93a-a698bdb60312",
               "IsFolded": false,
               "DisplayName": "Context",
               "Position": {
@@ -2186,12 +2645,13 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@sys.positive",
               "ExpressionName": null,
-              "Id": "9481f14c-a6a8-4548-9aa4-8e74e8b48d15",
+              "Id": "efd0f796-eca8-48d8-9762-b48940fffc38",
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
@@ -2201,25 +2661,27 @@
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": "Olives|Garlic|Onions",
             "Type": null,
             "Format": null,
-            "Text": "Please select your second topping.",
+            "Text": "Please select your second topping.  (Garlic | Olives | Onions)",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "897d605f-3163-4d57-abb6-9f1c34007ed9",
+            "Id": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
-              "X": 3114.2212582925617,
-              "Y": 4445.0599252365273
+              "X": 3023.5545916258952,
+              "Y": 4478.3932585698612
             }
           },
-          "Id": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
+          "Id": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
           "IsFolded": false,
           "DisplayName": "Intent (more_top_yes)",
           "Position": {
-            "X": 3421.5632413681888,
-            "Y": 4241.1130781230213
+            "X": 3429.2555490604964,
+            "Y": 4206.4976935076365
           }
         },
         {
@@ -2228,7 +2690,7 @@
           "IntentContexts": [
             {
               "ContextName": "con-plus-top",
-              "Id": "bab6bf93-b5d5-4ac6-b365-bfd31996a4ef",
+              "Id": "8d1c2820-ba19-4801-8717-7f600dfd3a5e",
               "IsFolded": false,
               "DisplayName": "Context",
               "Position": {
@@ -2241,12 +2703,13 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@pizza-top",
               "ExpressionName": null,
-              "Id": "63b84a2d-2ccf-4a4a-a0a0-d4abe75581ba",
+              "Id": "4a899900-408e-4bf7-8682-e81d6c9f880e",
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
@@ -2256,12 +2719,14 @@
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": "Classic|Stuffed|Thin",
             "Type": null,
             "Format": null,
-            "Text": "Moving forward, what is your crust preference?",
+            "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "5554f375-21f6-47c3-a3d4-191e6438effd",
+            "Id": "b9e05350-05e7-453c-82e6-844dc7c913e0",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
@@ -2269,7 +2734,7 @@
               "Y": 5344.1648496498456
             }
           },
-          "Id": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
+          "Id": "b30c2ea2-2332-4efb-9756-951faef6820f",
           "IsFolded": false,
           "DisplayName": "Intent (plus_toppings)",
           "Position": {
@@ -2285,12 +2750,13 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@sys.negative",
               "ExpressionName": null,
-              "Id": "51875d54-311a-4b1a-b70c-ed7430523712",
+              "Id": "752075e3-b8d2-46ec-aa54-defe641e67ea",
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
@@ -2300,12 +2766,14 @@
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": "Classic|Stuffed|Thin",
             "Type": null,
             "Format": null,
-            "Text": "Moving forward, what is your crust preference?",
+            "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+            "Id": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
@@ -2313,7 +2781,7 @@
               "Y": 6050.7722667425542
             }
           },
-          "Id": "4e35bdc4-9156-4fd9-b41f-9a218024f78f",
+          "Id": "99289072-4b08-45e2-bc19-053eea65a954",
           "IsFolded": false,
           "DisplayName": "Intent (more_top_no)",
           "Position": {
@@ -2322,7 +2790,9 @@
           }
         }
       ],
-      "Id": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
+      "Events": [],
+      "Actions": [],
+      "Id": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
       "IsFolded": false,
       "DisplayName": "Dialog (toppings_dialog)",
       "Position": {
@@ -2337,7 +2807,7 @@
       "IntentContexts": [
         {
           "ContextName": "con-wait-top",
-          "Id": "10360cec-b575-4772-9d01-a92b907a2b1f",
+          "Id": "a2916d48-0d7e-41f0-ad70-a4b1dc892e37",
           "IsFolded": false,
           "DisplayName": "Context",
           "Position": {
@@ -2350,12 +2820,13 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@pizza-top",
           "ExpressionName": null,
-          "Id": "fb3cf054-7827-44d9-9070-630e39d583c5",
+          "Id": "9d67304d-8623-4ebd-8e17-97fd880b64c8",
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
@@ -2365,12 +2836,14 @@
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": "Yes|No",
         "Type": null,
         "Format": null,
-        "Text": "Aha $pizza-top is a good choice. Would you like to add another topping? ",
+        "Text": "Aha $pizza-top is a good choice. Would you like to add another topping?  (Yes | No)",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "2b159754-598f-4509-a617-5bea07fc50fb",
+        "Id": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
@@ -2378,7 +2851,7 @@
           "Y": 3682.734537581443
         }
       },
-      "Id": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
+      "Id": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
       "IsFolded": false,
       "DisplayName": "Intent (toppings_intent)",
       "Position": {
@@ -2390,7 +2863,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
       "Value": "@pizza-top",
       "ExpressionName": null,
-      "Id": "fb3cf054-7827-44d9-9070-630e39d583c5",
+      "Id": "9d67304d-8623-4ebd-8e17-97fd880b64c8",
       "IsFolded": false,
       "DisplayName": "Expression",
       "Position": {
@@ -2400,12 +2873,14 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": "Yes|No",
       "Type": null,
       "Format": null,
-      "Text": "Aha $pizza-top is a good choice. Would you like to add another topping? ",
+      "Text": "Aha $pizza-top is a good choice. Would you like to add another topping?  (Yes | No)",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "2b159754-598f-4509-a617-5bea07fc50fb",
+      "Id": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
@@ -2414,9 +2889,9 @@
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
-      "OutputValue": "Aha $pizza-top is a good choice. Would you like to add another topping? ",
-      "Id": "416f14ad-2435-4c2c-81d9-ddc9f6bb6574",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Aha $pizza-top is a good choice. Would you like to add another topping?  (Yes | No)",
+      "Id": "29c7c9d1-780e-4216-8e7b-636227aec0df",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
@@ -2431,7 +2906,7 @@
       "IntentContexts": [
         {
           "ContextName": "con-more-top",
-          "Id": "348a83c8-f4fd-4ba6-a316-1fa58426fefa",
+          "Id": "c0a1fcaf-b57a-4edb-a93a-a698bdb60312",
           "IsFolded": false,
           "DisplayName": "Context",
           "Position": {
@@ -2444,12 +2919,13 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@sys.positive",
           "ExpressionName": null,
-          "Id": "9481f14c-a6a8-4548-9aa4-8e74e8b48d15",
+          "Id": "efd0f796-eca8-48d8-9762-b48940fffc38",
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
@@ -2459,32 +2935,34 @@
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": "Olives|Garlic|Onions",
         "Type": null,
         "Format": null,
-        "Text": "Please select your second topping.",
+        "Text": "Please select your second topping.  (Garlic | Olives | Onions)",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "897d605f-3163-4d57-abb6-9f1c34007ed9",
+        "Id": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
-          "X": 3114.2212582925617,
-          "Y": 4445.0599252365273
+          "X": 3023.5545916258952,
+          "Y": 4478.3932585698612
         }
       },
-      "Id": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
+      "Id": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
       "IsFolded": false,
       "DisplayName": "Intent (more_top_yes)",
       "Position": {
-        "X": 3421.5632413681888,
-        "Y": 4241.1130781230213
+        "X": 3429.2555490604964,
+        "Y": 4206.4976935076365
       }
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
       "ContextName": "con-more-top",
       "Lifespan": 2,
-      "Id": "e98fe97d-2be2-4509-a0d2-b902792913fd",
+      "Id": "7744582f-cacb-4c27-95ca-097f6e699df6",
       "IsFolded": false,
       "DisplayName": "Context Add",
       "Position": {
@@ -2495,7 +2973,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
       "ContextName": "con-wait-size",
-      "Id": "bd70268c-785a-4655-8636-572bdb0c4121",
+      "Id": "91b35485-270b-43a9-a567-72204933a82d",
       "IsFolded": false,
       "DisplayName": "Context",
       "Position": {
@@ -2506,7 +2984,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
       "ContextName": "con-more-top",
-      "Id": "348a83c8-f4fd-4ba6-a316-1fa58426fefa",
+      "Id": "c0a1fcaf-b57a-4edb-a93a-a698bdb60312",
       "IsFolded": false,
       "DisplayName": "Context",
       "Position": {
@@ -2518,7 +2996,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
       "ContextName": "con-wait-top",
       "Lifespan": 2,
-      "Id": "809a4033-fec6-4a63-8958-2fb955aedd55",
+      "Id": "43a79844-f06c-4d91-ad2f-97b355727b2c",
       "IsFolded": false,
       "DisplayName": "Context Add",
       "Position": {
@@ -2529,7 +3007,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
       "ContextName": "con-wait-top",
-      "Id": "10360cec-b575-4772-9d01-a92b907a2b1f",
+      "Id": "a2916d48-0d7e-41f0-ad70-a4b1dc892e37",
       "IsFolded": false,
       "DisplayName": "Context",
       "Position": {
@@ -2540,7 +3018,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
       "ContextName": "con-wait-top",
-      "Id": "21d3ad6f-29b2-454a-90d2-57c9ccd28481",
+      "Id": "1e8654e9-c9c7-43e1-9771-766edc17c993",
       "IsFolded": false,
       "DisplayName": "Context Remove",
       "Position": {
@@ -2551,9 +3029,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
       "EntityName": "pizza-top",
-      "EntityGetType": 0,
+      "EntityGetType": "Reference",
       "EntityPropertyName": null,
-      "Id": "272ea5c1-33c4-4c10-a2b6-5f72aa8aa61b",
+      "Id": "192554f8-3eac-4521-ae55-30bba677b9d0",
       "IsFolded": false,
       "DisplayName": "Entity Get",
       "Position": {
@@ -2564,9 +3042,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.VariableSetNode, Syn.Bot",
       "VariableName": "top1",
-      "VariableOrigin": 1,
-      "VariableValue": "Garlic",
-      "Id": "085db619-fa98-4dc9-943b-c8a35f4b7bd4",
+      "VariableOrigin": "User",
+      "VariableValue": "olives",
+      "Id": "491f78fa-7888-46fe-894d-debc7cac0320",
       "IsFolded": false,
       "DisplayName": "Variable Set",
       "Position": {
@@ -2576,35 +3054,37 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": "Olives|Garlic|Onions",
       "Type": null,
       "Format": null,
-      "Text": "Please select your second topping.",
+      "Text": "Please select your second topping.  (Garlic | Olives | Onions)",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "897d605f-3163-4d57-abb6-9f1c34007ed9",
+      "Id": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
-        "X": 3114.2212582925617,
-        "Y": 4445.0599252365273
+        "X": 3023.5545916258952,
+        "Y": 4478.3932585698612
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
-      "OutputValue": "Please select your second topping.",
-      "Id": "e2b1c96f-2341-47a4-8688-e5438d161390",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Please select your second topping.  (Garlic | Olives | Onions)",
+      "Id": "4cd5594d-d999-404a-a9d0-6f8319d9f3ee",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
-        "X": 2722.04093508979,
-        "Y": 4476.4709699881305
+        "X": 2522.04093508979,
+        "Y": 4565.8043033214635
       }
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
       "Value": "@sys.positive",
       "ExpressionName": null,
-      "Id": "9481f14c-a6a8-4548-9aa4-8e74e8b48d15",
+      "Id": "efd0f796-eca8-48d8-9762-b48940fffc38",
       "IsFolded": false,
       "DisplayName": "Expression",
       "Position": {
@@ -2621,12 +3101,13 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@sys.negative",
           "ExpressionName": null,
-          "Id": "51875d54-311a-4b1a-b70c-ed7430523712",
+          "Id": "752075e3-b8d2-46ec-aa54-defe641e67ea",
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
@@ -2636,12 +3117,14 @@
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": "Classic|Stuffed|Thin",
         "Type": null,
         "Format": null,
-        "Text": "Moving forward, what is your crust preference?",
+        "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+        "Id": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
@@ -2649,7 +3132,7 @@
           "Y": 6050.7722667425542
         }
       },
-      "Id": "4e35bdc4-9156-4fd9-b41f-9a218024f78f",
+      "Id": "99289072-4b08-45e2-bc19-053eea65a954",
       "IsFolded": false,
       "DisplayName": "Intent (more_top_no)",
       "Position": {
@@ -2660,7 +3143,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
       "ContextName": "con-more-top",
-      "Id": "fda56df3-49d4-4333-be15-4ea3dc656941",
+      "Id": "9daab817-d454-4097-a3b5-4eefbdbaaf68",
       "IsFolded": false,
       "DisplayName": "Context Remove",
       "Position": {
@@ -2672,7 +3155,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
       "ContextName": "con-plus-top",
       "Lifespan": 3,
-      "Id": "46459a84-3cc6-4621-b9d2-b95fb14fbd09",
+      "Id": "6f7c7cd7-10b9-4cfd-968e-493bd5d72ccd",
       "IsFolded": false,
       "DisplayName": "Context Add",
       "Position": {
@@ -2687,7 +3170,7 @@
       "IntentContexts": [
         {
           "ContextName": "con-plus-top",
-          "Id": "bab6bf93-b5d5-4ac6-b365-bfd31996a4ef",
+          "Id": "8d1c2820-ba19-4801-8717-7f600dfd3a5e",
           "IsFolded": false,
           "DisplayName": "Context",
           "Position": {
@@ -2700,12 +3183,13 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@pizza-top",
           "ExpressionName": null,
-          "Id": "63b84a2d-2ccf-4a4a-a0a0-d4abe75581ba",
+          "Id": "4a899900-408e-4bf7-8682-e81d6c9f880e",
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
@@ -2715,12 +3199,14 @@
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": "Classic|Stuffed|Thin",
         "Type": null,
         "Format": null,
-        "Text": "Moving forward, what is your crust preference?",
+        "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "5554f375-21f6-47c3-a3d4-191e6438effd",
+        "Id": "b9e05350-05e7-453c-82e6-844dc7c913e0",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
@@ -2728,7 +3214,7 @@
           "Y": 5344.1648496498456
         }
       },
-      "Id": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
+      "Id": "b30c2ea2-2332-4efb-9756-951faef6820f",
       "IsFolded": false,
       "DisplayName": "Intent (plus_toppings)",
       "Position": {
@@ -2739,7 +3225,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
       "ContextName": "con-plus-top",
-      "Id": "bab6bf93-b5d5-4ac6-b365-bfd31996a4ef",
+      "Id": "8d1c2820-ba19-4801-8717-7f600dfd3a5e",
       "IsFolded": false,
       "DisplayName": "Context",
       "Position": {
@@ -2749,12 +3235,14 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": "Classic|Stuffed|Thin",
       "Type": null,
       "Format": null,
-      "Text": "Moving forward, what is your crust preference?",
+      "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "5554f375-21f6-47c3-a3d4-191e6438effd",
+      "Id": "b9e05350-05e7-453c-82e6-844dc7c913e0",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
@@ -2765,9 +3253,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
       "EntityName": "pizza-top",
-      "EntityGetType": 0,
+      "EntityGetType": "Reference",
       "EntityPropertyName": null,
-      "Id": "679cb6f3-7b7a-4716-aecc-576744ee6831",
+      "Id": "232eb8a5-110e-433b-93e7-e335e9a8b033",
       "IsFolded": false,
       "DisplayName": "Entity Get",
       "Position": {
@@ -2778,9 +3266,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.VariableSetNode, Syn.Bot",
       "VariableName": "top2",
-      "VariableOrigin": 1,
+      "VariableOrigin": "User",
       "VariableValue": "Onions",
-      "Id": "9d9fd065-91cf-4181-b8d7-cc2e0e290760",
+      "Id": "2a5889a9-e8be-452b-a5d4-2142dcb29e43",
       "IsFolded": false,
       "DisplayName": "Variable Set",
       "Position": {
@@ -2789,9 +3277,9 @@
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
-      "OutputValue": "Moving forward, what is your crust preference?",
-      "Id": "4b846e89-8d9c-4f50-8ebc-d7c0d34ef50c",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+      "Id": "b8994a12-641e-44b4-8108-d43372049e43",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
@@ -2805,30 +3293,35 @@
       "Entries": [
         {
           "EntryValue": "Stuffed",
-          "Synonyms": [],
-          "Id": "a9d813bb-09be-4605-b1fa-cc7c7d5f3769",
+          "Synonyms": [
+            "stuff",
+            "thick"
+          ],
+          "Id": "769d05cb-2256-44de-a54c-320b2d7a8569",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
-            "X": 3567.0070501747587,
-            "Y": 9480.5516295366269
+            "X": 3566.0070501747587,
+            "Y": 9454.5516295366269
           }
         },
         {
           "EntryValue": "Classic",
           "Synonyms": [],
-          "Id": "c13cd6e4-aa7c-475c-86be-2011cc1b2e2e",
+          "Id": "eba224b9-500d-440f-b378-c416e66c35d9",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
-            "X": 3570.7570501747587,
-            "Y": 9685.5516295366269
+            "X": 3565.7570501747587,
+            "Y": 9705.5516295366269
           }
         },
         {
           "EntryValue": "Thin",
-          "Synonyms": [],
-          "Id": "4d7af74a-656e-4348-af52-89e6c1db0b47",
+          "Synonyms": [
+            "small"
+          ],
+          "Id": "82f686d6-a2a5-440c-9b43-1602611c89f2",
           "IsFolded": false,
           "DisplayName": "Entry",
           "Position": {
@@ -2837,8 +3330,7 @@
           }
         }
       ],
-      "RecognizerType": 0,
-      "Id": "0099d050-8539-457b-af91-4407ccc01fa8",
+      "Id": "00380f86-0496-4318-999b-3a462c90d835",
       "IsFolded": false,
       "DisplayName": "Entry Recognizer",
       "Position": {
@@ -2849,32 +3341,37 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "Stuffed",
-      "Synonyms": [],
-      "Id": "a9d813bb-09be-4605-b1fa-cc7c7d5f3769",
+      "Synonyms": [
+        "stuff",
+        "thick"
+      ],
+      "Id": "769d05cb-2256-44de-a54c-320b2d7a8569",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
-        "X": 3567.0070501747587,
-        "Y": 9480.5516295366269
+        "X": 3566.0070501747587,
+        "Y": 9454.5516295366269
       }
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "Classic",
       "Synonyms": [],
-      "Id": "c13cd6e4-aa7c-475c-86be-2011cc1b2e2e",
+      "Id": "eba224b9-500d-440f-b378-c416e66c35d9",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
-        "X": 3570.7570501747587,
-        "Y": 9685.5516295366269
+        "X": 3565.7570501747587,
+        "Y": 9705.5516295366269
       }
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
       "EntryValue": "Thin",
-      "Synonyms": [],
-      "Id": "4d7af74a-656e-4348-af52-89e6c1db0b47",
+      "Synonyms": [
+        "small"
+      ],
+      "Id": "82f686d6-a2a5-440c-9b43-1602611c89f2",
       "IsFolded": false,
       "DisplayName": "Entry",
       "Position": {
@@ -2884,12 +3381,14 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": "Classic|Stuffed|Thin",
       "Type": null,
       "Format": null,
-      "Text": "Moving forward, what is your crust preference?",
+      "Text": "Moving forward, what is your crust preference? (Classic | Stuffed | Thin)",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+      "Id": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
@@ -2898,9 +3397,9 @@
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
       "OutputValue": "Classic|Stuffed|Thin",
-      "Id": "32bdc0ae-f663-4157-9d20-9183b9005870",
+      "Id": "2f13ba0a-7112-4bf9-bee5-f0ce316f97e3",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
@@ -2911,7 +3410,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
       "ContextName": "con-plus-top",
-      "Id": "66e515d2-50ed-412b-bc52-556aa03d8bdc",
+      "Id": "2fb9a566-2f75-4ad2-89bf-a4842708c6a9",
       "IsFolded": false,
       "DisplayName": "Context Remove",
       "Position": {
@@ -2923,7 +3422,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
       "Value": "@pizza-top",
       "ExpressionName": null,
-      "Id": "63b84a2d-2ccf-4a4a-a0a0-d4abe75581ba",
+      "Id": "4a899900-408e-4bf7-8682-e81d6c9f880e",
       "IsFolded": false,
       "DisplayName": "Expression",
       "Position": {
@@ -2935,7 +3434,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
       "Value": "@sys.negative",
       "ExpressionName": null,
-      "Id": "51875d54-311a-4b1a-b70c-ed7430523712",
+      "Id": "752075e3-b8d2-46ec-aa54-defe641e67ea",
       "IsFolded": false,
       "DisplayName": "Expression",
       "Position": {
@@ -2947,7 +3446,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
       "ContextName": "con-wait-crust",
       "Lifespan": 2,
-      "Id": "5ce33c19-287f-4bb2-ac32-c4156acd8ce6",
+      "Id": "8e8b27c5-a128-4bb8-ba5d-ca513f8ec4d4",
       "IsFolded": false,
       "DisplayName": "Context Add",
       "Position": {
@@ -2967,7 +3466,7 @@
           "IntentContexts": [
             {
               "ContextName": "con-wait-crust",
-              "Id": "1d05a082-4c89-4a64-b074-74702fb40857",
+              "Id": "d78cde35-98ce-4df3-8e4c-afe390c93adf",
               "IsFolded": false,
               "DisplayName": "Context",
               "Position": {
@@ -2980,12 +3479,13 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@pizza-crust",
               "ExpressionName": null,
-              "Id": "38dde4cc-1ab2-4a17-8002-d3f6efa47d67",
+              "Id": "5707e71a-6452-4718-b58a-ddcb480eb344",
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
@@ -2995,12 +3495,14 @@
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": null,
             "Type": null,
             "Format": null,
-            "Text": "Alright you're pizza will have $sys.user.crust crust. Please now specify your delivery address.",
+            "Text": "Alright you're pizza will have $user.crust crust. Please now specify your delivery address.",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "9e32b871-35ba-4640-b398-81d192afbb93",
+            "Id": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
@@ -3008,7 +3510,7 @@
               "Y": 6676.838181526532
             }
           },
-          "Id": "88373396-d15c-4676-b2ff-5e717728ef2a",
+          "Id": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
           "IsFolded": false,
           "DisplayName": "Intent (crust_intent)",
           "Position": {
@@ -3022,7 +3524,7 @@
           "IntentContexts": [
             {
               "ContextName": "con-wait-address",
-              "Id": "f4c20e97-5324-4ebc-9aea-b9245cd47b62",
+              "Id": "d8fe45a3-be42-49be-8198-83b8dd4e2b09",
               "IsFolded": false,
               "DisplayName": "Context",
               "Position": {
@@ -3035,12 +3537,13 @@
           "AutoEntity": null,
           "Fallback": null,
           "Trait": null,
+          "Event": null,
           "Action": null,
           "Expressions": [
             {
               "Value": "@sys.text",
               "ExpressionName": null,
-              "Id": "1bc5c77f-fba9-4a7c-b2ca-866b85665519",
+              "Id": "6e93e69e-2e4f-407b-826b-30efe82a9461",
               "IsFolded": false,
               "DisplayName": "Expression",
               "Position": {
@@ -3050,12 +3553,14 @@
             }
           ],
           "Response": {
+            "Priority": "Normal",
             "Hint": null,
             "Type": null,
             "Format": null,
-            "Text": "Thank you! Your Pizza:\r\n\r\nSize: $sys.user.size\r\nToppings Primary: $sys.user.top1\r\nToppings Secondary: $sys.user.top2\r\nCrust: $sys.user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+            "Text": "Thank you! Your Pizza:\r\n\r\nSize: $user.size\r\nToppings Primary: $user.top1\r\nToppings Secondary: $user.top2\r\nCrust: $user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+            "ResponseMessages": [],
             "Children": [],
-            "Id": "064c9567-4b16-4321-b558-23d582f3ff61",
+            "Id": "d901f76f-7407-477f-ab81-a88814867ac3",
             "IsFolded": false,
             "DisplayName": "Response",
             "Position": {
@@ -3063,7 +3568,7 @@
               "Y": 7777.82181348064
             }
           },
-          "Id": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
+          "Id": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
           "IsFolded": false,
           "DisplayName": "Intent (end_intent)",
           "Position": {
@@ -3072,7 +3577,9 @@
           }
         }
       ],
-      "Id": "c6ad23b2-53b2-4612-947c-0abce4af2aae",
+      "Events": [],
+      "Actions": [],
+      "Id": "d999f74a-8b52-415e-8e14-b9d9a7dc5cb0",
       "IsFolded": false,
       "DisplayName": "Dialog (crust_dialog)",
       "Position": {
@@ -3087,7 +3594,7 @@
       "IntentContexts": [
         {
           "ContextName": "con-wait-crust",
-          "Id": "1d05a082-4c89-4a64-b074-74702fb40857",
+          "Id": "d78cde35-98ce-4df3-8e4c-afe390c93adf",
           "IsFolded": false,
           "DisplayName": "Context",
           "Position": {
@@ -3100,12 +3607,13 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@pizza-crust",
           "ExpressionName": null,
-          "Id": "38dde4cc-1ab2-4a17-8002-d3f6efa47d67",
+          "Id": "5707e71a-6452-4718-b58a-ddcb480eb344",
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
@@ -3115,12 +3623,14 @@
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": null,
         "Type": null,
         "Format": null,
-        "Text": "Alright you're pizza will have $sys.user.crust crust. Please now specify your delivery address.",
+        "Text": "Alright you're pizza will have $user.crust crust. Please now specify your delivery address.",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "9e32b871-35ba-4640-b398-81d192afbb93",
+        "Id": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
@@ -3128,7 +3638,7 @@
           "Y": 6676.838181526532
         }
       },
-      "Id": "88373396-d15c-4676-b2ff-5e717728ef2a",
+      "Id": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
       "IsFolded": false,
       "DisplayName": "Intent (crust_intent)",
       "Position": {
@@ -3138,12 +3648,14 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": null,
       "Type": null,
       "Format": null,
-      "Text": "Alright you're pizza will have $sys.user.crust crust. Please now specify your delivery address.",
+      "Text": "Alright you're pizza will have $user.crust crust. Please now specify your delivery address.",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "9e32b871-35ba-4640-b398-81d192afbb93",
+      "Id": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
@@ -3154,7 +3666,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
       "ContextName": "con-wait-crust",
-      "Id": "ba766e60-e889-4676-ac57-51ce192c6866",
+      "Id": "2e9efa48-cd0a-4de9-bbe5-13bc845c6033",
       "IsFolded": false,
       "DisplayName": "Context Remove",
       "Position": {
@@ -3166,7 +3678,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
       "Value": "@pizza-crust",
       "ExpressionName": null,
-      "Id": "38dde4cc-1ab2-4a17-8002-d3f6efa47d67",
+      "Id": "5707e71a-6452-4718-b58a-ddcb480eb344",
       "IsFolded": false,
       "DisplayName": "Expression",
       "Position": {
@@ -3177,9 +3689,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
       "EntityName": "pizza-crust",
-      "EntityGetType": 0,
+      "EntityGetType": "Reference",
       "EntityPropertyName": null,
-      "Id": "a3c152a4-a083-4a08-b6ca-9e2581e8406b",
+      "Id": "27730c30-d265-4e5c-8020-284d2dfcb542",
       "IsFolded": false,
       "DisplayName": "Entity Get",
       "Position": {
@@ -3190,9 +3702,9 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.VariableSetNode, Syn.Bot",
       "VariableName": "crust",
-      "VariableOrigin": 1,
-      "VariableValue": "Classic",
-      "Id": "8c706339-18dd-4385-8c4b-e7ed8f80a63e",
+      "VariableOrigin": "User",
+      "VariableValue": "Stuffed",
+      "Id": "f951c6b8-060a-4c28-b5f3-dd69bee97953",
       "IsFolded": false,
       "DisplayName": "Variable Set",
       "Position": {
@@ -3201,9 +3713,9 @@
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
-      "OutputValue": "Alright you're pizza will have $sys.user.crust crust. Please now specify your delivery address.",
-      "Id": "efe496c6-82ad-4ee1-9891-c4f05481094d",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Alright you're pizza will have $user.crust crust. Please now specify your delivery address.",
+      "Id": "8203e51e-dadc-4048-bf6e-4296f534c460",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
@@ -3214,7 +3726,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
       "ContextName": "con-wait-crust",
-      "Id": "1d05a082-4c89-4a64-b074-74702fb40857",
+      "Id": "d78cde35-98ce-4df3-8e4c-afe390c93adf",
       "IsFolded": false,
       "DisplayName": "Context",
       "Position": {
@@ -3226,7 +3738,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
       "ContextName": "con-wait-address",
       "Lifespan": 1,
-      "Id": "c44f0575-ef24-4019-916a-9b656d8f6c42",
+      "Id": "192cd729-28f5-499b-8b12-746aa72d8b06",
       "IsFolded": false,
       "DisplayName": "Context Add",
       "Position": {
@@ -3241,7 +3753,7 @@
       "IntentContexts": [
         {
           "ContextName": "con-wait-address",
-          "Id": "f4c20e97-5324-4ebc-9aea-b9245cd47b62",
+          "Id": "d8fe45a3-be42-49be-8198-83b8dd4e2b09",
           "IsFolded": false,
           "DisplayName": "Context",
           "Position": {
@@ -3254,12 +3766,13 @@
       "AutoEntity": null,
       "Fallback": null,
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [
         {
           "Value": "@sys.text",
           "ExpressionName": null,
-          "Id": "1bc5c77f-fba9-4a7c-b2ca-866b85665519",
+          "Id": "6e93e69e-2e4f-407b-826b-30efe82a9461",
           "IsFolded": false,
           "DisplayName": "Expression",
           "Position": {
@@ -3269,12 +3782,14 @@
         }
       ],
       "Response": {
+        "Priority": "Normal",
         "Hint": null,
         "Type": null,
         "Format": null,
-        "Text": "Thank you! Your Pizza:\r\n\r\nSize: $sys.user.size\r\nToppings Primary: $sys.user.top1\r\nToppings Secondary: $sys.user.top2\r\nCrust: $sys.user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+        "Text": "Thank you! Your Pizza:\r\n\r\nSize: $user.size\r\nToppings Primary: $user.top1\r\nToppings Secondary: $user.top2\r\nCrust: $user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "064c9567-4b16-4321-b558-23d582f3ff61",
+        "Id": "d901f76f-7407-477f-ab81-a88814867ac3",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
@@ -3282,7 +3797,7 @@
           "Y": 7777.82181348064
         }
       },
-      "Id": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
+      "Id": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
       "IsFolded": false,
       "DisplayName": "Intent (end_intent)",
       "Position": {
@@ -3292,12 +3807,14 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": null,
       "Type": null,
       "Format": null,
-      "Text": "Thank you! Your Pizza:\r\n\r\nSize: $sys.user.size\r\nToppings Primary: $sys.user.top1\r\nToppings Secondary: $sys.user.top2\r\nCrust: $sys.user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+      "Text": "Thank you! Your Pizza:\r\n\r\nSize: $user.size\r\nToppings Primary: $user.top1\r\nToppings Secondary: $user.top2\r\nCrust: $user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "064c9567-4b16-4321-b558-23d582f3ff61",
+      "Id": "d901f76f-7407-477f-ab81-a88814867ac3",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
@@ -3309,7 +3826,7 @@
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
       "Value": "@sys.text",
       "ExpressionName": null,
-      "Id": "1bc5c77f-fba9-4a7c-b2ca-866b85665519",
+      "Id": "6e93e69e-2e4f-407b-826b-30efe82a9461",
       "IsFolded": false,
       "DisplayName": "Expression",
       "Position": {
@@ -3318,9 +3835,9 @@
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
-      "OutputValue": "Thank you! Your Pizza:\r\n\r\nSize: $sys.user.size\r\nToppings Primary: $sys.user.top1\r\nToppings Secondary: $sys.user.top2\r\nCrust: $sys.user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
-      "Id": "84ec374e-feec-4c07-a000-ec1a3afc8cea",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Thank you! Your Pizza:\r\n\r\nSize: $user.size\r\nToppings Primary: $user.top1\r\nToppings Secondary: $user.top2\r\nCrust: $user.crust\r\n\r\nWill be delivered to :\r\n\r\nAddress: $sys.text",
+      "Id": "4ec52584-d211-44f1-9c49-d45c2daca725",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
@@ -3331,7 +3848,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
       "ContextName": "con-wait-address",
-      "Id": "f4c20e97-5324-4ebc-9aea-b9245cd47b62",
+      "Id": "d8fe45a3-be42-49be-8198-83b8dd4e2b09",
       "IsFolded": false,
       "DisplayName": "Context",
       "Position": {
@@ -3346,7 +3863,7 @@
           "VariableName": "top2",
           "VariableValue": "Not Specified",
           "ValueCollection": [],
-          "Id": "df119a2d-7957-4dbd-86b5-05a291a12f12",
+          "Id": "ec8c7028-a1d1-4cfc-b1b7-30e73111981d",
           "IsFolded": false,
           "DisplayName": "Settings Variable",
           "Position": {
@@ -3355,7 +3872,7 @@
           }
         }
       ],
-      "Id": "2814afe8-dfec-42b0-939c-a8df2525204b",
+      "Id": "bba012f4-f740-4c0f-bb93-155889c390e9",
       "IsFolded": false,
       "DisplayName": "User Settings",
       "Position": {
@@ -3368,7 +3885,7 @@
       "VariableName": "top2",
       "VariableValue": "Not Specified",
       "ValueCollection": [],
-      "Id": "df119a2d-7957-4dbd-86b5-05a291a12f12",
+      "Id": "ec8c7028-a1d1-4cfc-b1b7-30e73111981d",
       "IsFolded": false,
       "DisplayName": "Settings Variable",
       "Position": {
@@ -3385,7 +3902,7 @@
       "AutoEntity": null,
       "Fallback": {
         "ContextName": "con-wait-size",
-        "Id": "6f1099f5-543a-48dc-ba43-6a5fa67b0656",
+        "Id": "753f051f-855c-4bc2-8939-a78c257b2692",
         "IsFolded": false,
         "DisplayName": "Fallback",
         "Position": {
@@ -3394,23 +3911,26 @@
         }
       },
       "Trait": null,
+      "Event": null,
       "Action": null,
       "Expressions": [],
       "Response": {
+        "Priority": "Normal",
         "Hint": "Small|Medium|Large|Extra Large",
         "Type": null,
         "Format": null,
         "Text": "That doesn't seem like a valid pizza size. Please select an option.",
+        "ResponseMessages": [],
         "Children": [],
-        "Id": "f6599b28-8cc3-4521-86a2-6f5b20e7d927",
+        "Id": "9ce76e34-16eb-4977-9119-10b1cccc35ac",
         "IsFolded": false,
         "DisplayName": "Response",
         "Position": {
-          "X": 3550.9291941288852,
-          "Y": 2386.4648329310835
+          "X": 3543.8703705994735,
+          "Y": 2364.1118917546132
         }
       },
-      "Id": "c9d58e7f-e2e9-4a4a-833f-e6d80aa56a40",
+      "Id": "deafff16-0198-4ec4-bd43-3a91dcdecfa4",
       "IsFolded": false,
       "DisplayName": "Intent (size_fallback)",
       "Position": {
@@ -3421,7 +3941,7 @@
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.FallbackNode, Syn.Bot",
       "ContextName": "con-wait-size",
-      "Id": "6f1099f5-543a-48dc-ba43-6a5fa67b0656",
+      "Id": "753f051f-855c-4bc2-8939-a78c257b2692",
       "IsFolded": false,
       "DisplayName": "Fallback",
       "Position": {
@@ -3431,546 +3951,581 @@
     },
     {
       "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
       "Hint": "Small|Medium|Large|Extra Large",
       "Type": null,
       "Format": null,
       "Text": "That doesn't seem like a valid pizza size. Please select an option.",
+      "ResponseMessages": [],
       "Children": [],
-      "Id": "f6599b28-8cc3-4521-86a2-6f5b20e7d927",
+      "Id": "9ce76e34-16eb-4977-9119-10b1cccc35ac",
       "IsFolded": false,
       "DisplayName": "Response",
       "Position": {
-        "X": 3550.9291941288852,
-        "Y": 2386.4648329310835
+        "X": 3543.8703705994735,
+        "Y": 2364.1118917546132
       }
     },
     {
-      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
       "OutputValue": "That doesn't seem like a valid pizza size. Please select an option.",
-      "Id": "6e92c4a2-91fb-4718-90c2-44e6e912f4fe",
+      "Id": "d7ef5612-18f8-448b-adc6-e065a074fbf9",
       "IsFolded": false,
       "DisplayName": "Input Text",
       "Position": {
         "X": 3006.48474968444,
         "Y": 2439.7981662644161
       }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionListNode, Syn.Bot",
+      "ExpressionList": [
+        "@start",
+        "hi there",
+        "hello"
+      ],
+      "Id": "62724d70-d560-4edd-8da0-8409c3f21872",
+      "IsFolded": false,
+      "DisplayName": "Expression List",
+      "Position": {
+        "X": 3594.3706371887492,
+        "Y": 1603.5809425524594
+      }
     }
   ],
   "Connections": [
     {
-      "FromNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
+      "FromNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
       "FromPortName": "Output",
-      "ToNodeId": "04988245-1816-40bb-8702-f231aaf9ba55",
+      "ToNodeId": "43e41a95-06d2-4f13-8d2b-734e1725d648",
       "ToPortName": "OscovaBotNode"
     },
     {
-      "FromNodeId": "f0ca1b28-5841-478f-a2f5-62643847ec89",
+      "FromNodeId": "565d09c8-0688-4816-a883-47fd6334dc04",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Dialogs:[0]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Dialogs"
     },
     {
-      "FromNodeId": "edd5dd46-6dc5-4580-85a0-b056d7770d9a",
+      "FromNodeId": "f7164098-e9aa-42a7-bdfd-d03b5bbb7038",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Dialogs:[1]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Dialogs"
     },
     {
-      "FromNodeId": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
+      "FromNodeId": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Dialogs:[2]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Dialogs"
     },
     {
-      "FromNodeId": "c6ad23b2-53b2-4612-947c-0abce4af2aae",
+      "FromNodeId": "d999f74a-8b52-415e-8e14-b9d9a7dc5cb0",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Dialogs:[3]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Dialogs"
     },
     {
-      "FromNodeId": "9d8b3260-7d9a-4112-a6d2-cc0c7fc68e15",
+      "FromNodeId": "86a54aca-9102-420c-81c5-5c739c24be47",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Entities:[0]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Entities"
     },
     {
-      "FromNodeId": "e50fac02-4c45-411f-bf13-befc937b2a21",
+      "FromNodeId": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Entities:[1]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Entities"
     },
     {
-      "FromNodeId": "35bc7cb2-8151-49b5-b2e3-cb46c2dcd310",
+      "FromNodeId": "bb156d36-9be8-46e9-8095-49347f592850",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Entities:[2]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Entities"
     },
     {
-      "FromNodeId": "0099d050-8539-457b-af91-4407ccc01fa8",
+      "FromNodeId": "00380f86-0496-4318-999b-3a462c90d835",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
-      "ToPortName": "Entities:[3]"
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
+      "ToPortName": "Entities"
     },
     {
-      "FromNodeId": "2814afe8-dfec-42b0-939c-a8df2525204b",
+      "FromNodeId": "bba012f4-f740-4c0f-bb93-155889c390e9",
       "FromPortName": "Output",
-      "ToNodeId": "ff174022-3c3d-440d-8011-4fd4c9734cea",
+      "ToNodeId": "24f37aa6-69e1-4fd6-867e-25ff898e6c2c",
       "ToPortName": "UserSettings"
     },
     {
-      "FromNodeId": "1e982435-5ade-44d1-a4eb-9c5523c40521",
-      "FromPortName": "Output",
-      "ToNodeId": "21d11caa-8ee4-49e6-a374-9daf35892563",
-      "ToPortName": "Expressions:[0]"
+      "FromNodeId": "62724d70-d560-4edd-8da0-8409c3f21872",
+      "FromPortName": "Expressions",
+      "ToNodeId": "e98f5102-440c-447b-a9a5-098d519c8d75",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
+      "FromNodeId": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
       "FromPortName": "Output",
-      "ToNodeId": "21d11caa-8ee4-49e6-a374-9daf35892563",
+      "ToNodeId": "e98f5102-440c-447b-a9a5-098d519c8d75",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "21d11caa-8ee4-49e6-a374-9daf35892563",
+      "FromNodeId": "e98f5102-440c-447b-a9a5-098d519c8d75",
       "FromPortName": "Output",
-      "ToNodeId": "f0ca1b28-5841-478f-a2f5-62643847ec89",
-      "ToPortName": "Intents:[0]"
+      "ToNodeId": "565d09c8-0688-4816-a883-47fd6334dc04",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "c9d58e7f-e2e9-4a4a-833f-e6d80aa56a40",
+      "FromNodeId": "deafff16-0198-4ec4-bd43-3a91dcdecfa4",
       "FromPortName": "Output",
-      "ToNodeId": "f0ca1b28-5841-478f-a2f5-62643847ec89",
-      "ToPortName": "Intents:[1]"
+      "ToNodeId": "565d09c8-0688-4816-a883-47fd6334dc04",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "e61ce04b-aa49-47c6-a0e4-79f675844c91",
+      "FromNodeId": "2e19c075-0b1a-4599-b880-c28a350020c8",
       "FromPortName": "OutputValue",
-      "ToNodeId": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
+      "ToNodeId": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "a28b769e-ed38-4a5e-bbd5-d11635b1f228",
+      "FromNodeId": "74f7bfbe-0281-4893-9b19-97dc53cc5624",
       "FromPortName": "Output",
-      "ToNodeId": "9d8b3260-7d9a-4112-a6d2-cc0c7fc68e15",
-      "ToPortName": "Entries:[0]"
+      "ToNodeId": "86a54aca-9102-420c-81c5-5c739c24be47",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "ea218417-506c-461f-8fed-667f87d6c840",
+      "FromNodeId": "3bdfd4aa-28d2-4b58-af66-c599dec99101",
       "FromPortName": "Output",
-      "ToNodeId": "e50fac02-4c45-411f-bf13-befc937b2a21",
-      "ToPortName": "Entries:[0]"
+      "ToNodeId": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "fb1352b3-f8f5-454f-8687-22e74848bf44",
+      "FromNodeId": "2ac02e62-f6f0-4e2b-8834-02edc4bc9884",
       "FromPortName": "Output",
-      "ToNodeId": "e50fac02-4c45-411f-bf13-befc937b2a21",
-      "ToPortName": "Entries:[1]"
+      "ToNodeId": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "4d0bd3f5-970a-4eca-b2e7-dca8f14769a6",
+      "FromNodeId": "ad851940-2fec-44ea-9db6-dc431e8a6fac",
       "FromPortName": "Output",
-      "ToNodeId": "e50fac02-4c45-411f-bf13-befc937b2a21",
-      "ToPortName": "Entries:[2]"
+      "ToNodeId": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "747f03e3-a4a9-44c3-88a9-20dbabf2eeb1",
+      "FromNodeId": "535f4a73-3409-492a-95a1-4cf9ea75e96f",
       "FromPortName": "Output",
-      "ToNodeId": "e50fac02-4c45-411f-bf13-befc937b2a21",
-      "ToPortName": "Entries:[3]"
+      "ToNodeId": "fbdcf92d-a135-4d49-8cf6-62cb12bc8c15",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "72563ef3-9bad-453d-ac2a-c4164d1ebeb5",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "c76b8b71-2446-4869-96eb-af365bca1a9a",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "8979c7e7-2bef-4106-9ab8-b8de96b6bece",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "7e7d8449-dcfb-4e3f-b5a9-a231c2d84e7d",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
+      "FromNodeId": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
       "FromPortName": "Output",
-      "ToNodeId": "edd5dd46-6dc5-4580-85a0-b056d7770d9a",
-      "ToPortName": "Intents:[0]"
+      "ToNodeId": "f7164098-e9aa-42a7-bdfd-d03b5bbb7038",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "bd70268c-785a-4655-8636-572bdb0c4121",
+      "FromNodeId": "91b35485-270b-43a9-a567-72204933a82d",
       "FromPortName": "Output",
-      "ToNodeId": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
-      "ToPortName": "IntentContexts:[0]"
+      "ToNodeId": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
+      "ToPortName": "IntentContexts"
     },
     {
-      "FromNodeId": "734609b7-d3fd-4546-a4b0-7ec57010a61c",
+      "FromNodeId": "ddb8ab79-89e9-46a0-b75c-37f0b3b09778",
       "FromPortName": "Output",
-      "ToNodeId": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
-      "ToPortName": "Expressions:[0]"
+      "ToNodeId": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
+      "FromNodeId": "040fd457-13e2-40a0-82ed-6c905368fd67",
       "FromPortName": "Output",
-      "ToNodeId": "e6081295-40f5-412f-a7a8-90a8e3679e7a",
+      "ToNodeId": "7ffd4f79-0e94-4a01-bb88-dfb770194016",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "f1db48b1-8d37-4efd-ae90-f9c03aada8a6",
+      "FromNodeId": "9b5d847b-6223-48ee-878c-6117b2f01494",
       "FromPortName": "OutputValue",
-      "ToNodeId": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
+      "ToNodeId": "040fd457-13e2-40a0-82ed-6c905368fd67",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "9ee873a7-672e-46df-a130-36e30d996198",
+      "FromNodeId": "903522fa-d703-41fb-b3fd-cb020af50c45",
       "FromPortName": "Output",
-      "ToNodeId": "35bc7cb2-8151-49b5-b2e3-cb46c2dcd310",
-      "ToPortName": "Entries:[0]"
+      "ToNodeId": "bb156d36-9be8-46e9-8095-49347f592850",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "24ff475d-de32-4a84-976a-c6163d2f184c",
+      "FromNodeId": "90fd293b-eb3c-468a-91d5-e87d1aea6c5e",
       "FromPortName": "Output",
-      "ToNodeId": "35bc7cb2-8151-49b5-b2e3-cb46c2dcd310",
-      "ToPortName": "Entries:[1]"
+      "ToNodeId": "bb156d36-9be8-46e9-8095-49347f592850",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "a75427fe-2f4c-4004-9c6c-1345d95e2ab9",
+      "FromNodeId": "cd49e659-6884-4259-a2f1-3c2f1ad340da",
       "FromPortName": "Output",
-      "ToNodeId": "35bc7cb2-8151-49b5-b2e3-cb46c2dcd310",
-      "ToPortName": "Entries:[2]"
+      "ToNodeId": "bb156d36-9be8-46e9-8095-49347f592850",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "ad313e2c-2268-450c-b920-ad439b7e82e8",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "040fd457-13e2-40a0-82ed-6c905368fd67",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "db797fb5-92b0-4d82-8230-ad8487abd7af",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "ad313e2c-2268-450c-b920-ad439b7e82e8",
+      "FromNodeId": "db797fb5-92b0-4d82-8230-ad8487abd7af",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "a0ab3a44-a272-4b87-8b84-48a88d05427b",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "db797fb5-92b0-4d82-8230-ad8487abd7af",
       "FromPortName": "Output",
-      "ToNodeId": "3ce8f1c6-a3a8-49d8-b1f4-cae109707b4d",
+      "ToNodeId": "a0ab3a44-a272-4b87-8b84-48a88d05427b",
       "ToPortName": "VariableValue"
     },
     {
-      "FromNodeId": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
+      "FromNodeId": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
       "FromPortName": "Output",
-      "ToNodeId": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
-      "ToPortName": "Intents:[0]"
+      "ToNodeId": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
+      "FromNodeId": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
       "FromPortName": "Output",
-      "ToNodeId": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
-      "ToPortName": "Intents:[1]"
+      "ToNodeId": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
+      "FromNodeId": "b30c2ea2-2332-4efb-9756-951faef6820f",
       "FromPortName": "Output",
-      "ToNodeId": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
-      "ToPortName": "Intents:[2]"
+      "ToNodeId": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "4e35bdc4-9156-4fd9-b41f-9a218024f78f",
+      "FromNodeId": "99289072-4b08-45e2-bc19-053eea65a954",
       "FromPortName": "Output",
-      "ToNodeId": "9d3e2234-bd8c-4b3a-8248-b4885847324e",
-      "ToPortName": "Intents:[3]"
+      "ToNodeId": "b0dc229e-42e2-49a9-a663-e3660cbeab64",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "10360cec-b575-4772-9d01-a92b907a2b1f",
+      "FromNodeId": "a2916d48-0d7e-41f0-ad70-a4b1dc892e37",
       "FromPortName": "Output",
-      "ToNodeId": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
-      "ToPortName": "IntentContexts:[0]"
+      "ToNodeId": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
+      "ToPortName": "IntentContexts"
     },
     {
-      "FromNodeId": "fb3cf054-7827-44d9-9070-630e39d583c5",
+      "FromNodeId": "9d67304d-8623-4ebd-8e17-97fd880b64c8",
       "FromPortName": "Output",
-      "ToNodeId": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
-      "ToPortName": "Expressions:[0]"
+      "ToNodeId": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "2b159754-598f-4509-a617-5bea07fc50fb",
+      "FromNodeId": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
       "FromPortName": "Output",
-      "ToNodeId": "18baf46f-b84a-4ec1-ba2e-55e09d32ddbd",
+      "ToNodeId": "aedb66f2-e41c-49f8-8ffc-53952036cec2",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "416f14ad-2435-4c2c-81d9-ddc9f6bb6574",
+      "FromNodeId": "29c7c9d1-780e-4216-8e7b-636227aec0df",
       "FromPortName": "OutputValue",
-      "ToNodeId": "2b159754-598f-4509-a617-5bea07fc50fb",
+      "ToNodeId": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "348a83c8-f4fd-4ba6-a316-1fa58426fefa",
+      "FromNodeId": "c0a1fcaf-b57a-4edb-a93a-a698bdb60312",
       "FromPortName": "Output",
-      "ToNodeId": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
-      "ToPortName": "IntentContexts:[0]"
+      "ToNodeId": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
+      "ToPortName": "IntentContexts"
     },
     {
-      "FromNodeId": "9481f14c-a6a8-4548-9aa4-8e74e8b48d15",
+      "FromNodeId": "efd0f796-eca8-48d8-9762-b48940fffc38",
       "FromPortName": "Output",
-      "ToNodeId": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
-      "ToPortName": "Expressions:[0]"
+      "ToNodeId": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "897d605f-3163-4d57-abb6-9f1c34007ed9",
+      "FromNodeId": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
       "FromPortName": "Output",
-      "ToNodeId": "cf1bab2e-7e3d-42c0-876a-3e0ad59a2291",
+      "ToNodeId": "61e9db6c-bb94-466a-bb8e-a20320123cb7",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "2b159754-598f-4509-a617-5bea07fc50fb",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "e98fe97d-2be2-4509-a0d2-b902792913fd",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "7744582f-cacb-4c27-95ca-097f6e699df6",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "bcdd8f04-e6f0-483c-b24e-8bbe1f76cba8",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "809a4033-fec6-4a63-8958-2fb955aedd55",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "040fd457-13e2-40a0-82ed-6c905368fd67",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "43a79844-f06c-4d91-ad2f-97b355727b2c",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "2b159754-598f-4509-a617-5bea07fc50fb",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "21d3ad6f-29b2-454a-90d2-57c9ccd28481",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "1e8654e9-c9c7-43e1-9771-766edc17c993",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "2b159754-598f-4509-a617-5bea07fc50fb",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "272ea5c1-33c4-4c10-a2b6-5f72aa8aa61b",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "e2eb65c2-90c5-44e0-8167-5dbd7c9c200c",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "192554f8-3eac-4521-ae55-30bba677b9d0",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "272ea5c1-33c4-4c10-a2b6-5f72aa8aa61b",
+      "FromNodeId": "192554f8-3eac-4521-ae55-30bba677b9d0",
       "FromPortName": "Output",
-      "ToNodeId": "085db619-fa98-4dc9-943b-c8a35f4b7bd4",
+      "ToNodeId": "491f78fa-7888-46fe-894d-debc7cac0320",
       "ToPortName": "VariableValue"
     },
     {
-      "FromNodeId": "e2b1c96f-2341-47a4-8688-e5438d161390",
+      "FromNodeId": "4cd5594d-d999-404a-a9d0-6f8319d9f3ee",
       "FromPortName": "OutputValue",
-      "ToNodeId": "897d605f-3163-4d57-abb6-9f1c34007ed9",
+      "ToNodeId": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "51875d54-311a-4b1a-b70c-ed7430523712",
+      "FromNodeId": "752075e3-b8d2-46ec-aa54-defe641e67ea",
       "FromPortName": "Output",
-      "ToNodeId": "4e35bdc4-9156-4fd9-b41f-9a218024f78f",
-      "ToPortName": "Expressions:[0]"
+      "ToNodeId": "99289072-4b08-45e2-bc19-053eea65a954",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+      "FromNodeId": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
       "FromPortName": "Output",
-      "ToNodeId": "4e35bdc4-9156-4fd9-b41f-9a218024f78f",
+      "ToNodeId": "99289072-4b08-45e2-bc19-053eea65a954",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "897d605f-3163-4d57-abb6-9f1c34007ed9",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "fda56df3-49d4-4333-be15-4ea3dc656941",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "9daab817-d454-4097-a3b5-4eefbdbaaf68",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "897d605f-3163-4d57-abb6-9f1c34007ed9",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "46459a84-3cc6-4621-b9d2-b95fb14fbd09",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "cc03d1d4-eed1-46ab-899a-6cca69b49389",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "6f7c7cd7-10b9-4cfd-968e-493bd5d72ccd",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "bab6bf93-b5d5-4ac6-b365-bfd31996a4ef",
+      "FromNodeId": "8d1c2820-ba19-4801-8717-7f600dfd3a5e",
       "FromPortName": "Output",
-      "ToNodeId": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
-      "ToPortName": "IntentContexts:[0]"
+      "ToNodeId": "b30c2ea2-2332-4efb-9756-951faef6820f",
+      "ToPortName": "IntentContexts"
     },
     {
-      "FromNodeId": "63b84a2d-2ccf-4a4a-a0a0-d4abe75581ba",
+      "FromNodeId": "4a899900-408e-4bf7-8682-e81d6c9f880e",
       "FromPortName": "Output",
-      "ToNodeId": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
-      "ToPortName": "Expressions:[0]"
+      "ToNodeId": "b30c2ea2-2332-4efb-9756-951faef6820f",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "5554f375-21f6-47c3-a3d4-191e6438effd",
+      "FromNodeId": "b9e05350-05e7-453c-82e6-844dc7c913e0",
       "FromPortName": "Output",
-      "ToNodeId": "0391fc57-f3a1-45d6-ac6f-67a6f33aabc6",
+      "ToNodeId": "b30c2ea2-2332-4efb-9756-951faef6820f",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "32bdc0ae-f663-4157-9d20-9183b9005870",
+      "FromNodeId": "2f13ba0a-7112-4bf9-bee5-f0ce316f97e3",
       "FromPortName": "OutputValue",
-      "ToNodeId": "5554f375-21f6-47c3-a3d4-191e6438effd",
+      "ToNodeId": "b9e05350-05e7-453c-82e6-844dc7c913e0",
       "ToPortName": "Hint"
     },
     {
-      "FromNodeId": "4b846e89-8d9c-4f50-8ebc-d7c0d34ef50c",
+      "FromNodeId": "b8994a12-641e-44b4-8108-d43372049e43",
       "FromPortName": "OutputValue",
-      "ToNodeId": "5554f375-21f6-47c3-a3d4-191e6438effd",
+      "ToNodeId": "b9e05350-05e7-453c-82e6-844dc7c913e0",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "5554f375-21f6-47c3-a3d4-191e6438effd",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "679cb6f3-7b7a-4716-aecc-576744ee6831",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "b9e05350-05e7-453c-82e6-844dc7c913e0",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "232eb8a5-110e-433b-93e7-e335e9a8b033",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "679cb6f3-7b7a-4716-aecc-576744ee6831",
+      "FromNodeId": "232eb8a5-110e-433b-93e7-e335e9a8b033",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "2a5889a9-e8be-452b-a5d4-2142dcb29e43",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "232eb8a5-110e-433b-93e7-e335e9a8b033",
       "FromPortName": "Output",
-      "ToNodeId": "9d9fd065-91cf-4181-b8d7-cc2e0e290760",
+      "ToNodeId": "2a5889a9-e8be-452b-a5d4-2142dcb29e43",
       "ToPortName": "VariableValue"
     },
     {
-      "FromNodeId": "a9d813bb-09be-4605-b1fa-cc7c7d5f3769",
+      "FromNodeId": "769d05cb-2256-44de-a54c-320b2d7a8569",
       "FromPortName": "Output",
-      "ToNodeId": "0099d050-8539-457b-af91-4407ccc01fa8",
-      "ToPortName": "Entries:[0]"
+      "ToNodeId": "00380f86-0496-4318-999b-3a462c90d835",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "c13cd6e4-aa7c-475c-86be-2011cc1b2e2e",
+      "FromNodeId": "eba224b9-500d-440f-b378-c416e66c35d9",
       "FromPortName": "Output",
-      "ToNodeId": "0099d050-8539-457b-af91-4407ccc01fa8",
-      "ToPortName": "Entries:[1]"
+      "ToNodeId": "00380f86-0496-4318-999b-3a462c90d835",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "4d7af74a-656e-4348-af52-89e6c1db0b47",
+      "FromNodeId": "82f686d6-a2a5-440c-9b43-1602611c89f2",
       "FromPortName": "Output",
-      "ToNodeId": "0099d050-8539-457b-af91-4407ccc01fa8",
-      "ToPortName": "Entries:[2]"
+      "ToNodeId": "00380f86-0496-4318-999b-3a462c90d835",
+      "ToPortName": "Entries"
     },
     {
-      "FromNodeId": "32bdc0ae-f663-4157-9d20-9183b9005870",
+      "FromNodeId": "2f13ba0a-7112-4bf9-bee5-f0ce316f97e3",
       "FromPortName": "OutputValue",
-      "ToNodeId": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+      "ToNodeId": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
       "ToPortName": "Hint"
     },
     {
-      "FromNodeId": "4b846e89-8d9c-4f50-8ebc-d7c0d34ef50c",
+      "FromNodeId": "b8994a12-641e-44b4-8108-d43372049e43",
       "FromPortName": "OutputValue",
-      "ToNodeId": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
+      "ToNodeId": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "5554f375-21f6-47c3-a3d4-191e6438effd",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "66e515d2-50ed-412b-bc52-556aa03d8bdc",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "b9e05350-05e7-453c-82e6-844dc7c913e0",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "2fb9a566-2f75-4ad2-89bf-a4842708c6a9",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "66e515d2-50ed-412b-bc52-556aa03d8bdc",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "2fb9a566-2f75-4ad2-89bf-a4842708c6a9",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "5554f375-21f6-47c3-a3d4-191e6438effd",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "5ce33c19-287f-4bb2-ac32-c4156acd8ce6",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "b9e05350-05e7-453c-82e6-844dc7c913e0",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "8e8b27c5-a128-4bb8-ba5d-ca513f8ec4d4",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "cb236bd8-d3d4-4478-b439-2a51a51bd60a",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "5ce33c19-287f-4bb2-ac32-c4156acd8ce6",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "edc6f24e-d3cf-464c-a012-3f55d7a60127",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "8e8b27c5-a128-4bb8-ba5d-ca513f8ec4d4",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "88373396-d15c-4676-b2ff-5e717728ef2a",
+      "FromNodeId": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
       "FromPortName": "Output",
-      "ToNodeId": "c6ad23b2-53b2-4612-947c-0abce4af2aae",
-      "ToPortName": "Intents:[0]"
+      "ToNodeId": "d999f74a-8b52-415e-8e14-b9d9a7dc5cb0",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
+      "FromNodeId": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
       "FromPortName": "Output",
-      "ToNodeId": "c6ad23b2-53b2-4612-947c-0abce4af2aae",
-      "ToPortName": "Intents:[1]"
+      "ToNodeId": "d999f74a-8b52-415e-8e14-b9d9a7dc5cb0",
+      "ToPortName": "Intents"
     },
     {
-      "FromNodeId": "1d05a082-4c89-4a64-b074-74702fb40857",
+      "FromNodeId": "d78cde35-98ce-4df3-8e4c-afe390c93adf",
       "FromPortName": "Output",
-      "ToNodeId": "88373396-d15c-4676-b2ff-5e717728ef2a",
-      "ToPortName": "IntentContexts:[0]"
+      "ToNodeId": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
+      "ToPortName": "IntentContexts"
     },
     {
-      "FromNodeId": "38dde4cc-1ab2-4a17-8002-d3f6efa47d67",
+      "FromNodeId": "5707e71a-6452-4718-b58a-ddcb480eb344",
       "FromPortName": "Output",
-      "ToNodeId": "88373396-d15c-4676-b2ff-5e717728ef2a",
-      "ToPortName": "Expressions:[0]"
+      "ToNodeId": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "9e32b871-35ba-4640-b398-81d192afbb93",
+      "FromNodeId": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
       "FromPortName": "Output",
-      "ToNodeId": "88373396-d15c-4676-b2ff-5e717728ef2a",
+      "ToNodeId": "4d33ba42-f83a-407b-b5ee-4e46edaf0569",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "efe496c6-82ad-4ee1-9891-c4f05481094d",
+      "FromNodeId": "8203e51e-dadc-4048-bf6e-4296f534c460",
       "FromPortName": "OutputValue",
-      "ToNodeId": "9e32b871-35ba-4640-b398-81d192afbb93",
+      "ToNodeId": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "9e32b871-35ba-4640-b398-81d192afbb93",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "ba766e60-e889-4676-ac57-51ce192c6866",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "2e9efa48-cd0a-4de9-bbe5-13bc845c6033",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "9e32b871-35ba-4640-b398-81d192afbb93",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "a3c152a4-a083-4a08-b6ca-9e2581e8406b",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "27730c30-d265-4e5c-8020-284d2dfcb542",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "a3c152a4-a083-4a08-b6ca-9e2581e8406b",
+      "FromNodeId": "27730c30-d265-4e5c-8020-284d2dfcb542",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "f951c6b8-060a-4c28-b5f3-dd69bee97953",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "27730c30-d265-4e5c-8020-284d2dfcb542",
       "FromPortName": "Output",
-      "ToNodeId": "8c706339-18dd-4385-8c4b-e7ed8f80a63e",
+      "ToNodeId": "f951c6b8-060a-4c28-b5f3-dd69bee97953",
       "ToPortName": "VariableValue"
     },
     {
-      "FromNodeId": "9e32b871-35ba-4640-b398-81d192afbb93",
-      "FromPortName": "GeneratingResponse",
-      "ToNodeId": "c44f0575-ef24-4019-916a-9b656d8f6c42",
-      "ToPortName": "OnGeneratingResponse"
+      "FromNodeId": "c901a577-0ef6-4fc8-88b1-0fd03627990a",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "192cd729-28f5-499b-8b12-746aa72d8b06",
+      "ToPortName": "OnNodeTriggered"
     },
     {
-      "FromNodeId": "f4c20e97-5324-4ebc-9aea-b9245cd47b62",
+      "FromNodeId": "d8fe45a3-be42-49be-8198-83b8dd4e2b09",
       "FromPortName": "Output",
-      "ToNodeId": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
-      "ToPortName": "IntentContexts:[0]"
+      "ToNodeId": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
+      "ToPortName": "IntentContexts"
     },
     {
-      "FromNodeId": "1bc5c77f-fba9-4a7c-b2ca-866b85665519",
+      "FromNodeId": "6e93e69e-2e4f-407b-826b-30efe82a9461",
       "FromPortName": "Output",
-      "ToNodeId": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
-      "ToPortName": "Expressions:[0]"
+      "ToNodeId": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
+      "ToPortName": "Expressions"
     },
     {
-      "FromNodeId": "064c9567-4b16-4321-b558-23d582f3ff61",
+      "FromNodeId": "d901f76f-7407-477f-ab81-a88814867ac3",
       "FromPortName": "Output",
-      "ToNodeId": "ed5eaaba-94b1-4b8e-b713-4fce2b04325c",
+      "ToNodeId": "a6366f75-71b6-4af8-85ed-25b9827de7ba",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "84ec374e-feec-4c07-a000-ec1a3afc8cea",
+      "FromNodeId": "4ec52584-d211-44f1-9c49-d45c2daca725",
       "FromPortName": "OutputValue",
-      "ToNodeId": "064c9567-4b16-4321-b558-23d582f3ff61",
+      "ToNodeId": "d901f76f-7407-477f-ab81-a88814867ac3",
       "ToPortName": "Text"
     },
     {
-      "FromNodeId": "df119a2d-7957-4dbd-86b5-05a291a12f12",
+      "FromNodeId": "ec8c7028-a1d1-4cfc-b1b7-30e73111981d",
       "FromPortName": "Output",
-      "ToNodeId": "2814afe8-dfec-42b0-939c-a8df2525204b",
-      "ToPortName": "Variables:[0]"
+      "ToNodeId": "bba012f4-f740-4c0f-bb93-155889c390e9",
+      "ToPortName": "Variables"
     },
     {
-      "FromNodeId": "6f1099f5-543a-48dc-ba43-6a5fa67b0656",
+      "FromNodeId": "753f051f-855c-4bc2-8939-a78c257b2692",
       "FromPortName": "Output",
-      "ToNodeId": "c9d58e7f-e2e9-4a4a-833f-e6d80aa56a40",
+      "ToNodeId": "deafff16-0198-4ec4-bd43-3a91dcdecfa4",
       "ToPortName": "Fallback"
     },
     {
-      "FromNodeId": "f6599b28-8cc3-4521-86a2-6f5b20e7d927",
+      "FromNodeId": "9ce76e34-16eb-4977-9119-10b1cccc35ac",
       "FromPortName": "Output",
-      "ToNodeId": "c9d58e7f-e2e9-4a4a-833f-e6d80aa56a40",
+      "ToNodeId": "deafff16-0198-4ec4-bd43-3a91dcdecfa4",
       "ToPortName": "Response"
     },
     {
-      "FromNodeId": "6e92c4a2-91fb-4718-90c2-44e6e912f4fe",
+      "FromNodeId": "d7ef5612-18f8-448b-adc6-e065a074fbf9",
       "FromPortName": "OutputValue",
-      "ToNodeId": "f6599b28-8cc3-4521-86a2-6f5b20e7d927",
+      "ToNodeId": "9ce76e34-16eb-4977-9119-10b1cccc35ac",
       "ToPortName": "Text"
     }
   ]
